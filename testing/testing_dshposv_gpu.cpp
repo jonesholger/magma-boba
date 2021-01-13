@@ -54,8 +54,8 @@ int main(int argc, char **argv)
     printf("%% uplo = %s\n",
            lapack_uplo_const(opts.uplo));
 
-    printf("%%   N NRHS   DP-Factor  DP-Solve  SP-Factor  SP-Solve  MP-Solve  Iter   |b-Ax|/|A|\n");
-    printf("%%====================================================================================\n");
+    printf("%% condA       N     NRHS   DP-Factor  DP-Solve  SP-Factor  SP-Solve  MP-Solve  Iter   |b-Ax|/|A|\n");
+    printf("%%===================================================================================================\n");
     for( int itest = 0; itest < opts.ntest; ++itest ) {
         for( int iter = 0; iter < opts.niter; ++iter ) {
             N = opts.nsize[itest];
@@ -280,7 +280,7 @@ int main(int argc, char **argv)
                        (long long) info, magma_strerror( info ));
             }
 
-            printf("%3.1e   %5lld %5lld   %7.2f   %7.2f   %7.2f   %7.2f   %7.2f    %4lld   %8.2e   %s\n",
+            printf(" %3.1e   %5lld %5lld     %7.2f    %7.2f   %7.2f    %7.2f   %7.2f  %4lld   %8.2e   %s\n",
                    condA, (long long) N, (long long) nrhs,
                    gpu_perfdf, gpu_perfds, gpu_perfsf, gpu_perfss, gpu_perf,
                    (long long) posv_iter, error, (error < tol ? "ok" : "failed"));
