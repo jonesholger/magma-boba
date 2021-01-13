@@ -188,7 +188,12 @@ int main(int argc, char **argv)
             magma_dsetmatrix( N, N, h_A, lda, d_A, lda, opts.queue );
 
             gpu_time = magma_wtime();
-            magma_dpotrf_gpu(opts.uplo, N, d_A, lda, &info);
+            if(opts.version < 5) {
+                magma_dpotrf_gpu(opts.uplo, N, d_A, lda, &info);
+            }
+            else{
+                magma_dpotrf_native(opts.uplo, N, d_A, lda, &info);
+            }
             gpu_time = magma_wtime() - gpu_time;
             gpu_perfdf = gflopsF / gpu_time;
             if (info != 0) {
@@ -216,7 +221,12 @@ int main(int argc, char **argv)
             magma_dsetmatrix( N, nrhs, h_B, ldb, d_B, ldb, opts.queue );
 
             gpu_time = magma_wtime();
-            magma_dpotrf_gpu(opts.uplo, N, d_A, lda, &info);
+            if(opts.version < 5) {
+                magma_dpotrf_gpu(opts.uplo, N, d_A, lda, &info);
+            }
+            else{
+                magma_dpotrf_native(opts.uplo, N, d_A, lda, &info);
+            }
             magma_dpotrs_gpu(opts.uplo, N, nrhs, d_A, lda, d_B, ldb, &info);
             gpu_time = magma_wtime() - gpu_time;
             gpu_perfds = gflopsS / gpu_time;
@@ -236,7 +246,12 @@ int main(int argc, char **argv)
             magmablas_dlag2s( N, nrhs, d_B, ldb, d_Bs, N, opts.queue, &info );
 
             gpu_time = magma_wtime();
-            magma_spotrf_gpu(opts.uplo, N, d_As, N, &info);
+            if( opts.version < 5){
+                magma_spotrf_gpu(opts.uplo, N, d_As, N, &info);
+            }
+            else{
+                magma_spotrf_native(opts.uplo, N, d_As, N, &info);
+            }
             gpu_time = magma_wtime() - gpu_time;
             gpu_perfsf = gflopsF / gpu_time;
             if (info != 0) {
@@ -251,7 +266,12 @@ int main(int argc, char **argv)
             magmablas_dlag2s(N, nrhs, d_B, ldb, d_Bs, N, opts.queue, &info );
 
             gpu_time = magma_wtime();
-            magma_spotrf_gpu(opts.uplo, N, d_As, lda, &info);
+            if( opts.version < 5){
+                magma_spotrf_gpu(opts.uplo, N, d_As, lda, &info);
+            }
+            else{
+                magma_spotrf_native(opts.uplo, N, d_As, lda, &info);
+            }
             magma_spotrs_gpu(opts.uplo, N, nrhs, d_As, N, d_Bs, N, &info);
             gpu_time = magma_wtime() - gpu_time;
             gpu_perfss = gflopsS / gpu_time;
