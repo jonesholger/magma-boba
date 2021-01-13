@@ -556,6 +556,34 @@ magma_zlarfx_gpu(
     magma_queue_t queue );
 
   /*
+   * Auxiliary kernels for fp16 mixed-precision Cholesky
+   */
+void
+magmablas_zextract_diag_sqrt(
+    magma_int_t m, magma_int_t n,
+    magmaDoubleComplex* dA, magma_int_t ldda,
+    double* dD, magma_int_t incd,
+    magma_queue_t queue);
+
+void
+magmablas_zscal_shift_hpd(
+    magma_uplo_t uplo, magma_int_t n,
+    magmaDoubleComplex* dA, magma_int_t ldda,
+    double* dD, magma_int_t incd,
+    double miu, double cn, double eps,
+    magma_queue_t queue);
+
+void
+magmablas_zdimv_invert(
+    magma_int_t n,
+    magmaDoubleComplex alpha,
+    magmaDoubleComplex* dD, magma_int_t incd,
+    magmaDoubleComplex* dx, magma_int_t incx,
+    magmaDoubleComplex beta,
+    magmaDoubleComplex* dy, magma_int_t incy,
+    magma_queue_t queue);
+
+  /*
    * Level 1 BLAS (alphabetical order)
    */
 void
