@@ -137,6 +137,30 @@ int main(int argc, char **argv)
                                   d_workd, d_works, &posv_iter, MagmaHybrid,
                                   1, 1, cn, theta, &info);
             }
+            else if(opts.version == 5) {
+                // hybrid -- IR, no preprocessing
+                magma_dshposv_gpu(opts.uplo, N, nrhs, d_A, lda, d_B, ldb, d_X, ldx,
+                                  d_workd, d_works, &posv_iter, MagmaNative,
+                                  0, 0, cn, theta, &info);
+            }
+            else if (opts.version == 6) {
+                // hybrid -- IR, with preprocessing
+                magma_dshposv_gpu(opts.uplo, N, nrhs, d_A, lda, d_B, ldb, d_X, ldx,
+                                  d_workd, d_works, &posv_iter, MagmaNative,
+                                  0, 1, cn, theta, &info);
+            }
+            else if(opts.version == 7) {
+                // hybrid -- IRGMRES, no preprocessing
+                magma_dshposv_gpu(opts.uplo, N, nrhs, d_A, lda, d_B, ldb, d_X, ldx,
+                                  d_workd, d_works, &posv_iter, MagmaNative,
+                                  1, 0, cn, theta, &info);
+            }
+            else if(opts.version == 8) {
+                // hybrid -- IRGMRES, with preprocessing
+                magma_dshposv_gpu(opts.uplo, N, nrhs, d_A, lda, d_B, ldb, d_X, ldx,
+                                  d_workd, d_works, &posv_iter, MagmaNative,
+                                  1, 1, cn, theta, &info);
+            }
             cudaProfilerStop();
             gpu_time = magma_wtime() - gpu_time;
             gpu_perf = gflopsS / gpu_time;
