@@ -24,24 +24,24 @@ extract_diag_sqrt_kernel(int min_mn, magmaDoubleComplex* dA, int ldda, double* d
 }
 
 /*============================================================================*/
-// two-sided diagonal scaling for hpd matrices 
+// two-sided diagonal scaling for hpd matrices
 // A becomes D^-1 * A * D^-1, where D diag( sqrt(a(i,i)) )
-// this kernel ignores uplo and scales the whole matrix 
+// this kernel ignores uplo and scales the whole matrix
 // TODO: scale the upper or the lower triangular part only
 template<int DIMX, int DIMY>
 __global__ void
 zscal_shift_hpd_kernel(
-        magma_uplo_t uplo, int n, 
-        magmaDoubleComplex* dA, int ldda, 
-        double* dD, int incd, 
+        magma_uplo_t uplo, int n,
+        magmaDoubleComplex* dA, int ldda,
+        double* dD, int incd,
         double miu, double cn, double eps)
 {
     const int tx = threadIdx.x;
     const int ty = threadIdx.y;
 
-    const int gbx = blockIdx.x * blockDim.x; 
-    const int gby = blockIdx.y * blockDim.y; 
-    
+    const int gbx = blockIdx.x * blockDim.x;
+    const int gby = blockIdx.y * blockDim.y;
+
     const int gtx = gbx + tx;
     const int gty = gby + ty;
 
@@ -51,13 +51,13 @@ zscal_shift_hpd_kernel(
     magmaDoubleComplex rA = MAGMA_Z_ZERO;
     double rTmp = MAGMA_D_ZERO;
     // read the corresponding segments from diagonal vector
-    // for pre-multiplication 
+    // for pre-multiplication
     if(ty == 0 && gtx < n) {
         rTmp = dD[gtx * incd];
         sD_row[ tx ] = MAGMA_Z_DIV( MAGMA_Z_ONE, MAGMA_Z_MAKE(rTmp, 1.) );
     }
 
-    // for post multiplication 
+    // for post multiplication
     const int y_length = min(DIMY, n - gby);
     if( ty == 1 && tx < y_length ) {
         rTmp = dD[ (gby+tx) * incd];
@@ -75,7 +75,7 @@ zscal_shift_hpd_kernel(
 
     // rA * D^-1 -- scale columns
     rA *= sD_col[ ty ];
-    
+
     rA  = (gtx == gty) ? MAGMA_Z_MAKE(1 + (cn*eps), 0. )  : rA;
     rA *= MAGMA_Z_MAKE( miu, 0. );
 
@@ -90,10 +90,10 @@ zscal_shift_hpd_kernel(
 // operation can be done inplace
 __global__ void
 dimv_kernel(
-        int n, 
-        magmaDoubleComplex alpha, magmaDoubleComplex *dD, int incd, 
-                                  magmaDoubleComplex *dx, int incx, 
-        magmaDoubleComplex beta,  magmaDoubleComplex *dy, int incy, 
+        int n,
+        magmaDoubleComplex alpha, magmaDoubleComplex *dD, int incd,
+                                  magmaDoubleComplex *dx, int incx,
+        magmaDoubleComplex beta,  magmaDoubleComplex *dy, int incy,
         bool invert_diagonal)
 {
     const int gtx = blockIdx.x * blockDim.x + threadIdx.x;
@@ -106,9 +106,9 @@ dimv_kernel(
 
     magmaDoubleComplex rTmp = MAGMA_Z_ZERO;
     if( gtx < n) {
-        rTmp += (invert_diagonal) ? MAGMA_Z_DIV(MAGMA_Z_ONE, dD[gtx * incd]) * dx[gtx * incx] : 
+        rTmp += (invert_diagonal) ? MAGMA_Z_DIV(MAGMA_Z_ONE, dD[gtx * incd]) * dx[gtx * incx] :
                                     dD[gtx*incd] * dx[gtx * incx];
-        rTmp *= alpha; 
+        rTmp *= alpha;
         dy[gtx * incy] = rA + rTmp;
     }
 }
@@ -119,9 +119,9 @@ dimv_kernel(
 extern "C"
 void
 magmablas_zextract_diag_sqrt(
-    magma_int_t m, magma_int_t n, 
-    magmaDoubleComplex* dA, magma_int_t ldda, 
-    double* dD, magma_int_t incd, 
+    magma_int_t m, magma_int_t n,
+    magmaDoubleComplex* dA, magma_int_t ldda,
+    double* dD, magma_int_t incd,
     magma_queue_t queue)
 {
     const int bx = 256;
@@ -137,11 +137,11 @@ magmablas_zextract_diag_sqrt(
 extern "C"
 void
 magmablas_zscal_shift_hpd(
-    magma_uplo_t uplo, int n, 
-    magmaDoubleComplex* dA, int ldda, 
-    double* dD, int incd, 
-    double miu, double cn, double eps,  
-    magma_queue_t queue) 
+    magma_uplo_t uplo, magma_int_t n,
+    magmaDoubleComplex* dA, magma_int_t ldda,
+    double* dD, magma_int_t incd,
+    double miu, double cn, double eps,
+    magma_queue_t queue)
 {
     const int DIMX = 32;
     const int DIMY = 8;
@@ -158,12 +158,12 @@ magmablas_zscal_shift_hpd(
 
 /* ===========================================================================*/
 extern "C"
-void 
+void
 magmablas_zdimv_invert(
-        magma_int_t n, 
-        magmaDoubleComplex alpha, magmaDoubleComplex* dD, magma_int_t incd, 
-                                  magmaDoubleComplex* dx, magma_int_t incx, 
-        magmaDoubleComplex beta,  magmaDoubleComplex* dy, magma_int_t incy, 
+        magma_int_t n,
+        magmaDoubleComplex alpha, magmaDoubleComplex* dD, magma_int_t incd,
+                                  magmaDoubleComplex* dx, magma_int_t incx,
+        magmaDoubleComplex beta,  magmaDoubleComplex* dy, magma_int_t incy,
         magma_queue_t queue)
 {
     const int nthreads = 256;
