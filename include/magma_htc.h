@@ -144,6 +144,13 @@ magma_dshposv_gpu(
     float cn, float theta, magma_int_t *info);
 
 magma_int_t
+magma_shpotrf_LL_expert_gpu(
+    magma_uplo_t uplo, magma_int_t n,
+    magmaFloat_ptr dA, magma_int_t ldda,
+    magma_int_t nb, magma_int_t recnb,
+    magma_int_t *info, magma_mode_t mode );
+
+magma_int_t
 magma_shpotrf_gpu(
     magma_uplo_t uplo, magma_int_t n,
     magmaFloat_ptr dA, magma_int_t ldda,
