@@ -38,9 +38,9 @@ libmagma_src += \
 	$(cdir)/zpotrf_mgpu_right.cpp	\
 	$(cdir)/zpotrf3_mgpu.cpp	\
 	\
+	$(cdir)/dshposv_gpu.cpp		\
 	$(cdir)/shpotrf_gpu.cpp		\
 	$(cdir)/dfgmres_spd_gpu.cpp	\
-
 
 # Cholesky, CPU interface
 libmagma_src += \
