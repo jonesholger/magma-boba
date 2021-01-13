@@ -77,6 +77,8 @@ testing_src += \
 	$(cdir)/testing_ztrtri_gpu.cpp	\
 	\
 	$(cdir)/testing_zpotrf_mgpu.cpp	\
+	\
+	$(cdir)/testing_dshposv_gpu.cpp	\
 
 # Cholesky, CPU interface
 testing_src += \
