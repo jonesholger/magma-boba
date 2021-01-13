@@ -212,6 +212,7 @@ libmagma_src += \
 	$(cdir)/hlaconvert.cu	         \
 	$(cdir)/hlaswp.cu		         \
 	$(cdir)/hset_pointer.cu		     \
+	$(cdir)/zposv_fp16_kernels.cu	 \
 
 # ----------------------------------------------------------------------
 # extra include dependencies
