@@ -80,12 +80,12 @@ typedef double real_Double_t;
     typedef cudaEvent_t    magma_event_t;
     typedef magma_int_t    magma_device_t;
 
-    // Half precision in CUDA 
+    // Half precision in CUDA
     #if defined(__cplusplus) && CUDA_VERSION >= 7500
     #include <cuda_fp16.h>
     typedef __half           magmaHalf;
     #else
-    // use short for cuda older than 7.5 
+    // use short for cuda older than 7.5
     // corresponding routines would not work anyway since there is no half precision
     typedef short            magmaHalf;
     #endif    // CUDA_VERSION >= 7500
@@ -137,8 +137,6 @@ typedef double real_Double_t;
     #if !defined(__HIP_PLATFORM_HCC__) && !defined(__HIP_PLATFORM_NVCC)
       #define __HIP_PLATFORM_HCC__
     #endif
-    // the standard HIP header, similar to CUDA's 'cuda.h'
-    #include <hip/hip_runtime.h> 
 
 
     /* HIP Complex numbers:
@@ -165,10 +163,18 @@ typedef double real_Double_t;
     // instead, use this fix:
     //#include "magma_hip_complex.h"
     
-    // hipBLAS & hipSPARSE LA library headers
+    #include <hip/hip_version.h>
+    #include <hip/hip_runtime.h>
+
+    // hipblas/hipsparse headers
+    #if HIP_VERSION >= 50200000
+    #include <hipblas/hipblas.h>
+    #include <hipsparse/hipsparse.h>
+    #else
     #include <hipblas.h>
     #include <hipsparse.h>
-    
+    #endif
+
     // this macro allows you to define an unsupported function (primarily from hipBLAS)
     // which will become a NOOP, and print an error message
     #ifndef magma_unsupported
@@ -190,7 +196,7 @@ typedef double real_Double_t;
      * and an error message is printed out to stderr
      *
      * To generate a list of these, first remove all these macro definitions, run a `make clean`
-     * to clear caches, and then start running: 
+     * to clear caches, and then start running:
      * $ make lib/libmagma.so -j64 2>&1 \
      *     | grep "use of undeclared identifier" \
      *     | awk '{gsub("'"'"'", "", $7) ; gsub(";", "", $7) ; print $7}'
@@ -269,9 +275,9 @@ typedef double real_Double_t;
     #ifdef __cplusplus
     extern "C" {
     #endif
-  
+
     // opaque queue struct type
-    struct magma_queue; 
+    struct magma_queue;
     typedef struct magma_queue* magma_queue_t;
     typedef hipEvent_t  magma_event_t;
     typedef int         magma_device_t;
@@ -289,12 +295,12 @@ typedef double real_Double_t;
 
     /* simple double complex definition that should be binary compatible with hipBLAS */
     typedef struct {
-        
+
         // real, imag components
         double x, y;
 
-    } magmaDoubleComplex;    
-    
+    } magmaDoubleComplex;
+
     /* functionality macros */
     #define MAGMA_Z_MAKE(r, i)   ((magmaDoubleComplex){(double)(r), (double)(i)})
     #define MAGMA_Z_REAL(a) (a).x
@@ -305,7 +311,7 @@ typedef double real_Double_t;
     #define MAGMA_Z_DIV(a, b) magmaCdiv(a, b)
     #define MAGMA_Z_ABS(a) (hypot(MAGMA_Z_REAL(a), MAGMA_Z_IMAG(a)))
     #define MAGMA_Z_ABS1(a) (fabs(MAGMA_Z_REAL(a)) + fabs(MAGMA_Z_IMAG(a)))
-    #define MAGMA_Z_CONJ(a) magmaConj(a) 
+    #define MAGMA_Z_CONJ(a) magmaConj(a)
 
     /* basic arithmetic functions */
     __host__ __device__ static inline magmaDoubleComplex magmaCadd(magmaDoubleComplex a, magmaDoubleComplex b) {
@@ -320,7 +326,7 @@ typedef double real_Double_t;
     __host__ __device__ static inline magmaDoubleComplex magmaCdiv(magmaDoubleComplex a, magmaDoubleComplex b) {
         double sqabs = b.x*b.x + b.y*b.y;
         return MAGMA_Z_MAKE(
-            (a.x * b.x + a.y * b.y) / sqabs, 
+            (a.x * b.x + a.y * b.y) / sqabs,
             (a.y * b.x - a.x * b.y) / sqabs
         );
     }
@@ -335,10 +341,10 @@ typedef double real_Double_t;
 
     //typedef hipComplex magmaFloatComplex;
     //typedef hipblasComplex magmaFloatComplex;
-    
+
     /* basic definition of float complex that should be binary compatible with hipBLAS */
     typedef struct {
-        
+
         // real, imag components
         float x, y;
 
@@ -354,7 +360,7 @@ typedef double real_Double_t;
     #define MAGMA_C_DIV(a, b) magmaCdivf(a, b)
     #define MAGMA_C_ABS(a) (hypotf(MAGMA_C_REAL(a), MAGMA_C_IMAG(a)))
     #define MAGMA_C_ABS1(a) (fabsf(MAGMA_C_REAL(a)) + fabs(MAGMA_C_IMAG(a)))
-    #define MAGMA_C_CONJ(a) magmaConjf(a) 
+    #define MAGMA_C_CONJ(a) magmaConjf(a)
 
     /* basic arithmetic functions */
     __host__ __device__ static inline magmaFloatComplex magmaCaddf(magmaFloatComplex a, magmaFloatComplex b) {
@@ -383,7 +389,7 @@ typedef double real_Double_t;
 
     #ifdef __cplusplus
     }
-    #endif 
+    #endif
 
 #elif defined(HAVE_clBLAS)
     #include <clBLAS.h>
@@ -396,7 +402,7 @@ typedef double real_Double_t;
     typedef cl_event          magma_event_t;
     typedef cl_device_id      magma_device_t;
 
-    typedef short         magmaHalf;    // placeholder until FP16 is supported 
+    typedef short         magmaHalf;    // placeholder until FP16 is supported
     typedef DoubleComplex magmaDoubleComplex;
     typedef FloatComplex  magmaFloatComplex;
 
@@ -438,7 +444,7 @@ typedef double real_Double_t;
     typedef int   magma_event_t;
     typedef int   magma_device_t;
 
-    typedef short                 magmaHalf;    // placeholder until FP16 is supported 
+    typedef short                 magmaHalf;    // placeholder until FP16 is supported
     typedef std::complex<float>   magmaFloatComplex;
     typedef std::complex<double>  magmaDoubleComplex;
 
@@ -913,7 +919,7 @@ typedef enum {
     Magma_PREC_HST          = 903,
     Magma_PREC_SH           = 904,
     Magma_PREC_SHT          = 905,
-    
+
     Magma_PREC_XHS_H        = 910,
     Magma_PREC_XHS_HTC      = 911,
     Magma_PREC_XHS_161616   = 912,
