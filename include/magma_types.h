@@ -140,13 +140,13 @@ typedef double real_Double_t;
 #elif defined(MAGMA_HAVE_SYCL)
     #ifdef __cplusplus
     #include <CL/sycl.hpp>
-//    #include <dpct/dpct.hpp>
-    
+    #include <dpct/dpct.hpp>
+  
     #define MKL_Complex8  std::complex<float>
     #define MKL_Complex16 std::complex<double>
 
     #include <oneapi/mkl.hpp>
-//    #include <dpct/blas_utils.hpp>
+    #include <dpct/blas_utils.hpp>
     #endif
 
     #ifdef __cplusplus
