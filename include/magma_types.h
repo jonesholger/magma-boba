@@ -138,14 +138,16 @@ typedef double real_Double_t;
     }
     #endif
 #elif defined(MAGMA_HAVE_SYCL)
+    #ifdef __cplusplus
     #include <CL/sycl.hpp>
-    #include <dpct/dpct.hpp>
+//    #include <dpct/dpct.hpp>
     
     #define MKL_Complex8  std::complex<float>
     #define MKL_Complex16 std::complex<double>
 
     #include <oneapi/mkl.hpp>
-    #include <dpct/blas_utils.hpp>
+//    #include <dpct/blas_utils.hpp>
+    #endif
 
     #ifdef __cplusplus
     extern "C" {
@@ -154,28 +156,33 @@ typedef double real_Double_t;
     // opaque queue structure
     struct magma_queue;
     typedef struct magma_queue* magma_queue_t;
+    #ifdef __cplusplus
     typedef sycl::event magma_event_t;
+    #else
+    typedef int magma_event_t; // temporary, for libCEED
+    #endif
     typedef magma_int_t    magma_device_t;
 
 //    typedef short            magmaHalf;
+    #ifdef __cplusplus
     typedef sycl::half         magmaHalf;
-        /*
-    // typedef sycl::double2 magmaDoubleComplex;
-    typedef MKL_Complex16 magmaDoubleComplex;
-    // typedef sycl::float2  magmaFloatComplex;
-    typedef MKL_Complex8 magmaFloatComplex;
-        */
-
-    typedef std::complex<float>   magmaFloatComplex;
-    typedef std::complex<double>   magmaDoubleComplex;
 
     sycl::queue *magma_queue_get_sycl_stream(magma_queue_t queue);
     sycl::queue *magma_queue_get_syclblas_handle(magma_queue_t queue);
     sycl::queue *magma_queue_get_syclsparse_handle(magma_queue_t queue);
 
+    typedef std::complex<float>   magmaFloatComplex;
+    typedef std::complex<double>   magmaDoubleComplex;
+    #else
+    typedef short   magmaHalf;
+
+    typedef float _Complex magmaFloatComplex;
+    typedef double _Complex magmaDoubleComplex;
+     #endif
     /// @addtogroup magma_complex
     /// @{
 
+    #ifdef __cplusplus
     #define MAGMA_Z_MAKE(r,i)     std::complex<double>(r,i)    ///< @return complex number r + i*sqrt(-1).
     #define MAGMA_Z_REAL(a)       (a).real()                         ///< @return real component of a.
     #define MAGMA_Z_IMAG(a)       (a).imag()                         ///< @return imaginary component of a.
@@ -209,6 +216,7 @@ typedef double real_Double_t;
     static inline magmaFloatComplex magmaCfmaf(magmaFloatComplex a, magmaFloatComplex b, magmaFloatComplex c) {
         return MAGMA_C_ADD(MAGMA_C_MUL(a, b), c);
     }
+    #endif
 
     /// @}
     // end group magma_complex
@@ -1129,10 +1137,12 @@ hipblasSideMode_t    hipblas_side_const (magma_side_t side    );
 
 // Convert MAGMA constants to MKL constants
 #if defined(MAGMA_HAVE_SYCL)
+#ifdef __cplusplus // Temp? For including in libCEED
 oneapi::mkl::transpose   syclblas_trans_const(magma_trans_t trans);
 oneapi::mkl::uplo   syclblas_uplo_const(magma_uplo_t uplo);
 oneapi::mkl::diag   syclblas_diag_const(magma_diag_t diag);
 oneapi::mkl::side   syclblas_side_const(magma_side_t side);
+#endif
 
 #define magma_backend_trans_const syclblas_trans_const
 #define magma_backend_uplo_const syclblas_uplo_const
