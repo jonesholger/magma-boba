@@ -34,69 +34,6 @@
 #define BLOCK_SIZE 512
 
 
-#if CUDA_VERSION >= 11000
-// todo: destroy descriptor and see if the original code descriptors have to be changed
-/*
-DPCT1007:667: Migration of cusparseCreateCsr is not supported by the Intel(R)
-DPC++ Compatibility Tool.
-*/
-/*
-DPCT1007:668: Migration of cusparseCreateDnVec is not supported by the Intel(R)
-DPC++ Compatibility Tool.
-*/
-/*
-DPCT1007:669: Migration of cusparseSpMV_bufferSize is not supported by the
-Intel(R) DPC++ Compatibility Tool.
-*/
-/*
-DPCT1007:670: Migration of cusparseSpMV is not supported by the Intel(R) DPC++
-Compatibility Tool.
-*/
-/*
-        descr = oneapi::mkl::index_base::zero;
-        oneapiSparseZcsrmv(oneapiSparseHandle, oneapi::mkl::transpose::nontrans,
-                       A.num_rows, A.num_cols, A.nnz, (std::complex<double> *)&c_one,
-                       descr, (std::complex<double> *)A.dval, A.drow, A.dcol,
-                       (std::complex<double> *)dd, (std::complex<double> *)&c_zero,
-                       (std::complex<double> *)dz);
-      oneapi::mkl:sparse::set_csr_data (
-        handle,
-        rows,
-        cols,
-        descr,
-        intType *row_ptr,
-        intType *col_ind,
-        fp *val);
-                       */
-#define cusparseZcsrmv(handle, op,\
-    rows, cols, nnz, alpha,\
-    descr, dval, drow, dcol,\
-    x, beta,\
-    y)                                       \
-    {                                                                          \
-        cusparseSpMatDescr_t descrA;                                           \
-        cusparseDnVecDescr_t descrX, descrY;                                   \
-        cusparseCreateCsr(&descrA, rows, cols, nnz, (void *)drow,              \
-                          (void *)dcol, (void *)dval, CUSPARSE_INDEX_32I,      \
-                          CUSPARSE_INDEX_32I, oneapi::mkl::index_base::zero,   \
-                          5);                                                  \
-        cusparseCreateDnVec(&descrX, cols, x, 5);                              \
-        cusparseCreateDnVec(&descrY, rows, y, 5);                              \
-                                                                               \
-        size_t bufsize;                                                        \
-        void *buf;                                                             \
-        cusparseSpMV_bufferSize(handle, op, (void *)alpha, descrA, descrX,     \
-                                (void *)beta, descrY, 5, CUSPARSE_CSRMV_ALG1,  \
-                                &bufsize);                                     \
-        if (bufsize > 0)                                                       \
-            magma_malloc(&buf, bufsize);                                       \
-        cusparseSpMV(handle, op, (void *)alpha, descrA, descrX, (void *)beta,  \
-                     descrY, 5, CUSPARSE_CSRMV_ALG1, buf);                     \
-        if (bufsize > 0)                                                       \
-            magma_free(buf);                                                   \
-    }
-#endif
-
 // These routines merge multiple kernels from zmergecg into one
 // for a description see 
 // "Reformulated Conjugate Gradient for the Energy-Aware 
@@ -1582,6 +1519,8 @@ magma_zcgmerge_spmv1(
     sycl::range<3> Bs(1, 1, local_block_size);
     sycl::range<3> Gs(1, 1, magma_ceildiv(A.num_rows, local_block_size));
     sycl::range<3> Gs_next(1, 1, 1);
+    int nthreads_max = queue->sycl_stream()->get_device()
+                            .get_info<sycl::info::device::max_work_group_size>();
     /*
     DPCT1083:659: The size of local memory in the migrated code may be different
     from the original code. Check that the allocated memory size in the migrated
@@ -1703,9 +1642,9 @@ magma_zcgmerge_spmv1(
     }
     else if ( A.storage_type == Magma_SELLP && A.alignment > 1) {
             int num_threadssellp = A.blocksize*A.alignment;
-            magma_int_t arch = magma_getdevice_arch();
-            if ( arch < 200 && num_threadssellp > 256 )
-                printf("error: too much shared memory requested.\n");
+            if ( num_threadssellp > nthreads_max)
+              printf("error: too many threads requested (%d) for this device (max %d).\n",
+               num_threadssellp, nthreads_max);
 
             sycl::range<3> block(1, A.alignment, A.blocksize);
             int dimgrid1 = int( sqrt( double( A.numblocks )));
@@ -1803,9 +1742,9 @@ magma_zcgmerge_spmv1(
 
     int real_row_length = magma_roundup( A.max_nnz_row, A.alignment );
 
-    magma_int_t arch = magma_getdevice_arch();
-    if ( arch < 200 && num_threads > 256 )
-        printf("error: too much shared memory requested.\n");
+    if ( num_threads > nthreads_max)
+              printf("error: too many threads requested (%d) for this device (max %d).\n",
+               num_threads, nthreads_max);
 
     int dimgrid1 = int( sqrt( double( num_blocks )));
     int dimgrid2 = magma_ceildiv( num_blocks, dimgrid1 );
