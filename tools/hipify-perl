@@ -993,7 +993,8 @@ sub simpleSubstitutions {
     
     # replace them with hipBLAS types
     $ft{'type'} += s/\bcuDoubleComplex\b/hipblasDoubleComplex/g;
-    $ft{'type'} += s/\bcuFloatComplex\b/hipblasFloatComplex/g;
+    #$ft{'type'} += s/\bcuFloatComplex\b/hipblasFloatComplex/g;
+    $ft{'type'} += s/\bcuFloatComplex\b/hipblasComplex/g;
     
     $ft{'type'} += s/\bcublasDataType_t\b/hipblasDatatype_t/g;
     $ft{'type'} += s/\bcublasDiagType_t\b/hipblasDiagType_t/g;

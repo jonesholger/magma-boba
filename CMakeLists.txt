@@ -1,9 +1,9 @@
-cmake_minimum_required( VERSION 3.18 )
+cmake_minimum_required( VERSION 3.21.3 )
 
 # ----------------------------------------
 # to disable Fortran, set this to "off"
 # see also -DADD_ below
-option( USE_FORTRAN "Fortran is required for some tester checks, but can be disabled with reduced functionality" ON )
+option( USE_FORTRAN "Fortran is required for some tester checks, but can be disabled with reduced functionality" OFF )
 
 if (USE_FORTRAN)
     project( MAGMA C CXX Fortran )
@@ -296,7 +296,7 @@ if (MAGMA_ENABLE_CUDA)
         message( FATAL_ERROR "GPU_TARGET must contain one or more of Fermi, Kepler, Maxwell, Pascal, Volta, Turing, Ampere, or valid sm_[0-9][0-9]" )
     endif()
 
-    set(CUDA_ARCHITECTURES "${__cuda_architectures}")
+    set(CMAKE_CUDA_ARCHITECTURES "${__cuda_architectures}")
 
     add_library(magma_nvcc_flags INTERFACE)
     if (COMPILER_SUPPORTS_FPIC)
@@ -322,6 +322,7 @@ if (MAGMA_ENABLE_CUDA)
 endif()
 
 if (MAGMA_ENABLE_HIP)
+if (MAGMA_ORIG)
   set( GPU_TARGET "gfx900" CACHE STRING "HIP architectures to compile for" )
   list(APPEND CMAKE_PREFIX_PATH /opt/rocm /opt/rocm/lib/cmake/hip)
   find_package( HIP )
@@ -383,10 +384,10 @@ if (MAGMA_ENABLE_HIP)
     endif()
 
     set( DEVCCFLAGS  "" )
-    set(VALID_GFXS "700;701;702;703;704;705;801;802;803;805;810;900;902;904;906;908;909;90c;1010;1011;1012;1030;1031;1032;1033")
+    set(VALID_GFXS "700;701;702;703;704;705;801;802;803;805;810;900;902;904;906;908;909;90a;90c;940;942;1010;1011;1012;1030;1031;1032;1033")
     foreach( GFX ${VALID_GFXS} )
       if ( GPU_TARGET MATCHES gfx${GFX} )
-	set( DEVCCFLAGS ${DEVCCFLAGS} --offload-arch=gfx${GFX} )
+	    set( DEVCCFLAGS ${DEVCCFLAGS} --offload-arch=gfx${GFX} )
       endif()
     endforeach()
 
@@ -402,7 +403,25 @@ if (MAGMA_ENABLE_HIP)
   else()
     message( STATUS "Could not find HIP" )
   endif()
-endif()
+else() 
+    set(HIP_SEPARABLE_COMPILATION ON)
+    set(DEVCCFLAGS  "" )
+    if(NOT CMAKE_HIP_ARCHITECTURES)
+        message(STATUS "Using DetermineHIPCompiler to detect CMAKE_HIP_ARCHIECTURES")
+        include(${CMAKE_ROOT}/Modules/CMakeDetermineHIPCompiler.cmake)
+    endif()
+    list(REMOVE_DUPLICATES CMAKE_HIP_ARCHITECTURES)
+    enable_language(HIP)
+    message(STATUS "CMAKE_HIP_ARCHITECTURES ${CMAKE_HIP_ARCHITECTURES}")
+    set(HIP_ARCHITECTURES ${CMAKE_HIP_ARCHITECTURES})
+    foreach(GFX ${CMAKE_HIP_ARCHITECTURES} )
+        set(DEVCCFLAGS ${DEVCCFLAGS} --offload-arch=${GFX} )
+    endforeach()
+    set(MAGMA_HAVE_HIP "1")
+    add_compile_options(${DEVCCFLAGS})
+endif(MAGMA_ORIG)
+endif(MAGMA_ENABLE_HIP)
+
 
 # ----------------------------------------
 # locate LAPACK libraries
@@ -489,6 +508,10 @@ else()
     # Primarily for gcc / nvcc:
     # Ignore unused static functions in headers.
     set( CMAKE_C_FLAGS     "${CMAKE_C_FLAGS} -Wall -Wno-unused-function" )
+    # quiet warnings to limit chatter in CI 
+    if(QUIET)
+        set( CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -w" )
+    endif()
     set( CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wno-unused-function" )
 endif()
 
@@ -631,6 +654,7 @@ endif()
 add_custom_target( lib DEPENDS magma )
 
 
+if(MAGMA_TEST)
 # ----------------------------------------
 # compile lapacktest library
 # If use fortran, compile only Fortran files, not magma_[sdcz]_no_fortran.cpp
@@ -656,7 +680,6 @@ target_link_libraries( lapacktest
     ${LAPACK_LIBRARIES}
 )
 
-
 # ----------------------------------------
 # compile tester library
 add_library( tester ${libtest_all} )
@@ -666,8 +689,9 @@ target_link_libraries( tester
     ${blas_fix}
     ${LAPACK_LIBRARIES}
 )
+endif()
 
-
+if(MAGMA_SPARSE)
 # ----------------------------------------
 # compile MAGMA sparse library
 
@@ -705,8 +729,9 @@ else()
     )
 endif()
 add_custom_target( sparse-lib DEPENDS magma_sparse )
+endif(MAGMA_SPARSE)
 
-
+if(MAGMA_TEST)
 # ----------------------------------------
 # compile each tester
 
@@ -732,16 +757,14 @@ foreach( TEST ${testing_all_cpp} )
 endforeach()
 add_custom_target( testing DEPENDS ${testing} )
 
-
 # ----------------------------------------
 # compile each sparse tester
-
+if(MAGMA_SPARSE)
 if (MAGMA_ENABLE_CUDA)
   set(SPARSE_TEST_DIR "sparse/testing")
 else()
   set(SPARSE_TEST_DIR "sparse_hip/testing")
 endif()
-
 
 set( CMAKE_RUNTIME_OUTPUT_DIRECTORY "${SPARSE_TEST_DIR}" )
 cmake_policy( SET CMP0037 OLD)
@@ -754,14 +777,23 @@ foreach( TEST ${sparse_testing_all} )
     list( APPEND sparse-testing ${EXE} )
 endforeach()
 add_custom_target( sparse-testing DEPENDS ${sparse-testing} )
-
+endif(MAGMA_SPARSE)
+endif(MAGMA_TEST)
 
 # ----------------------------------------
 # what to install
-install( TARGETS magma magma_sparse ${blas_fix}
-         RUNTIME DESTINATION bin
-         LIBRARY DESTINATION lib
-         ARCHIVE DESTINATION lib )
+if(MAGMA_SPARSE)
+    install( TARGETS magma magma_sparse ${blas_fix}
+            RUNTIME DESTINATION bin
+            LIBRARY DESTINATION lib
+            ARCHIVE DESTINATION lib )
+else()
+    install( TARGETS magma ${blas_fix}
+    RUNTIME DESTINATION bin
+    LIBRARY DESTINATION lib
+    ARCHIVE DESTINATION lib )
+endif()
+
 if (MAGMA_ENABLE_CUDA)
   file( GLOB headers include/*.h sparse/include/*.h "${CMAKE_BINARY_DIR}/include/*.h" )
 else()
