@@ -783,12 +783,12 @@ endif(MAGMA_TEST)
 # ----------------------------------------
 # what to install
 if(MAGMA_SPARSE)
-    install( TARGETS magma magma_sparse ${blas_fix}
+    install( TARGETS magma magma_sparse ${blas_fix} EXPORT magmaTargets
             RUNTIME DESTINATION bin
             LIBRARY DESTINATION lib
             ARCHIVE DESTINATION lib )
 else()
-    install( TARGETS magma ${blas_fix}
+    install( TARGETS magma ${blas_fix} EXPORT magmaTargets
     RUNTIME DESTINATION bin
     LIBRARY DESTINATION lib
     ARCHIVE DESTINATION lib )
@@ -834,6 +834,25 @@ install( FILES "${CMAKE_BINARY_DIR}/${pkgconfig}"
          DESTINATION lib/pkgconfig )
 
 # ----------------------------------------
+
+# setup relocatable export
+include(CMakePackageConfigHelpers)
+include(GNUInstallDirs)
+
+install(EXPORT magmaTargets DESTINATION lib/cmake/magma)
+configure_package_config_file(magmaConfig.cmake.in
+  ${CMAKE_CURRENT_BINARY_DIR}/magmaConfig.cmake
+  INSTALL_DESTINATION lib/cmake/magma)
+write_basic_package_version_file(
+  ${CMAKE_CURRENT_BINARY_DIR}/magmaConfigVersion.cmake
+  VERSION 2.7.2
+  COMPATIBILITY SameMajorVersion )
+install(FILES ${CMAKE_CURRENT_BINARY_DIR}/magmaConfig.cmake
+              ${CMAKE_CURRENT_BINARY_DIR}/magmaConfigVersion.cmake
+        DESTINATION lib/cmake/magma )
+
+# ----------------------------------------
+get_directory_property( compile_definitions COMPILE_DEFINITIONS )
 get_directory_property( compile_definitions COMPILE_DEFINITIONS )
 
 message( STATUS "Flags" )
