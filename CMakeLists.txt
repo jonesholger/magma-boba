@@ -782,17 +782,24 @@ endif(MAGMA_TEST)
 
 # ----------------------------------------
 # what to install
+
+set(TARGET_LIST_INSTALL "")
+list(APPEND TARGET_LIST_INSTALL magma ${blas_fix})
 if(MAGMA_SPARSE)
-    install( TARGETS magma magma_sparse ${blas_fix} EXPORT magmaTargets
+    list(APPEND TARGET_LIST_INSTALL magma_sparse)
+endif()
+
+if(MAGMA_ENABLE_CUDA)
+    list(APPEND TARGET_LIST_INSTALL magma_nvcc_flags)
+endif()
+
+message(STATUS "TARGET_LIST_INSTALL: ${TARGET_LIST_INSTALL}")
+
+install( TARGETS ${TARGET_LIST_INSTALL} EXPORT magmaTargets
             RUNTIME DESTINATION bin
             LIBRARY DESTINATION lib
             ARCHIVE DESTINATION lib )
-else()
-    install( TARGETS magma ${blas_fix} EXPORT magmaTargets
-    RUNTIME DESTINATION bin
-    LIBRARY DESTINATION lib
-    ARCHIVE DESTINATION lib )
-endif()
+
 
 if (MAGMA_ENABLE_CUDA)
   file( GLOB headers include/*.h sparse/include/*.h "${CMAKE_BINARY_DIR}/include/*.h" )

@@ -1,0 +1,48 @@
+@PACKAGE_INIT@
+
+if(@MAGMA_ENABLE_CUDA@)
+    enable_language(CUDA)
+    find_package(CUDAToolkit REQUIRED)
+elseif(@MAGMA_ENABLE_HIP@)
+    if(NOT @ROCM_PATH@)
+    # First try finding paths given by the user
+        find_path(ROCM_PATH
+            hip
+            PATHS
+            $ENV{ROCM_DIR}
+            $ENV{ROCM_PATH}
+            $ENV{HIP_PATH}
+            ${HIP_PATH}/..
+            ${HIP_ROOT_DIR}/../
+            ${ROCM_ROOT_DIR}
+            /opt/rocm
+            NO_DEFAULT_PATH
+            NO_CMAKE_ENVIRONMENT_PATH
+            NO_CMAKE_PATH
+            NO_SYSTEM_ENVIRONMENT_PATH
+            NO_CMAKE_SYSTEM_PATH)
+
+    # If that fails, use CMake default paths
+        if(NOT ROCM_PATH)
+            find_path(ROCM_PATH hip)
+        endif()
+    endif()
+
+    # Update CMAKE_PREFIX_PATH to make sure all the configs that hip depends on are
+    # found.
+    set(CMAKE_PREFIX_PATH "${CMAKE_PREFIX_PATH};${ROCM_PATH};${ROCM_ROOT_DIR}/lib/cmake")
+
+    find_package(hip REQUIRED CONFIG PATHS  ${HIP_PATH} ${ROCM_PATH} ${ROCM_ROOT_DIR}/lib/cmake/hip)
+    find_package(hipblas REQUIRED CONFIG PATHS  ${HIP_PATH} ${ROCM_PATH} ${ROCM_ROOT_DIR}/lib/cmake/hip)
+    find_package(hipsparse REQUIRED CONFIG PATHS  ${HIP_PATH} ${ROCM_PATH} ${ROCM_ROOT_DIR}/lib/cmake/hip)
+    message(STATUS "ROCM path:        ${ROCM_PATH}")
+    message(STATUS "HIP version:      ${hip_VERSION}")
+endif()
+
+include("${CMAKE_CURRENT_LIST_DIR}/magmaTargets.cmake")
+check_required_components( magma )
+set_and_check(MAGMA_INCLUDE_DIR ${CMAKE_CURRENT_LIST_DIR}/../../../include)
+set_target_properties(magma PROPERTIES
+  INTERFACE_INCLUDE_DIRECTORIES ${MAGMA_INCLUDE_DIR}
+)
+
