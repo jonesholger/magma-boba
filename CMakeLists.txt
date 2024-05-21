@@ -398,8 +398,13 @@ if (MAGMA_ORIG)
     set_property(TARGET hip::device APPEND PROPERTY COMPATIBLE_INTERFACE_BOOL INTERFACE_HIP_DEVICE_COMPILE)
     set_property(TARGET hip::device PROPERTY INTERFACE_HIP_DEVICE_COMPILE ON)
     set(GPU_ARCH_FLAGS ${DEVCCFLAGS})
-    
+
     #add_compile_options(${GPU_ARCH_FLAGS})
+    set( CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -D__HIP_PLATFORM_HCC__" )
+    option(ROCM_CORE "Location of the rocm-core package")
+    execute_process(COMMAND "${CMAKE_SOURCE_DIR}/tools/get-rocm-version.sh" "${ROCM_CORE}" OUTPUT_VARIABLE ROCM_VERSION OUTPUT_STRIP_TRAILING_WHITESPACE)
+    message(STATUS "ROCM_VERSION=${ROCM_VERSION}")
+    set( CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -DROCM_VERSION=${ROCM_VERSION}" )
   else()
     message( STATUS "Could not find HIP" )
   endif()
@@ -556,7 +561,7 @@ if (MAGMA_ENABLE_CUDA)
 else()
   include_directories( magmablas_hip )  # e.g., shuffle.cuh
 endif()
-  
+
 # Need to check sizeof(void*) after setting flags above;
 # CMAKE_SIZEOF_VOID_P can be wrong.
 include( CheckTypeSize )
@@ -639,7 +644,7 @@ else()
 	roc::hipsparse
 	)
     endif()
-    
+
     if (USE_FORTRAN)
         # make list of Fortran .mod files to install
         foreach( filename ${libmagma_all} )
