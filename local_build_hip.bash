@@ -1,7 +1,7 @@
 #!/bin/bash
 
-ml rocm/5.7.0
-ml rocmcc/5.7.0-magic
+ml rocm/6.1.1
+ml rocmcc/6.1.1-magic
 ml cmake/3.24.2
 ml python/3.9.12
 
@@ -27,6 +27,7 @@ cd $BUILD_DIR
 cmake \
  -DCMAKE_INSTALL_PREFIX=${BOBA_DIR}/install/magma_hip \
  -DMAGMA_ENABLE_HIP=ON \
+ -DMAGMA_ORIG=ON \
  -DCMAKE_CXX_COMPILER=$cpp \
  -DCMAKE_C_COMPILER=$cc \
  -DUSE_FORTRAN=OFF \
