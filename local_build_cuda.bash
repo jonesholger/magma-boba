@@ -12,9 +12,9 @@ BUILD_DIR=${BOBA_DIR}/build_cuda
 #RAJA_HOSTCONFIG=${BOBA_DIR}/tpl/RAJA/host-configs/lc-builds/blueos/nvcc_gcc_X.cmake
 
 #git reset --hard d998fcbb94d9046ec98ae93757010a1472902d54
-echo -e 'BACKEND=cuda\nGPU_TARGET=Volta\nFORT=false' > make.inc
-make cleanall
-make -j 32 generate
+#echo -e 'BACKEND=cuda\nGPU_TARGET=Volta\nFORT=false' > make.inc
+#make cleanall
+#make -j 32 generate
 
 mkdir -p $BUILD_DIR
 cd $BUILD_DIR

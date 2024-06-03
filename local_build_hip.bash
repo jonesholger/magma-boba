@@ -12,9 +12,9 @@ target=gfx90a
 BOBA_DIR=$(pwd)
 BUILD_DIR=${BOBA_DIR}/build_hip
 #git reset --hard d998fcbb94d9046ec98ae93757010a1472902d54
-echo -e 'BACKEND=hip\nGPU_TARGET=gfx90a\nFORT=false' > make.inc
-make cleanall
-make -j 32 generate
+#echo -e 'BACKEND=hip\nGPU_TARGET=gfx90a\nFORT=false' > make.inc
+#make cleanall
+#make -j 32 generate
 
 #-DCMAKE_EXE_LINKER_FLAGS="--offload-arch=$target" \
 #-DCMAKE_HIP_ARCHITECTURES=$target \
