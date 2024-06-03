@@ -1,8 +1,0 @@
-/g/g0/holger/workspace/magma/build_hip/CMakeFiles/magma.dir
-/g/g0/holger/workspace/magma/build_hip/CMakeFiles/lib.dir
-/g/g0/holger/workspace/magma/build_hip/CMakeFiles/edit_cache.dir
-/g/g0/holger/workspace/magma/build_hip/CMakeFiles/rebuild_cache.dir
-/g/g0/holger/workspace/magma/build_hip/CMakeFiles/list_install_components.dir
-/g/g0/holger/workspace/magma/build_hip/CMakeFiles/install.dir
-/g/g0/holger/workspace/magma/build_hip/CMakeFiles/install/local.dir
-/g/g0/holger/workspace/magma/build_hip/CMakeFiles/install/strip.dir

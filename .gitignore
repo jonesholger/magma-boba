@@ -11,11 +11,7 @@
 *.pyo
 __pycache__
 
-magmablas_hip/
-testing_hip/
-interface_hip/
-sparse_hip/
-Makefile.gen
-
-
+build_cuda/
+build_hip/
+install/
 
