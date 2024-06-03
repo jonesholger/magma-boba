@@ -1,0 +1,3 @@
+/g/g0/holger/workspace/magma/test_export/build_cuda/CMakeFiles/example.dir
+/g/g0/holger/workspace/magma/test_export/build_cuda/CMakeFiles/edit_cache.dir
+/g/g0/holger/workspace/magma/test_export/build_cuda/CMakeFiles/rebuild_cache.dir

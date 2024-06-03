@@ -1,0 +1,52 @@
+Detecting CXX OpenMP version failed with the following output:
+Change Dir: /g/g0/holger/workspace/magma/build_hip/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_26438/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_26438.dir/build.make CMakeFiles/cmTC_26438.dir/build
+gmake[1]: Entering directory '/usr/WS2/holger/magma/build_hip/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_26438.dir/OpenMPCheckVersion.cpp.o
+/opt/rocm-6.1.1/bin/hipcc   -std=c++11 -DADD_ -fopenmp=libomp -MD -MT CMakeFiles/cmTC_26438.dir/OpenMPCheckVersion.cpp.o -MF CMakeFiles/cmTC_26438.dir/OpenMPCheckVersion.cpp.o.d -o CMakeFiles/cmTC_26438.dir/OpenMPCheckVersion.cpp.o -c /g/g0/holger/workspace/magma/build_hip/CMakeFiles/FindOpenMP/OpenMPCheckVersion.cpp
+/g/g0/holger/workspace/magma/build_hip/CMakeFiles/FindOpenMP/OpenMPCheckVersion.cpp:6:38: error: use of undeclared identifier '_OPENMP'
+    6 |                             ('0' + ((_OPENMP/100000)%10)),
+      |                                      ^
+/g/g0/holger/workspace/magma/build_hip/CMakeFiles/FindOpenMP/OpenMPCheckVersion.cpp:7:38: error: use of undeclared identifier '_OPENMP'
+    7 |                             ('0' + ((_OPENMP/10000)%10)),
+      |                                      ^
+/g/g0/holger/workspace/magma/build_hip/CMakeFiles/FindOpenMP/OpenMPCheckVersion.cpp:8:38: error: use of undeclared identifier '_OPENMP'
+    8 |                             ('0' + ((_OPENMP/1000)%10)),
+      |                                      ^
+/g/g0/holger/workspace/magma/build_hip/CMakeFiles/FindOpenMP/OpenMPCheckVersion.cpp:9:38: error: use of undeclared identifier '_OPENMP'
+    9 |                             ('0' + ((_OPENMP/100)%10)),
+      |                                      ^
+/g/g0/holger/workspace/magma/build_hip/CMakeFiles/FindOpenMP/OpenMPCheckVersion.cpp:10:38: error: use of undeclared identifier '_OPENMP'
+   10 |                             ('0' + ((_OPENMP/10)%10)),
+      |                                      ^
+/g/g0/holger/workspace/magma/build_hip/CMakeFiles/FindOpenMP/OpenMPCheckVersion.cpp:11:38: error: use of undeclared identifier '_OPENMP'
+   11 |                             ('0' + ((_OPENMP/1)%10)),
+      |                                      ^
+6 errors generated when compiling for gfx90a.
+gmake[1]: *** [CMakeFiles/cmTC_26438.dir/build.make:79: CMakeFiles/cmTC_26438.dir/OpenMPCheckVersion.cpp.o] Error 1
+gmake[1]: Leaving directory '/usr/WS2/holger/magma/build_hip/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_26438/fast] Error 2
+
+
+
+Determining if the function sgemm_ exists failed with the following output:
+Change Dir: /g/g0/holger/workspace/magma/build_hip/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_4865f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_4865f.dir/build.make CMakeFiles/cmTC_4865f.dir/build
+gmake[1]: Entering directory '/usr/WS2/holger/magma/build_hip/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4865f.dir/CheckFunctionExists.c.o
+/opt/rocm-6.1.1/bin/hipcc   -std=c99   -DADD_ -fopenmp=libomp -DCHECK_FUNCTION_EXISTS=sgemm_ -MD -MT CMakeFiles/cmTC_4865f.dir/CheckFunctionExists.c.o -MF CMakeFiles/cmTC_4865f.dir/CheckFunctionExists.c.o.d -o CMakeFiles/cmTC_4865f.dir/CheckFunctionExists.c.o -c /usr/tce/backend/installations/linux-rhel8-x86_64/gcc-8.3.1/cmake-3.24.2-ywx52e32uh6gkxzuyubpwkulzgdvxyh6/share/cmake-3.24/Modules/CheckFunctionExists.c
+Linking C executable cmTC_4865f
+/usr/tce/backend/installations/linux-rhel8-x86_64/gcc-8.3.1/cmake-3.24.2-ywx52e32uh6gkxzuyubpwkulzgdvxyh6/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4865f.dir/link.txt --verbose=1
+/opt/rocm-6.1.1/bin/hipcc  -std=c99   -DADD_ -fopenmp=libomp -DCHECK_FUNCTION_EXISTS=sgemm_ CMakeFiles/cmTC_4865f.dir/CheckFunctionExists.c.o -o cmTC_4865f 
+ld.lld: error: undefined symbol: sgemm_
+>>> referenced by CheckFunctionExists.c
+>>>               CMakeFiles/cmTC_4865f.dir/CheckFunctionExists.c.o:(main)
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+gmake[1]: *** [CMakeFiles/cmTC_4865f.dir/build.make:100: cmTC_4865f] Error 1
+gmake[1]: Leaving directory '/usr/WS2/holger/magma/build_hip/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_4865f/fast] Error 2
+
+
+

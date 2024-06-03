@@ -1,0 +1,61 @@
+Performing C++ SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /g/g0/holger/workspace/magma/test_export/build_cuda/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/tcetmp/bin/gmake -f Makefile cmTC_cb48e/fast && /usr/tcetmp/bin/gmake  -f CMakeFiles/cmTC_cb48e.dir/build.make CMakeFiles/cmTC_cb48e.dir/build
+gmake[1]: Entering directory '/usr/WS2/holger/magma/test_export/build_cuda/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_cb48e.dir/src.cxx.o
+/usr/tce/packages/gcc/gcc-8.3.1/bin/g++ -DCMAKE_HAVE_LIBC_PTHREAD  -std=gnu++11 -o CMakeFiles/cmTC_cb48e.dir/src.cxx.o -c /g/g0/holger/workspace/magma/test_export/build_cuda/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_cb48e
+/usr/tce/packages/cmake/cmake-3.23.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cb48e.dir/link.txt --verbose=1
+/usr/tce/packages/gcc/gcc-8.3.1/bin/g++ CMakeFiles/cmTC_cb48e.dir/src.cxx.o -o cmTC_cb48e 
+CMakeFiles/cmTC_cb48e.dir/src.cxx.o: In function `main':
+src.cxx:(.text+0x64): undefined reference to `pthread_create'
+src.cxx:(.text+0x74): undefined reference to `pthread_detach'
+src.cxx:(.text+0x84): undefined reference to `pthread_cancel'
+src.cxx:(.text+0x98): undefined reference to `pthread_join'
+src.cxx:(.text+0xac): undefined reference to `pthread_atfork'
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_cb48e.dir/build.make:99: cmTC_cb48e] Error 1
+gmake[1]: Leaving directory '/usr/WS2/holger/magma/test_export/build_cuda/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_cb48e/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /g/g0/holger/workspace/magma/test_export/build_cuda/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/tcetmp/bin/gmake -f Makefile cmTC_7452e/fast && /usr/tcetmp/bin/gmake  -f CMakeFiles/cmTC_7452e.dir/build.make CMakeFiles/cmTC_7452e.dir/build
+gmake[1]: Entering directory '/usr/WS2/holger/magma/test_export/build_cuda/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_7452e.dir/CheckFunctionExists.cxx.o
+/usr/tce/packages/gcc/gcc-8.3.1/bin/g++   -DCHECK_FUNCTION_EXISTS=pthread_create -std=gnu++11 -o CMakeFiles/cmTC_7452e.dir/CheckFunctionExists.cxx.o -c /g/g0/holger/workspace/magma/test_export/build_cuda/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
+Linking CXX executable cmTC_7452e
+/usr/tce/packages/cmake/cmake-3.23.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7452e.dir/link.txt --verbose=1
+/usr/tce/packages/gcc/gcc-8.3.1/bin/g++  -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_7452e.dir/CheckFunctionExists.cxx.o -o cmTC_7452e  -lpthreads 
+/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../libexec/gcc/ppc64le-redhat-linux/8/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_7452e.dir/build.make:99: cmTC_7452e] Error 1
+gmake[1]: Leaving directory '/usr/WS2/holger/magma/test_export/build_cuda/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_7452e/fast] Error 2
+
+
+

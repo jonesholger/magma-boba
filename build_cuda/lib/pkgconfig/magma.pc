@@ -1,0 +1,13 @@
+prefix=/g/g0/holger/workspace/magma/install/magma_cuda
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: magma
+Description: Matrix Algebra on GPU and Multicore Architectures
+Version: 0.0.0
+Cflags: -I${includedir}  -std=c++11 -DADD_ -fopenmp -w -Wall -Wno-unused-function -I/usr/tce/packages/cuda/cuda-11.8.0/nvidia/include -I/g/g0/holger/workspace/magma/build_cuda/include -I/g/g0/holger/workspace/magma/include -I/g/g0/holger/workspace/magma/control -I/g/g0/holger/workspace/magma/magmablas 
+Libs: -L${libdir} -lmagma_sparse -lmagma  /usr/lib64/liblapack.so /usr/lib64/libessl.so -L/usr/tce/packages/cuda/cuda-11.8.0/nvidia/lib64 -lcudart -lcublas -lcusparse
+Libs.private:
+Requires: 
+Requires.private:

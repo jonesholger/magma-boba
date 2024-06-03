@@ -1,0 +1,3 @@
+BACKEND=hip
+GPU_TARGET=gfx90a
+FORT=false

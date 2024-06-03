@@ -1,0 +1,759 @@
+The system is: Linux - 4.14.0-115.35.1.3chaos.ch6a.ppc64le - ppc64le
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/tce/packages/gcc/gcc-8.3.1/bin/g++ 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/g/g0/holger/workspace/magma/test_export/build_cuda/CMakeFiles/3.23.1/CompilerIdCXX/a.out"
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /g/g0/holger/workspace/magma/test_export/build_cuda/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/tcetmp/bin/gmake -f Makefile cmTC_cc40c/fast && /usr/tcetmp/bin/gmake  -f CMakeFiles/cmTC_cc40c.dir/build.make CMakeFiles/cmTC_cc40c.dir/build
+gmake[1]: Entering directory '/usr/WS2/holger/magma/test_export/build_cuda/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_cc40c.dir/CMakeCXXCompilerABI.cpp.o
+/usr/tce/packages/gcc/gcc-8.3.1/bin/g++   -v -std=gnu++17 -o CMakeFiles/cmTC_cc40c.dir/CMakeCXXCompilerABI.cpp.o -c /usr/tce/packages/cmake/cmake-3.23.1/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+Using built-in specs.
+COLLECT_GCC=/usr/tce/packages/gcc/gcc-8.3.1/rh/bin/g++
+Target: ppc64le-redhat-linux
+Configured with: ../configure --enable-bootstrap --enable-languages=c,c++,fortran,lto --prefix=/opt/rh/devtoolset-8/root/usr --mandir=/opt/rh/devtoolset-8/root/usr/share/man --infodir=/opt/rh/devtoolset-8/root/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-targets=powerpcle-linux --disable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --with-linker-hash-style=gnu --with-default-libstdcxx-abi=gcc4-compatible --enable-plugin --enable-initfini-array --with-isl=/builddir/build/BUILD/gcc-8.3.1-20190311/obj-ppc64le-redhat-linux/isl-install --disable-libmpx --enable-gnu-indirect-function --enable-secureplt --with-long-double-128 --with-cpu-32=power8 --with-tune-32=power8 --with-cpu-64=power8 --with-tune-64=power8 --build=ppc64le-redhat-linux
+Thread model: posix
+gcc version 8.3.1 20190311 (Red Hat 8.3.1-3) (GCC) 
+COLLECT_GCC_OPTIONS='-v' '-std=gnu++17' '-o' 'CMakeFiles/cmTC_cc40c.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=power8' '-mcpu=power8'
+ /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../libexec/gcc/ppc64le-redhat-linux/8/cc1plus -quiet -v -iprefix /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/ -D_GNU_SOURCE -D__unix__ -D__gnu_linux__ -D__linux__ -Dunix -D__unix -Dlinux -D__linux -Asystem=linux -Asystem=unix -Asystem=posix /usr/tce/packages/cmake/cmake-3.23.1/share/cmake/Modules/CMakeCXXCompilerABI.cpp -msecure-plt -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=power8 -mcpu=power8 -auxbase-strip CMakeFiles/cmTC_cc40c.dir/CMakeCXXCompilerABI.cpp.o -std=gnu++17 -version -o /var/tmp/ccKFDTIV.s
+GNU C++17 (GCC) version 8.3.1 20190311 (Red Hat 8.3.1-3) (ppc64le-redhat-linux)
+	compiled by GNU C version 8.3.1 20190311 (Red Hat 8.3.1-3), GMP version 6.0.0, MPFR version 3.1.1, MPC version 1.0.1, isl version isl-0.16.1-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/include-fixed"
+ignoring nonexistent directory "/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../../../ppc64le-redhat-linux/include"
+ignoring duplicate directory "/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/../../lib/gcc/ppc64le-redhat-linux/8/../../../../include/c++/8"
+ignoring duplicate directory "/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/../../lib/gcc/ppc64le-redhat-linux/8/../../../../include/c++/8/ppc64le-redhat-linux"
+ignoring duplicate directory "/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/../../lib/gcc/ppc64le-redhat-linux/8/../../../../include/c++/8/backward"
+ignoring duplicate directory "/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/../../lib/gcc/ppc64le-redhat-linux/8/include"
+ignoring nonexistent directory "/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/../../lib/gcc/ppc64le-redhat-linux/8/include-fixed"
+ignoring nonexistent directory "/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/../../lib/gcc/ppc64le-redhat-linux/8/../../../../ppc64le-redhat-linux/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../../../include/c++/8
+ /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../../../include/c++/8/ppc64le-redhat-linux
+ /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../../../include/c++/8/backward
+ /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/include
+ /usr/local/include
+ /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/../../include
+ /usr/include
+End of search list.
+GNU C++17 (GCC) version 8.3.1 20190311 (Red Hat 8.3.1-3) (ppc64le-redhat-linux)
+	compiled by GNU C version 8.3.1 20190311 (Red Hat 8.3.1-3), GMP version 6.0.0, MPFR version 3.1.1, MPC version 1.0.1, isl version isl-0.16.1-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 16e8708e3cb63ee916cff70b274d2773
+COLLECT_GCC_OPTIONS='-v' '-std=gnu++17' '-o' 'CMakeFiles/cmTC_cc40c.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=power8' '-mcpu=power8'
+ /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../libexec/gcc/ppc64le-redhat-linux/8/as -v -a64 -mpower8 -many -mlittle -o CMakeFiles/cmTC_cc40c.dir/CMakeCXXCompilerABI.cpp.o /var/tmp/ccKFDTIV.s
+GNU assembler version 2.30 (ppc64le-redhat-linux) using BFD version version 2.30-54.el7
+COMPILER_PATH=/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../libexec/gcc/ppc64le-redhat-linux/8/:/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../libexec/gcc/
+LIBRARY_PATH=/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/:/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/:/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-std=gnu++17' '-o' 'CMakeFiles/cmTC_cc40c.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=power8' '-mcpu=power8'
+Linking CXX executable cmTC_cc40c
+/usr/tce/packages/cmake/cmake-3.23.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cc40c.dir/link.txt --verbose=1
+/usr/tce/packages/gcc/gcc-8.3.1/bin/g++  -v CMakeFiles/cmTC_cc40c.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_cc40c 
+Using built-in specs.
+COLLECT_GCC=/usr/tce/packages/gcc/gcc-8.3.1/rh/bin/g++
+COLLECT_LTO_WRAPPER=/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../libexec/gcc/ppc64le-redhat-linux/8/lto-wrapper
+Target: ppc64le-redhat-linux
+Configured with: ../configure --enable-bootstrap --enable-languages=c,c++,fortran,lto --prefix=/opt/rh/devtoolset-8/root/usr --mandir=/opt/rh/devtoolset-8/root/usr/share/man --infodir=/opt/rh/devtoolset-8/root/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-targets=powerpcle-linux --disable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --with-linker-hash-style=gnu --with-default-libstdcxx-abi=gcc4-compatible --enable-plugin --enable-initfini-array --with-isl=/builddir/build/BUILD/gcc-8.3.1-20190311/obj-ppc64le-redhat-linux/isl-install --disable-libmpx --enable-gnu-indirect-function --enable-secureplt --with-long-double-128 --with-cpu-32=power8 --with-tune-32=power8 --with-cpu-64=power8 --with-tune-64=power8 --build=ppc64le-redhat-linux
+Thread model: posix
+gcc version 8.3.1 20190311 (Red Hat 8.3.1-3) (GCC) 
+COMPILER_PATH=/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../libexec/gcc/ppc64le-redhat-linux/8/:/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../libexec/gcc/
+LIBRARY_PATH=/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/:/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/:/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_cc40c' '-shared-libgcc' '-mtune=power8' '-mcpu=power8'
+ /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../libexec/gcc/ppc64le-redhat-linux/8/collect2 -plugin /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../libexec/gcc/ppc64le-redhat-linux/8/liblto_plugin.so -plugin-opt=/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../libexec/gcc/ppc64le-redhat-linux/8/lto-wrapper -plugin-opt=-fresolution=/var/tmp/ccI1AWFU.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -V -m elf64lppc -dynamic-linker /lib64/ld64.so.2 -o cmTC_cc40c /lib/../lib64/crt1.o /lib/../lib64/crti.o /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/crtbegin.o -L/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8 -L/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc -L/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../.. CMakeFiles/cmTC_cc40c.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/crtend.o /lib/../lib64/crtn.o
+GNU ld version 2.30-55.el7.2
+  Supported emulations:
+   elf64lppc
+   elf32lppc
+   elf32lppclinux
+   elf32lppcsim
+   elf64ppc
+   elf32ppc
+   elf32ppclinux
+   elf32ppcsim
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_cc40c' '-shared-libgcc' '-mtune=power8' '-mcpu=power8'
+gmake[1]: Leaving directory '/usr/WS2/holger/magma/test_export/build_cuda/CMakeFiles/CMakeTmp'
+
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../../../include/c++/8]
+    add: [/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../../../include/c++/8/ppc64le-redhat-linux]
+    add: [/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../../../include/c++/8/backward]
+    add: [/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/include]
+    add: [/usr/local/include]
+    add: [/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/../../include]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../../../include/c++/8] ==> [/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8]
+  collapse include dir [/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../../../include/c++/8/ppc64le-redhat-linux] ==> [/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/ppc64le-redhat-linux]
+  collapse include dir [/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../../../include/c++/8/backward] ==> [/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/backward]
+  collapse include dir [/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/include] ==> [/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/lib/gcc/ppc64le-redhat-linux/8/include]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/../../include] ==> [/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8;/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/ppc64le-redhat-linux;/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/backward;/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/lib/gcc/ppc64le-redhat-linux/8/include;/usr/local/include;/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include;/usr/include]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /g/g0/holger/workspace/magma/test_export/build_cuda/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/tcetmp/bin/gmake -f Makefile cmTC_cc40c/fast && /usr/tcetmp/bin/gmake  -f CMakeFiles/cmTC_cc40c.dir/build.make CMakeFiles/cmTC_cc40c.dir/build]
+  ignore line: [gmake[1]: Entering directory '/usr/WS2/holger/magma/test_export/build_cuda/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_cc40c.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/tce/packages/gcc/gcc-8.3.1/bin/g++   -v -std=gnu++17 -o CMakeFiles/cmTC_cc40c.dir/CMakeCXXCompilerABI.cpp.o -c /usr/tce/packages/cmake/cmake-3.23.1/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/tce/packages/gcc/gcc-8.3.1/rh/bin/g++]
+  ignore line: [Target: ppc64le-redhat-linux]
+  ignore line: [Configured with: ../configure --enable-bootstrap --enable-languages=c c++ fortran lto --prefix=/opt/rh/devtoolset-8/root/usr --mandir=/opt/rh/devtoolset-8/root/usr/share/man --infodir=/opt/rh/devtoolset-8/root/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-targets=powerpcle-linux --disable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --with-linker-hash-style=gnu --with-default-libstdcxx-abi=gcc4-compatible --enable-plugin --enable-initfini-array --with-isl=/builddir/build/BUILD/gcc-8.3.1-20190311/obj-ppc64le-redhat-linux/isl-install --disable-libmpx --enable-gnu-indirect-function --enable-secureplt --with-long-double-128 --with-cpu-32=power8 --with-tune-32=power8 --with-cpu-64=power8 --with-tune-64=power8 --build=ppc64le-redhat-linux]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 8.3.1 20190311 (Red Hat 8.3.1-3) (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-std=gnu++17' '-o' 'CMakeFiles/cmTC_cc40c.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=power8' '-mcpu=power8']
+  ignore line: [ /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../libexec/gcc/ppc64le-redhat-linux/8/cc1plus -quiet -v -iprefix /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/ -D_GNU_SOURCE -D__unix__ -D__gnu_linux__ -D__linux__ -Dunix -D__unix -Dlinux -D__linux -Asystem=linux -Asystem=unix -Asystem=posix /usr/tce/packages/cmake/cmake-3.23.1/share/cmake/Modules/CMakeCXXCompilerABI.cpp -msecure-plt -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=power8 -mcpu=power8 -auxbase-strip CMakeFiles/cmTC_cc40c.dir/CMakeCXXCompilerABI.cpp.o -std=gnu++17 -version -o /var/tmp/ccKFDTIV.s]
+  ignore line: [GNU C++17 (GCC) version 8.3.1 20190311 (Red Hat 8.3.1-3) (ppc64le-redhat-linux)]
+  ignore line: [	compiled by GNU C version 8.3.1 20190311 (Red Hat 8.3.1-3)  GMP version 6.0.0  MPFR version 3.1.1  MPC version 1.0.1  isl version isl-0.16.1-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/include-fixed"]
+  ignore line: [ignoring nonexistent directory "/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../../../ppc64le-redhat-linux/include"]
+  ignore line: [ignoring duplicate directory "/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/../../lib/gcc/ppc64le-redhat-linux/8/../../../../include/c++/8"]
+  ignore line: [ignoring duplicate directory "/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/../../lib/gcc/ppc64le-redhat-linux/8/../../../../include/c++/8/ppc64le-redhat-linux"]
+  ignore line: [ignoring duplicate directory "/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/../../lib/gcc/ppc64le-redhat-linux/8/../../../../include/c++/8/backward"]
+  ignore line: [ignoring duplicate directory "/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/../../lib/gcc/ppc64le-redhat-linux/8/include"]
+  ignore line: [ignoring nonexistent directory "/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/../../lib/gcc/ppc64le-redhat-linux/8/include-fixed"]
+  ignore line: [ignoring nonexistent directory "/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/../../lib/gcc/ppc64le-redhat-linux/8/../../../../ppc64le-redhat-linux/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../../../include/c++/8]
+  ignore line: [ /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../../../include/c++/8/ppc64le-redhat-linux]
+  ignore line: [ /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../../../include/c++/8/backward]
+  ignore line: [ /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/../../include]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C++17 (GCC) version 8.3.1 20190311 (Red Hat 8.3.1-3) (ppc64le-redhat-linux)]
+  ignore line: [	compiled by GNU C version 8.3.1 20190311 (Red Hat 8.3.1-3)  GMP version 6.0.0  MPFR version 3.1.1  MPC version 1.0.1  isl version isl-0.16.1-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 16e8708e3cb63ee916cff70b274d2773]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-std=gnu++17' '-o' 'CMakeFiles/cmTC_cc40c.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=power8' '-mcpu=power8']
+  ignore line: [ /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../libexec/gcc/ppc64le-redhat-linux/8/as -v -a64 -mpower8 -many -mlittle -o CMakeFiles/cmTC_cc40c.dir/CMakeCXXCompilerABI.cpp.o /var/tmp/ccKFDTIV.s]
+  ignore line: [GNU assembler version 2.30 (ppc64le-redhat-linux) using BFD version version 2.30-54.el7]
+  ignore line: [COMPILER_PATH=/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../libexec/gcc/ppc64le-redhat-linux/8/:/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../libexec/gcc/]
+  ignore line: [LIBRARY_PATH=/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/:/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/:/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-std=gnu++17' '-o' 'CMakeFiles/cmTC_cc40c.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=power8' '-mcpu=power8']
+  ignore line: [Linking CXX executable cmTC_cc40c]
+  ignore line: [/usr/tce/packages/cmake/cmake-3.23.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cc40c.dir/link.txt --verbose=1]
+  ignore line: [/usr/tce/packages/gcc/gcc-8.3.1/bin/g++  -v CMakeFiles/cmTC_cc40c.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_cc40c ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/tce/packages/gcc/gcc-8.3.1/rh/bin/g++]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../libexec/gcc/ppc64le-redhat-linux/8/lto-wrapper]
+  ignore line: [Target: ppc64le-redhat-linux]
+  ignore line: [Configured with: ../configure --enable-bootstrap --enable-languages=c c++ fortran lto --prefix=/opt/rh/devtoolset-8/root/usr --mandir=/opt/rh/devtoolset-8/root/usr/share/man --infodir=/opt/rh/devtoolset-8/root/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-targets=powerpcle-linux --disable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --with-linker-hash-style=gnu --with-default-libstdcxx-abi=gcc4-compatible --enable-plugin --enable-initfini-array --with-isl=/builddir/build/BUILD/gcc-8.3.1-20190311/obj-ppc64le-redhat-linux/isl-install --disable-libmpx --enable-gnu-indirect-function --enable-secureplt --with-long-double-128 --with-cpu-32=power8 --with-tune-32=power8 --with-cpu-64=power8 --with-tune-64=power8 --build=ppc64le-redhat-linux]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 8.3.1 20190311 (Red Hat 8.3.1-3) (GCC) ]
+  ignore line: [COMPILER_PATH=/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../libexec/gcc/ppc64le-redhat-linux/8/:/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../libexec/gcc/]
+  ignore line: [LIBRARY_PATH=/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/:/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/:/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_cc40c' '-shared-libgcc' '-mtune=power8' '-mcpu=power8']
+  link line: [ /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../libexec/gcc/ppc64le-redhat-linux/8/collect2 -plugin /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../libexec/gcc/ppc64le-redhat-linux/8/liblto_plugin.so -plugin-opt=/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../libexec/gcc/ppc64le-redhat-linux/8/lto-wrapper -plugin-opt=-fresolution=/var/tmp/ccI1AWFU.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -V -m elf64lppc -dynamic-linker /lib64/ld64.so.2 -o cmTC_cc40c /lib/../lib64/crt1.o /lib/../lib64/crti.o /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/crtbegin.o -L/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8 -L/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc -L/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../.. CMakeFiles/cmTC_cc40c.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/crtend.o /lib/../lib64/crtn.o]
+    arg [/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../libexec/gcc/ppc64le-redhat-linux/8/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../libexec/gcc/ppc64le-redhat-linux/8/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../libexec/gcc/ppc64le-redhat-linux/8/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/var/tmp/ccI1AWFU.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--no-add-needed] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [-V] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf64lppc] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_cc40c] ==> ignore
+    arg [/lib/../lib64/crt1.o] ==> obj [/lib/../lib64/crt1.o]
+    arg [/lib/../lib64/crti.o] ==> obj [/lib/../lib64/crti.o]
+    arg [/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/crtbegin.o] ==> obj [/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/crtbegin.o]
+    arg [-L/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8] ==> dir [/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8]
+    arg [-L/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc] ==> dir [/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc]
+    arg [-L/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../../../lib64] ==> dir [/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../../../lib64]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../..] ==> dir [/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../..]
+    arg [CMakeFiles/cmTC_cc40c.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/crtend.o] ==> obj [/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/crtend.o]
+    arg [/lib/../lib64/crtn.o] ==> obj [/lib/../lib64/crtn.o]
+  collapse obj [/lib/../lib64/crt1.o] ==> [/lib64/crt1.o]
+  collapse obj [/lib/../lib64/crti.o] ==> [/lib64/crti.o]
+  collapse obj [/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/crtbegin.o] ==> [/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/lib/gcc/ppc64le-redhat-linux/8/crtbegin.o]
+  collapse obj [/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/crtend.o] ==> [/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/lib/gcc/ppc64le-redhat-linux/8/crtend.o]
+  collapse obj [/lib/../lib64/crtn.o] ==> [/lib64/crtn.o]
+  collapse library dir [/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8] ==> [/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/lib/gcc/ppc64le-redhat-linux/8]
+  collapse library dir [/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc] ==> [/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/lib/gcc]
+  collapse library dir [/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../../../lib64] ==> [/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/lib64]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../..] ==> [/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/lib]
+  implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+  implicit objs: [/lib64/crt1.o;/lib64/crti.o;/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/lib/gcc/ppc64le-redhat-linux/8/crtbegin.o;/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/lib/gcc/ppc64le-redhat-linux/8/crtend.o;/lib64/crtn.o]
+  implicit dirs: [/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/lib/gcc/ppc64le-redhat-linux/8;/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/lib/gcc;/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/lib64;/lib64;/usr/lib64;/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/lib]
+  implicit fwks: []
+
+
+Checking whether the CUDA compiler is NVIDIA using "" matched "nvcc: NVIDIA \(R\) Cuda compiler driver":
+nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2022 NVIDIA Corporation
+Built on Wed_Sep_21_10:34:12_PDT_2022
+Cuda compilation tools, release 11.8, V11.8.89
+Build cuda_11.8.r11.8/compiler.31833905_0
+Compiling the CUDA compiler identification source file "CMakeCUDACompilerId.cu" succeeded.
+Compiler: /usr/tce/packages/cuda/cuda-11.8.0/bin/nvcc 
+Build flags: 
+Id flags: --keep;--keep-dir;tmp;-gencode=arch=compute_70,code=sm_70 -v
+
+The output was:
+0
+#$ _NVVM_BRANCH_=nvvm
+#$ _SPACE_= 
+#$ _CUDART_=cudart
+#$ _HERE_=/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin
+#$ _THERE_=/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin
+#$ _TARGET_SIZE_=
+#$ _TARGET_DIR_=
+#$ _TARGET_DIR_=targets/ppc64le-linux
+#$ TOP=/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/..
+#$ NVVMIR_LIBRARY_DIR=/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../nvvm/libdevice
+#$ LD_LIBRARY_PATH=/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../lib:/usr/tce/packages/python/python-3.8.2/lib:/usr/tce/packages/cuda/cuda-11.8.0/lib64:/opt/ibm/spectrumcomputing/lsf/10.1.0.10/linux3.10-glibc2.17-ppc64le-csm/lib:/usr/tce/packages/cuda/cuda-11.8.0/nvidia/lib64
+#$ PATH=/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../nvvm/bin:/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin:/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin:/usr/tce/packages/python/python-3.8.2/bin:/usr/tce/packages/cmake/cmake-3.23.1/bin:/usr/tce/packages/cuda/cuda-11.8.0/bin:/usr/tce/packages/spectrum-mpi/spectrum-mpi-rolling-release-gcc-8.3.1/bin:/usr/tce/packages/gcc/gcc-8.3.1/bin:/usr/tce/packages/nsight-systems/nsight-systems-2023.3.1/bin:/usr/tce/packages/nsight-compute/nsight-compute-2023.2.2:/usr/tce/packages/totalview/toolworks/totalview.2023.1.6/bin:/usr/tcetmp/bin:/usr/lib64/qt-3.3/bin:/usr/condabin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ibm/spectrum_mpi/jsm_pmix/bin:/opt/ibm/bb/bin:/opt/ibm/flightlog/bin:/opt/ibutils/bin:.:/opt/ibm/spectrumcomputing/lsf/10.1.0.10/linux3.10-glibc2.17-ppc64le-csm/etc:/opt/ibm/spectrumcomputing/lsf/10.1.0.10/linux3.10-glibc2.17-ppc64le-csm/bin
+#$ INCLUDES="-I/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/include"  
+#$ LIBRARIES=  "-L/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/lib/stubs" "-L/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/lib"
+#$ CUDAFE_FLAGS=
+#$ PTXAS_FLAGS=
+#$ rm tmp/a_dlink.reg.c
+#$ gcc -D__NV_NO_HOST_COMPILER_CHECK=1 -std=c++14 -D__CUDA_ARCH__=700 -D__CUDA_ARCH_LIST__=700 -E -x c++  -DCUDA_DOUBLE_MATH_FUNCTIONS -D__CUDACC__ -D__NVCC__  "-I/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/include"    -D__CUDACC_VER_MAJOR__=11 -D__CUDACC_VER_MINOR__=8 -D__CUDACC_VER_BUILD__=89 -D__CUDA_API_VER_MAJOR__=11 -D__CUDA_API_VER_MINOR__=8 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -include "cuda_runtime.h" "CMakeCUDACompilerId.cu" -o "tmp/CMakeCUDACompilerId.cpp1.ii" 
+#$ cicc --c++14 --builtin-ieee128-type --gnu_version=80301 --display_error_number --orig_src_file_name "CMakeCUDACompilerId.cu" --orig_src_path_name "/usr/WS2/holger/magma/test_export/build_cuda/CMakeFiles/3.23.1/CompilerIdCUDA/CMakeCUDACompilerId.cu" --allow_managed --unsigned_chars   -arch compute_70 -m64 --no-version-ident -ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 --include_file_name "CMakeCUDACompilerId.fatbin.c" -tused --gen_module_id_file --module_id_file_name "tmp/CMakeCUDACompilerId.module_id" --gen_c_file_name "tmp/CMakeCUDACompilerId.cudafe1.c" --stub_file_name "tmp/CMakeCUDACompilerId.cudafe1.stub.c" --gen_device_file_name "tmp/CMakeCUDACompilerId.cudafe1.gpu"  "tmp/CMakeCUDACompilerId.cpp1.ii" -o "tmp/CMakeCUDACompilerId.ptx"
+#$ ptxas -arch=sm_70 -m64  "tmp/CMakeCUDACompilerId.ptx"  -o "tmp/CMakeCUDACompilerId.cubin" 
+#$ fatbinary --create="tmp/CMakeCUDACompilerId.fatbin" -64 --cicc-cmdline="-ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 " "--image3=kind=elf,sm=70,file=tmp/CMakeCUDACompilerId.cubin" --embedded-fatbin="tmp/CMakeCUDACompilerId.fatbin.c" 
+#$ gcc -D__NV_NO_HOST_COMPILER_CHECK=1 -std=c++14 -D__CUDA_ARCH_LIST__=700 -E -x c++ -D__CUDACC__ -D__NVCC__  "-I/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/include"    -D__CUDACC_VER_MAJOR__=11 -D__CUDACC_VER_MINOR__=8 -D__CUDACC_VER_BUILD__=89 -D__CUDA_API_VER_MAJOR__=11 -D__CUDA_API_VER_MINOR__=8 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -include "cuda_runtime.h" "CMakeCUDACompilerId.cu" -o "tmp/CMakeCUDACompilerId.cpp4.ii" 
+#$ cudafe++ --c++14 --builtin-ieee128-type --gnu_version=80301 --display_error_number --orig_src_file_name "CMakeCUDACompilerId.cu" --orig_src_path_name "/usr/WS2/holger/magma/test_export/build_cuda/CMakeFiles/3.23.1/CompilerIdCUDA/CMakeCUDACompilerId.cu" --allow_managed --unsigned_chars  --m64 --parse_templates --gen_c_file_name "tmp/CMakeCUDACompilerId.cudafe1.cpp" --stub_file_name "CMakeCUDACompilerId.cudafe1.stub.c" --module_id_file_name "tmp/CMakeCUDACompilerId.module_id" "tmp/CMakeCUDACompilerId.cpp4.ii" 
+#$ gcc -std=c++14 -D__CUDA_ARCH__=700 -D__CUDA_ARCH_LIST__=700 -c -x c++  -DCUDA_DOUBLE_MATH_FUNCTIONS "-I/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/include"   "tmp/CMakeCUDACompilerId.cudafe1.cpp" -o "tmp/CMakeCUDACompilerId.o" 
+#$ nvlink -m64 --arch=sm_70 --register-link-binaries="tmp/a_dlink.reg.c"    "-L/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/lib/stubs" "-L/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/lib" -cpu-arch=PPC64LE "tmp/CMakeCUDACompilerId.o"  -lcudadevrt  -o "tmp/a_dlink.cubin" --host-ccbin "gcc"
+#$ fatbinary --create="tmp/a_dlink.fatbin" -64 --cicc-cmdline="-ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 " -link "--image3=kind=elf,sm=70,file=tmp/a_dlink.cubin" --embedded-fatbin="tmp/a_dlink.fatbin.c" 
+#$ gcc -std=c++14 -D__CUDA_ARCH_LIST__=700 -c -x c++ -DFATBINFILE="\"tmp/a_dlink.fatbin.c\"" -DREGISTERLINKBINARYFILE="\"tmp/a_dlink.reg.c\"" -I. -D__NV_EXTRA_INITIALIZATION= -D__NV_EXTRA_FINALIZATION= -D__CUDA_INCLUDE_COMPILER_INTERNAL_HEADERS__  "-I/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/include"    -D__CUDACC_VER_MAJOR__=11 -D__CUDACC_VER_MINOR__=8 -D__CUDACC_VER_BUILD__=89 -D__CUDA_API_VER_MAJOR__=11 -D__CUDA_API_VER_MINOR__=8 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 "/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/crt/link.stub" -o "tmp/a_dlink.o" 
+#$ g++ -std=c++14 -D__CUDA_ARCH_LIST__=700 -Wl,--start-group "tmp/a_dlink.o" "tmp/CMakeCUDACompilerId.o" -Xlinker "-rpath=/usr/tce/packages/cuda/cuda-11.8.0/nvidia/lib64"   "-L/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/lib/stubs" "-L/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/lib"  -lcudadevrt  -lcudart_static  -lrt -lpthread  -ldl  -Wl,--end-group -o "a.out" 
+
+
+Compilation of the CUDA compiler identification source "CMakeCUDACompilerId.cu" produced "a.out"
+
+The CUDA compiler identification is NVIDIA, found in "/g/g0/holger/workspace/magma/test_export/build_cuda/CMakeFiles/3.23.1/CompilerIdCUDA/a.out"
+
+Parsed CUDA nvcc implicit link information from above output:
+  found 'PATH=' string: [/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../nvvm/bin:/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin:/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin:/usr/tce/packages/python/python-3.8.2/bin:/usr/tce/packages/cmake/cmake-3.23.1/bin:/usr/tce/packages/cuda/cuda-11.8.0/bin:/usr/tce/packages/spectrum-mpi/spectrum-mpi-rolling-release-gcc-8.3.1/bin:/usr/tce/packages/gcc/gcc-8.3.1/bin:/usr/tce/packages/nsight-systems/nsight-systems-2023.3.1/bin:/usr/tce/packages/nsight-compute/nsight-compute-2023.2.2:/usr/tce/packages/totalview/toolworks/totalview.2023.1.6/bin:/usr/tcetmp/bin:/usr/lib64/qt-3.3/bin:/usr/condabin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ibm/spectrum_mpi/jsm_pmix/bin:/opt/ibm/bb/bin:/opt/ibm/flightlog/bin:/opt/ibutils/bin:.:/opt/ibm/spectrumcomputing/lsf/10.1.0.10/linux3.10-glibc2.17-ppc64le-csm/etc:/opt/ibm/spectrumcomputing/lsf/10.1.0.10/linux3.10-glibc2.17-ppc64le-csm/bin]
+  found 'LIBRARIES=' string: ["-L/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/lib/stubs" "-L/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/lib"]
+  considering line: [#$ rm tmp/a_dlink.reg.c]
+  considering line: [gcc -D__NV_NO_HOST_COMPILER_CHECK=1 -std=c++14 -D__CUDA_ARCH__=700 -D__CUDA_ARCH_LIST__=700 -E -x c++  -DCUDA_DOUBLE_MATH_FUNCTIONS -D__CUDACC__ -D__NVCC__  "-I/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/include"    -D__CUDACC_VER_MAJOR__=11 -D__CUDACC_VER_MINOR__=8 -D__CUDACC_VER_BUILD__=89 -D__CUDA_API_VER_MAJOR__=11 -D__CUDA_API_VER_MINOR__=8 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -include "cuda_runtime.h" "CMakeCUDACompilerId.cu" -o "tmp/CMakeCUDACompilerId.cpp1.ii" ]
+  considering line: [cicc --c++14 --builtin-ieee128-type --gnu_version=80301 --display_error_number --orig_src_file_name "CMakeCUDACompilerId.cu" --orig_src_path_name "/usr/WS2/holger/magma/test_export/build_cuda/CMakeFiles/3.23.1/CompilerIdCUDA/CMakeCUDACompilerId.cu" --allow_managed --unsigned_chars   -arch compute_70 -m64 --no-version-ident -ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 --include_file_name "CMakeCUDACompilerId.fatbin.c" -tused --gen_module_id_file --module_id_file_name "tmp/CMakeCUDACompilerId.module_id" --gen_c_file_name "tmp/CMakeCUDACompilerId.cudafe1.c" --stub_file_name "tmp/CMakeCUDACompilerId.cudafe1.stub.c" --gen_device_file_name "tmp/CMakeCUDACompilerId.cudafe1.gpu"  "tmp/CMakeCUDACompilerId.cpp1.ii" -o "tmp/CMakeCUDACompilerId.ptx"]
+  considering line: [ptxas -arch=sm_70 -m64  "tmp/CMakeCUDACompilerId.ptx"  -o "tmp/CMakeCUDACompilerId.cubin" ]
+  considering line: [fatbinary --create="tmp/CMakeCUDACompilerId.fatbin" -64 --cicc-cmdline="-ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 " "--image3=kind=elf,sm=70,file=tmp/CMakeCUDACompilerId.cubin" --embedded-fatbin="tmp/CMakeCUDACompilerId.fatbin.c" ]
+  considering line: [gcc -D__NV_NO_HOST_COMPILER_CHECK=1 -std=c++14 -D__CUDA_ARCH_LIST__=700 -E -x c++ -D__CUDACC__ -D__NVCC__  "-I/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/include"    -D__CUDACC_VER_MAJOR__=11 -D__CUDACC_VER_MINOR__=8 -D__CUDACC_VER_BUILD__=89 -D__CUDA_API_VER_MAJOR__=11 -D__CUDA_API_VER_MINOR__=8 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -include "cuda_runtime.h" "CMakeCUDACompilerId.cu" -o "tmp/CMakeCUDACompilerId.cpp4.ii" ]
+  considering line: [cudafe++ --c++14 --builtin-ieee128-type --gnu_version=80301 --display_error_number --orig_src_file_name "CMakeCUDACompilerId.cu" --orig_src_path_name "/usr/WS2/holger/magma/test_export/build_cuda/CMakeFiles/3.23.1/CompilerIdCUDA/CMakeCUDACompilerId.cu" --allow_managed --unsigned_chars  --m64 --parse_templates --gen_c_file_name "tmp/CMakeCUDACompilerId.cudafe1.cpp" --stub_file_name "CMakeCUDACompilerId.cudafe1.stub.c" --module_id_file_name "tmp/CMakeCUDACompilerId.module_id" "tmp/CMakeCUDACompilerId.cpp4.ii" ]
+  considering line: [gcc -std=c++14 -D__CUDA_ARCH__=700 -D__CUDA_ARCH_LIST__=700 -c -x c++  -DCUDA_DOUBLE_MATH_FUNCTIONS "-I/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/include"   "tmp/CMakeCUDACompilerId.cudafe1.cpp" -o "tmp/CMakeCUDACompilerId.o" ]
+  considering line: [nvlink -m64 --arch=sm_70 --register-link-binaries="tmp/a_dlink.reg.c"    "-L/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/lib/stubs" "-L/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/lib" -cpu-arch=PPC64LE "tmp/CMakeCUDACompilerId.o"  -lcudadevrt  -o "tmp/a_dlink.cubin" --host-ccbin "gcc"]
+    ignoring nvlink line
+  considering line: [fatbinary --create="tmp/a_dlink.fatbin" -64 --cicc-cmdline="-ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 " -link "--image3=kind=elf,sm=70,file=tmp/a_dlink.cubin" --embedded-fatbin="tmp/a_dlink.fatbin.c" ]
+  considering line: [gcc -std=c++14 -D__CUDA_ARCH_LIST__=700 -c -x c++ -DFATBINFILE="\"tmp/a_dlink.fatbin.c\"" -DREGISTERLINKBINARYFILE="\"tmp/a_dlink.reg.c\"" -I. -D__NV_EXTRA_INITIALIZATION= -D__NV_EXTRA_FINALIZATION= -D__CUDA_INCLUDE_COMPILER_INTERNAL_HEADERS__  "-I/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/include"    -D__CUDACC_VER_MAJOR__=11 -D__CUDACC_VER_MINOR__=8 -D__CUDACC_VER_BUILD__=89 -D__CUDA_API_VER_MAJOR__=11 -D__CUDA_API_VER_MINOR__=8 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 "/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/crt/link.stub" -o "tmp/a_dlink.o" ]
+  considering line: [g++ -std=c++14 -D__CUDA_ARCH_LIST__=700 -Wl,--start-group "tmp/a_dlink.o" "tmp/CMakeCUDACompilerId.o" -Xlinker "-rpath=/usr/tce/packages/cuda/cuda-11.8.0/nvidia/lib64"   "-L/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/lib/stubs" "-L/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/lib"  -lcudadevrt  -lcudart_static  -lrt -lpthread  -ldl  -Wl,--end-group -o "a.out" ]
+    extracted link line: [g++ -std=c++14 -D__CUDA_ARCH_LIST__=700 -Wl,--start-group "tmp/a_dlink.o" "tmp/CMakeCUDACompilerId.o" -Xlinker "-rpath=/usr/tce/packages/cuda/cuda-11.8.0/nvidia/lib64"   "-L/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/lib/stubs" "-L/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/lib"  -lcudadevrt  -lcudart_static  -lrt -lpthread  -ldl  -Wl,--end-group -o "a.out" ]
+  considering line: []
+  extracted link launcher name: [g++]
+  found link launcher absolute path: [/usr/tce/packages/gcc/gcc-8.3.1/bin/g++]
+
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  link line: [cuda-fake-ld g++ -std=c++14 -D__CUDA_ARCH_LIST__=700 -Wl,--start-group "tmp/a_dlink.o" "tmp/CMakeCUDACompilerId.o" -Xlinker "-rpath=/usr/tce/packages/cuda/cuda-11.8.0/nvidia/lib64"   "-L/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/lib/stubs" "-L/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/lib"  -lcudadevrt  -lcudart_static  -lrt -lpthread  -ldl  -Wl,--end-group -o "a.out" ]
+    arg [cuda-fake-ld] ==> ignore
+    arg [g++] ==> ignore
+    arg [-std=c++14] ==> ignore
+    arg [-D__CUDA_ARCH_LIST__=700] ==> ignore
+    arg [-Wl,--start-group] ==> ignore
+    arg [tmp/a_dlink.o] ==> ignore
+    arg [tmp/CMakeCUDACompilerId.o] ==> ignore
+    arg [-Xlinker] ==> ignore
+    arg [-rpath=/usr/tce/packages/cuda/cuda-11.8.0/nvidia/lib64] ==> ignore
+    arg [-L/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/lib/stubs] ==> dir [/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/lib/stubs]
+    arg [-L/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/lib] ==> dir [/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/lib]
+    arg [-lcudadevrt] ==> lib [cudadevrt]
+    arg [-lcudart_static] ==> lib [cudart_static]
+    arg [-lrt] ==> lib [rt]
+    arg [-lpthread] ==> lib [pthread]
+    arg [-ldl] ==> lib [dl]
+    arg [-Wl,--end-group] ==> ignore
+    arg [-o] ==> ignore
+    arg [a.out] ==> ignore
+  collapse library dir [/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/lib/stubs] ==> [/usr/tce/packages/cuda/cuda-11.8.0/nvidia/targets/ppc64le-linux/lib/stubs]
+  collapse library dir [/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/lib] ==> [/usr/tce/packages/cuda/cuda-11.8.0/nvidia/targets/ppc64le-linux/lib]
+  implicit libs: [cudadevrt;cudart_static;rt;pthread;dl]
+  implicit objs: []
+  implicit dirs: [/usr/tce/packages/cuda/cuda-11.8.0/nvidia/targets/ppc64le-linux/lib/stubs;/usr/tce/packages/cuda/cuda-11.8.0/nvidia/targets/ppc64le-linux/lib]
+  implicit fwks: []
+
+
+Parsed CUDA nvcc include information from above output:
+  found 'PATH=' string: [/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../nvvm/bin:/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin:/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin:/usr/tce/packages/python/python-3.8.2/bin:/usr/tce/packages/cmake/cmake-3.23.1/bin:/usr/tce/packages/cuda/cuda-11.8.0/bin:/usr/tce/packages/spectrum-mpi/spectrum-mpi-rolling-release-gcc-8.3.1/bin:/usr/tce/packages/gcc/gcc-8.3.1/bin:/usr/tce/packages/nsight-systems/nsight-systems-2023.3.1/bin:/usr/tce/packages/nsight-compute/nsight-compute-2023.2.2:/usr/tce/packages/totalview/toolworks/totalview.2023.1.6/bin:/usr/tcetmp/bin:/usr/lib64/qt-3.3/bin:/usr/condabin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ibm/spectrum_mpi/jsm_pmix/bin:/opt/ibm/bb/bin:/opt/ibm/flightlog/bin:/opt/ibutils/bin:.:/opt/ibm/spectrumcomputing/lsf/10.1.0.10/linux3.10-glibc2.17-ppc64le-csm/etc:/opt/ibm/spectrumcomputing/lsf/10.1.0.10/linux3.10-glibc2.17-ppc64le-csm/bin]
+  found 'LIBRARIES=' string: ["-L/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/lib/stubs" "-L/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/lib"]
+  considering line: [#$ rm tmp/a_dlink.reg.c]
+  considering line: [gcc -D__NV_NO_HOST_COMPILER_CHECK=1 -std=c++14 -D__CUDA_ARCH__=700 -D__CUDA_ARCH_LIST__=700 -E -x c++  -DCUDA_DOUBLE_MATH_FUNCTIONS -D__CUDACC__ -D__NVCC__  "-I/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/include"    -D__CUDACC_VER_MAJOR__=11 -D__CUDACC_VER_MINOR__=8 -D__CUDACC_VER_BUILD__=89 -D__CUDA_API_VER_MAJOR__=11 -D__CUDA_API_VER_MINOR__=8 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -include "cuda_runtime.h" "CMakeCUDACompilerId.cu" -o "tmp/CMakeCUDACompilerId.cpp1.ii" ]
+  considering line: [cicc --c++14 --builtin-ieee128-type --gnu_version=80301 --display_error_number --orig_src_file_name "CMakeCUDACompilerId.cu" --orig_src_path_name "/usr/WS2/holger/magma/test_export/build_cuda/CMakeFiles/3.23.1/CompilerIdCUDA/CMakeCUDACompilerId.cu" --allow_managed --unsigned_chars   -arch compute_70 -m64 --no-version-ident -ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 --include_file_name "CMakeCUDACompilerId.fatbin.c" -tused --gen_module_id_file --module_id_file_name "tmp/CMakeCUDACompilerId.module_id" --gen_c_file_name "tmp/CMakeCUDACompilerId.cudafe1.c" --stub_file_name "tmp/CMakeCUDACompilerId.cudafe1.stub.c" --gen_device_file_name "tmp/CMakeCUDACompilerId.cudafe1.gpu"  "tmp/CMakeCUDACompilerId.cpp1.ii" -o "tmp/CMakeCUDACompilerId.ptx"]
+  considering line: [ptxas -arch=sm_70 -m64  "tmp/CMakeCUDACompilerId.ptx"  -o "tmp/CMakeCUDACompilerId.cubin" ]
+  considering line: [fatbinary --create="tmp/CMakeCUDACompilerId.fatbin" -64 --cicc-cmdline="-ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 " "--image3=kind=elf,sm=70,file=tmp/CMakeCUDACompilerId.cubin" --embedded-fatbin="tmp/CMakeCUDACompilerId.fatbin.c" ]
+  considering line: [gcc -D__NV_NO_HOST_COMPILER_CHECK=1 -std=c++14 -D__CUDA_ARCH_LIST__=700 -E -x c++ -D__CUDACC__ -D__NVCC__  "-I/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/include"    -D__CUDACC_VER_MAJOR__=11 -D__CUDACC_VER_MINOR__=8 -D__CUDACC_VER_BUILD__=89 -D__CUDA_API_VER_MAJOR__=11 -D__CUDA_API_VER_MINOR__=8 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 -include "cuda_runtime.h" "CMakeCUDACompilerId.cu" -o "tmp/CMakeCUDACompilerId.cpp4.ii" ]
+  considering line: [cudafe++ --c++14 --builtin-ieee128-type --gnu_version=80301 --display_error_number --orig_src_file_name "CMakeCUDACompilerId.cu" --orig_src_path_name "/usr/WS2/holger/magma/test_export/build_cuda/CMakeFiles/3.23.1/CompilerIdCUDA/CMakeCUDACompilerId.cu" --allow_managed --unsigned_chars  --m64 --parse_templates --gen_c_file_name "tmp/CMakeCUDACompilerId.cudafe1.cpp" --stub_file_name "CMakeCUDACompilerId.cudafe1.stub.c" --module_id_file_name "tmp/CMakeCUDACompilerId.module_id" "tmp/CMakeCUDACompilerId.cpp4.ii" ]
+  considering line: [gcc -std=c++14 -D__CUDA_ARCH__=700 -D__CUDA_ARCH_LIST__=700 -c -x c++  -DCUDA_DOUBLE_MATH_FUNCTIONS "-I/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/include"   "tmp/CMakeCUDACompilerId.cudafe1.cpp" -o "tmp/CMakeCUDACompilerId.o" ]
+  considering line: [nvlink -m64 --arch=sm_70 --register-link-binaries="tmp/a_dlink.reg.c"    "-L/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/lib/stubs" "-L/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/lib" -cpu-arch=PPC64LE "tmp/CMakeCUDACompilerId.o"  -lcudadevrt  -o "tmp/a_dlink.cubin" --host-ccbin "gcc"]
+    ignoring nvlink line
+  considering line: [fatbinary --create="tmp/a_dlink.fatbin" -64 --cicc-cmdline="-ftz=0 -prec_div=1 -prec_sqrt=1 -fmad=1 " -link "--image3=kind=elf,sm=70,file=tmp/a_dlink.cubin" --embedded-fatbin="tmp/a_dlink.fatbin.c" ]
+  considering line: [gcc -std=c++14 -D__CUDA_ARCH_LIST__=700 -c -x c++ -DFATBINFILE="\"tmp/a_dlink.fatbin.c\"" -DREGISTERLINKBINARYFILE="\"tmp/a_dlink.reg.c\"" -I. -D__NV_EXTRA_INITIALIZATION= -D__NV_EXTRA_FINALIZATION= -D__CUDA_INCLUDE_COMPILER_INTERNAL_HEADERS__  "-I/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/include"    -D__CUDACC_VER_MAJOR__=11 -D__CUDACC_VER_MINOR__=8 -D__CUDACC_VER_BUILD__=89 -D__CUDA_API_VER_MAJOR__=11 -D__CUDA_API_VER_MINOR__=8 -D__NVCC_DIAG_PRAGMA_SUPPORT__=1 "/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/crt/link.stub" -o "tmp/a_dlink.o" ]
+  considering line: [g++ -std=c++14 -D__CUDA_ARCH_LIST__=700 -Wl,--start-group "tmp/a_dlink.o" "tmp/CMakeCUDACompilerId.o" -Xlinker "-rpath=/usr/tce/packages/cuda/cuda-11.8.0/nvidia/lib64"   "-L/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/lib/stubs" "-L/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/lib"  -lcudadevrt  -lcudart_static  -lrt -lpthread  -ldl  -Wl,--end-group -o "a.out" ]
+    extracted link line: [g++ -std=c++14 -D__CUDA_ARCH_LIST__=700 -Wl,--start-group "tmp/a_dlink.o" "tmp/CMakeCUDACompilerId.o" -Xlinker "-rpath=/usr/tce/packages/cuda/cuda-11.8.0/nvidia/lib64"   "-L/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/lib/stubs" "-L/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/lib"  -lcudadevrt  -lcudart_static  -lrt -lpthread  -ldl  -Wl,--end-group -o "a.out" ]
+  considering line: []
+  extracted link launcher name: [g++]
+  found link launcher absolute path: [/usr/tce/packages/gcc/gcc-8.3.1/bin/g++]
+  found 'INCLUDES=' string: ["-I/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/include"  ]
+
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  link line: [cuda-fake-ld g++ -std=c++14 -D__CUDA_ARCH_LIST__=700 -Wl,--start-group "tmp/a_dlink.o" "tmp/CMakeCUDACompilerId.o" -Xlinker "-rpath=/usr/tce/packages/cuda/cuda-11.8.0/nvidia/lib64"   "-L/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/lib/stubs" "-L/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/lib"  -lcudadevrt  -lcudart_static  -lrt -lpthread  -ldl  -Wl,--end-group -o "a.out" ]
+    arg [cuda-fake-ld] ==> ignore
+    arg [g++] ==> ignore
+    arg [-std=c++14] ==> ignore
+    arg [-D__CUDA_ARCH_LIST__=700] ==> ignore
+    arg [-Wl,--start-group] ==> ignore
+    arg [tmp/a_dlink.o] ==> ignore
+    arg [tmp/CMakeCUDACompilerId.o] ==> ignore
+    arg [-Xlinker] ==> ignore
+    arg [-rpath=/usr/tce/packages/cuda/cuda-11.8.0/nvidia/lib64] ==> ignore
+    arg [-L/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/lib/stubs] ==> dir [/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/lib/stubs]
+    arg [-L/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/lib] ==> dir [/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/lib]
+    arg [-lcudadevrt] ==> lib [cudadevrt]
+    arg [-lcudart_static] ==> lib [cudart_static]
+    arg [-lrt] ==> lib [rt]
+    arg [-lpthread] ==> lib [pthread]
+    arg [-ldl] ==> lib [dl]
+    arg [-Wl,--end-group] ==> ignore
+    arg [-o] ==> ignore
+    arg [a.out] ==> ignore
+  collapse library dir [/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/lib/stubs] ==> [/usr/tce/packages/cuda/cuda-11.8.0/nvidia/targets/ppc64le-linux/lib/stubs]
+  collapse library dir [/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/lib] ==> [/usr/tce/packages/cuda/cuda-11.8.0/nvidia/targets/ppc64le-linux/lib]
+  implicit libs: [cudadevrt;cudart_static;rt;pthread;dl]
+  implicit objs: []
+  implicit dirs: [/usr/tce/packages/cuda/cuda-11.8.0/nvidia/targets/ppc64le-linux/lib/stubs;/usr/tce/packages/cuda/cuda-11.8.0/nvidia/targets/ppc64le-linux/lib]
+  implicit fwks: []
+
+
+Detecting CUDA compiler ABI info compiled with the following output:
+Change Dir: /g/g0/holger/workspace/magma/test_export/build_cuda/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/tcetmp/bin/gmake -f Makefile cmTC_2c25c/fast && /usr/tcetmp/bin/gmake  -f CMakeFiles/cmTC_2c25c.dir/build.make CMakeFiles/cmTC_2c25c.dir/build
+gmake[1]: Entering directory '/usr/WS2/holger/magma/test_export/build_cuda/CMakeFiles/CMakeTmp'
+Building CUDA object CMakeFiles/cmTC_2c25c.dir/CMakeCUDACompilerABI.cu.o
+/usr/tce/packages/cuda/cuda-11.8.0/bin/nvcc -forward-unknown-to-host-compiler   --generate-code=arch=compute_70,code=[compute_70,sm_70]   -Xcompiler=-v -MD -MT CMakeFiles/cmTC_2c25c.dir/CMakeCUDACompilerABI.cu.o -MF CMakeFiles/cmTC_2c25c.dir/CMakeCUDACompilerABI.cu.o.d -x cu -c /usr/tce/packages/cmake/cmake-3.23.1/share/cmake/Modules/CMakeCUDACompilerABI.cu -o CMakeFiles/cmTC_2c25c.dir/CMakeCUDACompilerABI.cu.o
+Using built-in specs.
+COLLECT_GCC=/usr/tce/packages/gcc/gcc-8.3.1/rh/bin/gcc
+Target: ppc64le-redhat-linux
+Configured with: ../configure --enable-bootstrap --enable-languages=c,c++,fortran,lto --prefix=/opt/rh/devtoolset-8/root/usr --mandir=/opt/rh/devtoolset-8/root/usr/share/man --infodir=/opt/rh/devtoolset-8/root/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-targets=powerpcle-linux --disable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --with-linker-hash-style=gnu --with-default-libstdcxx-abi=gcc4-compatible --enable-plugin --enable-initfini-array --with-isl=/builddir/build/BUILD/gcc-8.3.1-20190311/obj-ppc64le-redhat-linux/isl-install --disable-libmpx --enable-gnu-indirect-function --enable-secureplt --with-long-double-128 --with-cpu-32=power8 --with-tune-32=power8 --with-cpu-64=power8 --with-tune-64=power8 --build=ppc64le-redhat-linux
+Thread model: posix
+gcc version 8.3.1 20190311 (Red Hat 8.3.1-3) (GCC) 
+COLLECT_GCC_OPTIONS='-D' '__NV_NO_HOST_COMPILER_CHECK=1' '-std=c++14' '-D' '__CUDA_ARCH__=700' '-D' '__CUDA_ARCH_LIST__=700' '-E' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/include' '-D' '__CUDACC_VER_MAJOR__=11' '-D' '__CUDACC_VER_MINOR__=8' '-D' '__CUDACC_VER_BUILD__=89' '-D' '__CUDA_API_VER_MAJOR__=11' '-D' '__CUDA_API_VER_MINOR__=8' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-include' 'cuda_runtime.h' '-o' '/var/tmp/holger/tmpxft_00013a38_00000000-7_CMakeCUDACompilerABI.cpp1.ii' '-mtune=power8' '-mcpu=power8'
+ /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../libexec/gcc/ppc64le-redhat-linux/8/cc1plus -E -quiet -v -I /usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/include -iprefix /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/ -D_GNU_SOURCE -D__unix__ -D__gnu_linux__ -D__linux__ -Asystem=linux -Asystem=unix -Asystem=posix -D __NV_NO_HOST_COMPILER_CHECK=1 -D __CUDA_ARCH__=700 -D __CUDA_ARCH_LIST__=700 -D CUDA_DOUBLE_MATH_FUNCTIONS -D __CUDACC__ -D __NVCC__ -D __CUDACC_VER_MAJOR__=11 -D __CUDACC_VER_MINOR__=8 -D __CUDACC_VER_BUILD__=89 -D __CUDA_API_VER_MAJOR__=11 -D __CUDA_API_VER_MINOR__=8 -D __NVCC_DIAG_PRAGMA_SUPPORT__=1 -include cuda_runtime.h /usr/tce/packages/cmake/cmake-3.23.1/share/cmake/Modules/CMakeCUDACompilerABI.cu -o /var/tmp/holger/tmpxft_00013a38_00000000-7_CMakeCUDACompilerABI.cpp1.ii -msecure-plt -mtune=power8 -mcpu=power8 -std=c++14
+ignoring nonexistent directory "/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/include-fixed"
+ignoring nonexistent directory "/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../../../ppc64le-redhat-linux/include"
+ignoring duplicate directory "/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/../../lib/gcc/ppc64le-redhat-linux/8/../../../../include/c++/8"
+ignoring duplicate directory "/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/../../lib/gcc/ppc64le-redhat-linux/8/../../../../include/c++/8/ppc64le-redhat-linux"
+ignoring duplicate directory "/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/../../lib/gcc/ppc64le-redhat-linux/8/../../../../include/c++/8/backward"
+ignoring duplicate directory "/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/../../lib/gcc/ppc64le-redhat-linux/8/include"
+ignoring nonexistent directory "/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/../../lib/gcc/ppc64le-redhat-linux/8/include-fixed"
+ignoring nonexistent directory "/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/../../lib/gcc/ppc64le-redhat-linux/8/../../../../ppc64le-redhat-linux/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/include
+ /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../../../include/c++/8
+ /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../../../include/c++/8/ppc64le-redhat-linux
+ /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../../../include/c++/8/backward
+ /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/include
+ /usr/local/include
+ /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/../../include
+ /usr/include
+End of search list.
+COMPILER_PATH=/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../libexec/gcc/ppc64le-redhat-linux/8/:/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../libexec/gcc/
+LIBRARY_PATH=/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/:/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/:/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-D' '__NV_NO_HOST_COMPILER_CHECK=1' '-std=c++14' '-D' '__CUDA_ARCH__=700' '-D' '__CUDA_ARCH_LIST__=700' '-E' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/include' '-D' '__CUDACC_VER_MAJOR__=11' '-D' '__CUDACC_VER_MINOR__=8' '-D' '__CUDACC_VER_BUILD__=89' '-D' '__CUDA_API_VER_MAJOR__=11' '-D' '__CUDA_API_VER_MINOR__=8' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-include' 'cuda_runtime.h' '-o' '/var/tmp/holger/tmpxft_00013a38_00000000-7_CMakeCUDACompilerABI.cpp1.ii' '-mtune=power8' '-mcpu=power8'
+Using built-in specs.
+COLLECT_GCC=/usr/tce/packages/gcc/gcc-8.3.1/rh/bin/gcc
+Target: ppc64le-redhat-linux
+Configured with: ../configure --enable-bootstrap --enable-languages=c,c++,fortran,lto --prefix=/opt/rh/devtoolset-8/root/usr --mandir=/opt/rh/devtoolset-8/root/usr/share/man --infodir=/opt/rh/devtoolset-8/root/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-targets=powerpcle-linux --disable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --with-linker-hash-style=gnu --with-default-libstdcxx-abi=gcc4-compatible --enable-plugin --enable-initfini-array --with-isl=/builddir/build/BUILD/gcc-8.3.1-20190311/obj-ppc64le-redhat-linux/isl-install --disable-libmpx --enable-gnu-indirect-function --enable-secureplt --with-long-double-128 --with-cpu-32=power8 --with-tune-32=power8 --with-cpu-64=power8 --with-tune-64=power8 --build=ppc64le-redhat-linux
+Thread model: posix
+gcc version 8.3.1 20190311 (Red Hat 8.3.1-3) (GCC) 
+COLLECT_GCC_OPTIONS='-D' '__NV_NO_HOST_COMPILER_CHECK=1' '-std=c++14' '-D' '__CUDA_ARCH_LIST__=700' '-E' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/include' '-D' '__CUDACC_VER_MAJOR__=11' '-D' '__CUDACC_VER_MINOR__=8' '-D' '__CUDACC_VER_BUILD__=89' '-D' '__CUDA_API_VER_MAJOR__=11' '-D' '__CUDA_API_VER_MINOR__=8' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-include' 'cuda_runtime.h' '-o' '/var/tmp/holger/tmpxft_00013a38_00000000-5_CMakeCUDACompilerABI.cpp4.ii' '-mtune=power8' '-mcpu=power8'
+ /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../libexec/gcc/ppc64le-redhat-linux/8/cc1plus -E -quiet -v -I /usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/include -iprefix /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/ -D_GNU_SOURCE -D__unix__ -D__gnu_linux__ -D__linux__ -Asystem=linux -Asystem=unix -Asystem=posix -D __NV_NO_HOST_COMPILER_CHECK=1 -D __CUDA_ARCH_LIST__=700 -D __CUDACC__ -D __NVCC__ -D __CUDACC_VER_MAJOR__=11 -D __CUDACC_VER_MINOR__=8 -D __CUDACC_VER_BUILD__=89 -D __CUDA_API_VER_MAJOR__=11 -D __CUDA_API_VER_MINOR__=8 -D __NVCC_DIAG_PRAGMA_SUPPORT__=1 -include cuda_runtime.h /usr/tce/packages/cmake/cmake-3.23.1/share/cmake/Modules/CMakeCUDACompilerABI.cu -o /var/tmp/holger/tmpxft_00013a38_00000000-5_CMakeCUDACompilerABI.cpp4.ii -msecure-plt -mtune=power8 -mcpu=power8 -std=c++14
+ignoring nonexistent directory "/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/include-fixed"
+ignoring nonexistent directory "/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../../../ppc64le-redhat-linux/include"
+ignoring duplicate directory "/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/../../lib/gcc/ppc64le-redhat-linux/8/../../../../include/c++/8"
+ignoring duplicate directory "/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/../../lib/gcc/ppc64le-redhat-linux/8/../../../../include/c++/8/ppc64le-redhat-linux"
+ignoring duplicate directory "/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/../../lib/gcc/ppc64le-redhat-linux/8/../../../../include/c++/8/backward"
+ignoring duplicate directory "/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/../../lib/gcc/ppc64le-redhat-linux/8/include"
+ignoring nonexistent directory "/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/../../lib/gcc/ppc64le-redhat-linux/8/include-fixed"
+ignoring nonexistent directory "/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/../../lib/gcc/ppc64le-redhat-linux/8/../../../../ppc64le-redhat-linux/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/include
+ /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../../../include/c++/8
+ /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../../../include/c++/8/ppc64le-redhat-linux
+ /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../../../include/c++/8/backward
+ /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/include
+ /usr/local/include
+ /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/../../include
+ /usr/include
+End of search list.
+COMPILER_PATH=/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../libexec/gcc/ppc64le-redhat-linux/8/:/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../libexec/gcc/
+LIBRARY_PATH=/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/:/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/:/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-D' '__NV_NO_HOST_COMPILER_CHECK=1' '-std=c++14' '-D' '__CUDA_ARCH_LIST__=700' '-E' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/include' '-D' '__CUDACC_VER_MAJOR__=11' '-D' '__CUDACC_VER_MINOR__=8' '-D' '__CUDACC_VER_BUILD__=89' '-D' '__CUDA_API_VER_MAJOR__=11' '-D' '__CUDA_API_VER_MINOR__=8' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-include' 'cuda_runtime.h' '-o' '/var/tmp/holger/tmpxft_00013a38_00000000-5_CMakeCUDACompilerABI.cpp4.ii' '-mtune=power8' '-mcpu=power8'
+Using built-in specs.
+COLLECT_GCC=/usr/tce/packages/gcc/gcc-8.3.1/rh/bin/gcc
+Target: ppc64le-redhat-linux
+Configured with: ../configure --enable-bootstrap --enable-languages=c,c++,fortran,lto --prefix=/opt/rh/devtoolset-8/root/usr --mandir=/opt/rh/devtoolset-8/root/usr/share/man --infodir=/opt/rh/devtoolset-8/root/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-targets=powerpcle-linux --disable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --with-linker-hash-style=gnu --with-default-libstdcxx-abi=gcc4-compatible --enable-plugin --enable-initfini-array --with-isl=/builddir/build/BUILD/gcc-8.3.1-20190311/obj-ppc64le-redhat-linux/isl-install --disable-libmpx --enable-gnu-indirect-function --enable-secureplt --with-long-double-128 --with-cpu-32=power8 --with-tune-32=power8 --with-cpu-64=power8 --with-tune-64=power8 --build=ppc64le-redhat-linux
+Thread model: posix
+gcc version 8.3.1 20190311 (Red Hat 8.3.1-3) (GCC) 
+COLLECT_GCC_OPTIONS='-std=c++14' '-D' '__CUDA_ARCH__=700' '-D' '__CUDA_ARCH_LIST__=700' '-c' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-v' '-I' '/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/include' '-o' 'CMakeFiles/cmTC_2c25c.dir/CMakeCUDACompilerABI.cu.o' '-mtune=power8' '-mcpu=power8'
+ /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../libexec/gcc/ppc64le-redhat-linux/8/cc1plus -quiet -v -I /usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/include -iprefix /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/ -D_GNU_SOURCE -D__unix__ -D__gnu_linux__ -D__linux__ -Asystem=linux -Asystem=unix -Asystem=posix -D __CUDA_ARCH__=700 -D __CUDA_ARCH_LIST__=700 -D CUDA_DOUBLE_MATH_FUNCTIONS /var/tmp/holger/tmpxft_00013a38_00000000-6_CMakeCUDACompilerABI.cudafe1.cpp -msecure-plt -quiet -dumpbase tmpxft_00013a38_00000000-6_CMakeCUDACompilerABI.cudafe1.cpp -mtune=power8 -mcpu=power8 -auxbase-strip CMakeFiles/cmTC_2c25c.dir/CMakeCUDACompilerABI.cu.o -std=c++14 -version -o /var/tmp/holger/ccM6rkax.s
+GNU C++14 (GCC) version 8.3.1 20190311 (Red Hat 8.3.1-3) (ppc64le-redhat-linux)
+	compiled by GNU C version 8.3.1 20190311 (Red Hat 8.3.1-3), GMP version 6.0.0, MPFR version 3.1.1, MPC version 1.0.1, isl version isl-0.16.1-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/include-fixed"
+ignoring nonexistent directory "/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../../../ppc64le-redhat-linux/include"
+ignoring duplicate directory "/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/../../lib/gcc/ppc64le-redhat-linux/8/../../../../include/c++/8"
+ignoring duplicate directory "/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/../../lib/gcc/ppc64le-redhat-linux/8/../../../../include/c++/8/ppc64le-redhat-linux"
+ignoring duplicate directory "/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/../../lib/gcc/ppc64le-redhat-linux/8/../../../../include/c++/8/backward"
+ignoring duplicate directory "/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/../../lib/gcc/ppc64le-redhat-linux/8/include"
+ignoring nonexistent directory "/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/../../lib/gcc/ppc64le-redhat-linux/8/include-fixed"
+ignoring nonexistent directory "/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/../../lib/gcc/ppc64le-redhat-linux/8/../../../../ppc64le-redhat-linux/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/include
+ /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../../../include/c++/8
+ /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../../../include/c++/8/ppc64le-redhat-linux
+ /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../../../include/c++/8/backward
+ /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/include
+ /usr/local/include
+ /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/../../include
+ /usr/include
+End of search list.
+GNU C++14 (GCC) version 8.3.1 20190311 (Red Hat 8.3.1-3) (ppc64le-redhat-linux)
+	compiled by GNU C version 8.3.1 20190311 (Red Hat 8.3.1-3), GMP version 6.0.0, MPFR version 3.1.1, MPC version 1.0.1, isl version isl-0.16.1-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 16e8708e3cb63ee916cff70b274d2773
+COLLECT_GCC_OPTIONS='-std=c++14' '-D' '__CUDA_ARCH__=700' '-D' '__CUDA_ARCH_LIST__=700' '-c' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-v' '-I' '/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/include' '-o' 'CMakeFiles/cmTC_2c25c.dir/CMakeCUDACompilerABI.cu.o' '-mtune=power8' '-mcpu=power8'
+ /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../libexec/gcc/ppc64le-redhat-linux/8/as -v -I /usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/include -a64 -mpower8 -many -mlittle -o CMakeFiles/cmTC_2c25c.dir/CMakeCUDACompilerABI.cu.o /var/tmp/holger/ccM6rkax.s
+GNU assembler version 2.30 (ppc64le-redhat-linux) using BFD version version 2.30-54.el7
+COMPILER_PATH=/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../libexec/gcc/ppc64le-redhat-linux/8/:/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../libexec/gcc/
+LIBRARY_PATH=/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/:/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/:/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-std=c++14' '-D' '__CUDA_ARCH__=700' '-D' '__CUDA_ARCH_LIST__=700' '-c' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-v' '-I' '/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/include' '-o' 'CMakeFiles/cmTC_2c25c.dir/CMakeCUDACompilerABI.cu.o' '-mtune=power8' '-mcpu=power8'
+Linking CUDA executable cmTC_2c25c
+/usr/tce/packages/cmake/cmake-3.23.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2c25c.dir/link.txt --verbose=1
+/usr/tce/packages/gcc/gcc-8.3.1/bin/g++  -v CMakeFiles/cmTC_2c25c.dir/CMakeCUDACompilerABI.cu.o -o cmTC_2c25c  -lcudadevrt -lcudart_static -lrt -lpthread -ldl  -L"/usr/tce/packages/cuda/cuda-11.8.0/nvidia/targets/ppc64le-linux/lib/stubs" -L"/usr/tce/packages/cuda/cuda-11.8.0/nvidia/targets/ppc64le-linux/lib"
+Using built-in specs.
+COLLECT_GCC=/usr/tce/packages/gcc/gcc-8.3.1/rh/bin/g++
+COLLECT_LTO_WRAPPER=/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../libexec/gcc/ppc64le-redhat-linux/8/lto-wrapper
+Target: ppc64le-redhat-linux
+Configured with: ../configure --enable-bootstrap --enable-languages=c,c++,fortran,lto --prefix=/opt/rh/devtoolset-8/root/usr --mandir=/opt/rh/devtoolset-8/root/usr/share/man --infodir=/opt/rh/devtoolset-8/root/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-targets=powerpcle-linux --disable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --with-linker-hash-style=gnu --with-default-libstdcxx-abi=gcc4-compatible --enable-plugin --enable-initfini-array --with-isl=/builddir/build/BUILD/gcc-8.3.1-20190311/obj-ppc64le-redhat-linux/isl-install --disable-libmpx --enable-gnu-indirect-function --enable-secureplt --with-long-double-128 --with-cpu-32=power8 --with-tune-32=power8 --with-cpu-64=power8 --with-tune-64=power8 --build=ppc64le-redhat-linux
+Thread model: posix
+gcc version 8.3.1 20190311 (Red Hat 8.3.1-3) (GCC) 
+COMPILER_PATH=/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../libexec/gcc/ppc64le-redhat-linux/8/:/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../libexec/gcc/
+LIBRARY_PATH=/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/:/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/:/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_2c25c' '-L/usr/tce/packages/cuda/cuda-11.8.0/nvidia/targets/ppc64le-linux/lib/stubs' '-L/usr/tce/packages/cuda/cuda-11.8.0/nvidia/targets/ppc64le-linux/lib' '-shared-libgcc' '-mtune=power8' '-mcpu=power8'
+ /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../libexec/gcc/ppc64le-redhat-linux/8/collect2 -plugin /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../libexec/gcc/ppc64le-redhat-linux/8/liblto_plugin.so -plugin-opt=/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../libexec/gcc/ppc64le-redhat-linux/8/lto-wrapper -plugin-opt=-fresolution=/var/tmp/cc5DvuNJ.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -V -m elf64lppc -dynamic-linker /lib64/ld64.so.2 -o cmTC_2c25c /lib/../lib64/crt1.o /lib/../lib64/crti.o /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/crtbegin.o -L/usr/tce/packages/cuda/cuda-11.8.0/nvidia/targets/ppc64le-linux/lib/stubs -L/usr/tce/packages/cuda/cuda-11.8.0/nvidia/targets/ppc64le-linux/lib -L/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8 -L/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc -L/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../.. CMakeFiles/cmTC_2c25c.dir/CMakeCUDACompilerABI.cu.o -lcudadevrt -lcudart_static -lrt -lpthread -ldl -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/crtend.o /lib/../lib64/crtn.o
+GNU ld version 2.30-55.el7.2
+  Supported emulations:
+   elf64lppc
+   elf32lppc
+   elf32lppclinux
+   elf32lppcsim
+   elf64ppc
+   elf32ppc
+   elf32ppclinux
+   elf32ppcsim
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_2c25c' '-L/usr/tce/packages/cuda/cuda-11.8.0/nvidia/targets/ppc64le-linux/lib/stubs' '-L/usr/tce/packages/cuda/cuda-11.8.0/nvidia/targets/ppc64le-linux/lib' '-shared-libgcc' '-mtune=power8' '-mcpu=power8'
+gmake[1]: Leaving directory '/usr/WS2/holger/magma/test_export/build_cuda/CMakeFiles/CMakeTmp'
+
+
+
+Parsed CUDA implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/include]
+    add: [/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../../../include/c++/8]
+    add: [/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../../../include/c++/8/ppc64le-redhat-linux]
+    add: [/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../../../include/c++/8/backward]
+    add: [/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/include]
+    add: [/usr/local/include]
+    add: [/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/../../include]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/include] ==> [/usr/tce/packages/cuda/cuda-11.8.0/nvidia/targets/ppc64le-linux/include]
+  collapse include dir [/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../../../include/c++/8] ==> [/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8]
+  collapse include dir [/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../../../include/c++/8/ppc64le-redhat-linux] ==> [/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/ppc64le-redhat-linux]
+  collapse include dir [/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../../../include/c++/8/backward] ==> [/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/backward]
+  collapse include dir [/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/include] ==> [/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/lib/gcc/ppc64le-redhat-linux/8/include]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/../../include] ==> [/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/usr/tce/packages/cuda/cuda-11.8.0/nvidia/targets/ppc64le-linux/include;/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8;/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/ppc64le-redhat-linux;/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/backward;/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/lib/gcc/ppc64le-redhat-linux/8/include;/usr/local/include;/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include;/usr/include]
+
+
+Parsed CUDA implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /g/g0/holger/workspace/magma/test_export/build_cuda/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/tcetmp/bin/gmake -f Makefile cmTC_2c25c/fast && /usr/tcetmp/bin/gmake  -f CMakeFiles/cmTC_2c25c.dir/build.make CMakeFiles/cmTC_2c25c.dir/build]
+  ignore line: [gmake[1]: Entering directory '/usr/WS2/holger/magma/test_export/build_cuda/CMakeFiles/CMakeTmp']
+  ignore line: [Building CUDA object CMakeFiles/cmTC_2c25c.dir/CMakeCUDACompilerABI.cu.o]
+  ignore line: [/usr/tce/packages/cuda/cuda-11.8.0/bin/nvcc -forward-unknown-to-host-compiler   --generate-code=arch=compute_70 code=[compute_70 sm_70]   -Xcompiler=-v -MD -MT CMakeFiles/cmTC_2c25c.dir/CMakeCUDACompilerABI.cu.o -MF CMakeFiles/cmTC_2c25c.dir/CMakeCUDACompilerABI.cu.o.d -x cu -c /usr/tce/packages/cmake/cmake-3.23.1/share/cmake/Modules/CMakeCUDACompilerABI.cu -o CMakeFiles/cmTC_2c25c.dir/CMakeCUDACompilerABI.cu.o]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/tce/packages/gcc/gcc-8.3.1/rh/bin/gcc]
+  ignore line: [Target: ppc64le-redhat-linux]
+  ignore line: [Configured with: ../configure --enable-bootstrap --enable-languages=c c++ fortran lto --prefix=/opt/rh/devtoolset-8/root/usr --mandir=/opt/rh/devtoolset-8/root/usr/share/man --infodir=/opt/rh/devtoolset-8/root/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-targets=powerpcle-linux --disable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --with-linker-hash-style=gnu --with-default-libstdcxx-abi=gcc4-compatible --enable-plugin --enable-initfini-array --with-isl=/builddir/build/BUILD/gcc-8.3.1-20190311/obj-ppc64le-redhat-linux/isl-install --disable-libmpx --enable-gnu-indirect-function --enable-secureplt --with-long-double-128 --with-cpu-32=power8 --with-tune-32=power8 --with-cpu-64=power8 --with-tune-64=power8 --build=ppc64le-redhat-linux]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 8.3.1 20190311 (Red Hat 8.3.1-3) (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-D' '__NV_NO_HOST_COMPILER_CHECK=1' '-std=c++14' '-D' '__CUDA_ARCH__=700' '-D' '__CUDA_ARCH_LIST__=700' '-E' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/include' '-D' '__CUDACC_VER_MAJOR__=11' '-D' '__CUDACC_VER_MINOR__=8' '-D' '__CUDACC_VER_BUILD__=89' '-D' '__CUDA_API_VER_MAJOR__=11' '-D' '__CUDA_API_VER_MINOR__=8' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-include' 'cuda_runtime.h' '-o' '/var/tmp/holger/tmpxft_00013a38_00000000-7_CMakeCUDACompilerABI.cpp1.ii' '-mtune=power8' '-mcpu=power8']
+  ignore line: [ /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../libexec/gcc/ppc64le-redhat-linux/8/cc1plus -E -quiet -v -I /usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/include -iprefix /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/ -D_GNU_SOURCE -D__unix__ -D__gnu_linux__ -D__linux__ -Asystem=linux -Asystem=unix -Asystem=posix -D __NV_NO_HOST_COMPILER_CHECK=1 -D __CUDA_ARCH__=700 -D __CUDA_ARCH_LIST__=700 -D CUDA_DOUBLE_MATH_FUNCTIONS -D __CUDACC__ -D __NVCC__ -D __CUDACC_VER_MAJOR__=11 -D __CUDACC_VER_MINOR__=8 -D __CUDACC_VER_BUILD__=89 -D __CUDA_API_VER_MAJOR__=11 -D __CUDA_API_VER_MINOR__=8 -D __NVCC_DIAG_PRAGMA_SUPPORT__=1 -include cuda_runtime.h /usr/tce/packages/cmake/cmake-3.23.1/share/cmake/Modules/CMakeCUDACompilerABI.cu -o /var/tmp/holger/tmpxft_00013a38_00000000-7_CMakeCUDACompilerABI.cpp1.ii -msecure-plt -mtune=power8 -mcpu=power8 -std=c++14]
+  ignore line: [ignoring nonexistent directory "/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/include-fixed"]
+  ignore line: [ignoring nonexistent directory "/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../../../ppc64le-redhat-linux/include"]
+  ignore line: [ignoring duplicate directory "/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/../../lib/gcc/ppc64le-redhat-linux/8/../../../../include/c++/8"]
+  ignore line: [ignoring duplicate directory "/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/../../lib/gcc/ppc64le-redhat-linux/8/../../../../include/c++/8/ppc64le-redhat-linux"]
+  ignore line: [ignoring duplicate directory "/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/../../lib/gcc/ppc64le-redhat-linux/8/../../../../include/c++/8/backward"]
+  ignore line: [ignoring duplicate directory "/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/../../lib/gcc/ppc64le-redhat-linux/8/include"]
+  ignore line: [ignoring nonexistent directory "/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/../../lib/gcc/ppc64le-redhat-linux/8/include-fixed"]
+  ignore line: [ignoring nonexistent directory "/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/../../lib/gcc/ppc64le-redhat-linux/8/../../../../ppc64le-redhat-linux/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/include]
+  ignore line: [ /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../../../include/c++/8]
+  ignore line: [ /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../../../include/c++/8/ppc64le-redhat-linux]
+  ignore line: [ /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../../../include/c++/8/backward]
+  ignore line: [ /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/../../include]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [COMPILER_PATH=/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../libexec/gcc/ppc64le-redhat-linux/8/:/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../libexec/gcc/]
+  ignore line: [LIBRARY_PATH=/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/:/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/:/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-D' '__NV_NO_HOST_COMPILER_CHECK=1' '-std=c++14' '-D' '__CUDA_ARCH__=700' '-D' '__CUDA_ARCH_LIST__=700' '-E' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/include' '-D' '__CUDACC_VER_MAJOR__=11' '-D' '__CUDACC_VER_MINOR__=8' '-D' '__CUDACC_VER_BUILD__=89' '-D' '__CUDA_API_VER_MAJOR__=11' '-D' '__CUDA_API_VER_MINOR__=8' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-include' 'cuda_runtime.h' '-o' '/var/tmp/holger/tmpxft_00013a38_00000000-7_CMakeCUDACompilerABI.cpp1.ii' '-mtune=power8' '-mcpu=power8']
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/tce/packages/gcc/gcc-8.3.1/rh/bin/gcc]
+  ignore line: [Target: ppc64le-redhat-linux]
+  ignore line: [Configured with: ../configure --enable-bootstrap --enable-languages=c c++ fortran lto --prefix=/opt/rh/devtoolset-8/root/usr --mandir=/opt/rh/devtoolset-8/root/usr/share/man --infodir=/opt/rh/devtoolset-8/root/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-targets=powerpcle-linux --disable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --with-linker-hash-style=gnu --with-default-libstdcxx-abi=gcc4-compatible --enable-plugin --enable-initfini-array --with-isl=/builddir/build/BUILD/gcc-8.3.1-20190311/obj-ppc64le-redhat-linux/isl-install --disable-libmpx --enable-gnu-indirect-function --enable-secureplt --with-long-double-128 --with-cpu-32=power8 --with-tune-32=power8 --with-cpu-64=power8 --with-tune-64=power8 --build=ppc64le-redhat-linux]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 8.3.1 20190311 (Red Hat 8.3.1-3) (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-D' '__NV_NO_HOST_COMPILER_CHECK=1' '-std=c++14' '-D' '__CUDA_ARCH_LIST__=700' '-E' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/include' '-D' '__CUDACC_VER_MAJOR__=11' '-D' '__CUDACC_VER_MINOR__=8' '-D' '__CUDACC_VER_BUILD__=89' '-D' '__CUDA_API_VER_MAJOR__=11' '-D' '__CUDA_API_VER_MINOR__=8' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-include' 'cuda_runtime.h' '-o' '/var/tmp/holger/tmpxft_00013a38_00000000-5_CMakeCUDACompilerABI.cpp4.ii' '-mtune=power8' '-mcpu=power8']
+  ignore line: [ /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../libexec/gcc/ppc64le-redhat-linux/8/cc1plus -E -quiet -v -I /usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/include -iprefix /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/ -D_GNU_SOURCE -D__unix__ -D__gnu_linux__ -D__linux__ -Asystem=linux -Asystem=unix -Asystem=posix -D __NV_NO_HOST_COMPILER_CHECK=1 -D __CUDA_ARCH_LIST__=700 -D __CUDACC__ -D __NVCC__ -D __CUDACC_VER_MAJOR__=11 -D __CUDACC_VER_MINOR__=8 -D __CUDACC_VER_BUILD__=89 -D __CUDA_API_VER_MAJOR__=11 -D __CUDA_API_VER_MINOR__=8 -D __NVCC_DIAG_PRAGMA_SUPPORT__=1 -include cuda_runtime.h /usr/tce/packages/cmake/cmake-3.23.1/share/cmake/Modules/CMakeCUDACompilerABI.cu -o /var/tmp/holger/tmpxft_00013a38_00000000-5_CMakeCUDACompilerABI.cpp4.ii -msecure-plt -mtune=power8 -mcpu=power8 -std=c++14]
+  ignore line: [ignoring nonexistent directory "/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/include-fixed"]
+  ignore line: [ignoring nonexistent directory "/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../../../ppc64le-redhat-linux/include"]
+  ignore line: [ignoring duplicate directory "/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/../../lib/gcc/ppc64le-redhat-linux/8/../../../../include/c++/8"]
+  ignore line: [ignoring duplicate directory "/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/../../lib/gcc/ppc64le-redhat-linux/8/../../../../include/c++/8/ppc64le-redhat-linux"]
+  ignore line: [ignoring duplicate directory "/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/../../lib/gcc/ppc64le-redhat-linux/8/../../../../include/c++/8/backward"]
+  ignore line: [ignoring duplicate directory "/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/../../lib/gcc/ppc64le-redhat-linux/8/include"]
+  ignore line: [ignoring nonexistent directory "/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/../../lib/gcc/ppc64le-redhat-linux/8/include-fixed"]
+  ignore line: [ignoring nonexistent directory "/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/../../lib/gcc/ppc64le-redhat-linux/8/../../../../ppc64le-redhat-linux/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/include]
+  ignore line: [ /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../../../include/c++/8]
+  ignore line: [ /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../../../include/c++/8/ppc64le-redhat-linux]
+  ignore line: [ /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../../../include/c++/8/backward]
+  ignore line: [ /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/../../include]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [COMPILER_PATH=/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../libexec/gcc/ppc64le-redhat-linux/8/:/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../libexec/gcc/]
+  ignore line: [LIBRARY_PATH=/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/:/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/:/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-D' '__NV_NO_HOST_COMPILER_CHECK=1' '-std=c++14' '-D' '__CUDA_ARCH_LIST__=700' '-E' '-D' '__CUDACC__' '-D' '__NVCC__' '-v' '-I' '/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/include' '-D' '__CUDACC_VER_MAJOR__=11' '-D' '__CUDACC_VER_MINOR__=8' '-D' '__CUDACC_VER_BUILD__=89' '-D' '__CUDA_API_VER_MAJOR__=11' '-D' '__CUDA_API_VER_MINOR__=8' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-include' 'cuda_runtime.h' '-o' '/var/tmp/holger/tmpxft_00013a38_00000000-5_CMakeCUDACompilerABI.cpp4.ii' '-mtune=power8' '-mcpu=power8']
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/tce/packages/gcc/gcc-8.3.1/rh/bin/gcc]
+  ignore line: [Target: ppc64le-redhat-linux]
+  ignore line: [Configured with: ../configure --enable-bootstrap --enable-languages=c c++ fortran lto --prefix=/opt/rh/devtoolset-8/root/usr --mandir=/opt/rh/devtoolset-8/root/usr/share/man --infodir=/opt/rh/devtoolset-8/root/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-targets=powerpcle-linux --disable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --with-linker-hash-style=gnu --with-default-libstdcxx-abi=gcc4-compatible --enable-plugin --enable-initfini-array --with-isl=/builddir/build/BUILD/gcc-8.3.1-20190311/obj-ppc64le-redhat-linux/isl-install --disable-libmpx --enable-gnu-indirect-function --enable-secureplt --with-long-double-128 --with-cpu-32=power8 --with-tune-32=power8 --with-cpu-64=power8 --with-tune-64=power8 --build=ppc64le-redhat-linux]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 8.3.1 20190311 (Red Hat 8.3.1-3) (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-std=c++14' '-D' '__CUDA_ARCH__=700' '-D' '__CUDA_ARCH_LIST__=700' '-c' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-v' '-I' '/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/include' '-o' 'CMakeFiles/cmTC_2c25c.dir/CMakeCUDACompilerABI.cu.o' '-mtune=power8' '-mcpu=power8']
+  ignore line: [ /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../libexec/gcc/ppc64le-redhat-linux/8/cc1plus -quiet -v -I /usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/include -iprefix /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/ -D_GNU_SOURCE -D__unix__ -D__gnu_linux__ -D__linux__ -Asystem=linux -Asystem=unix -Asystem=posix -D __CUDA_ARCH__=700 -D __CUDA_ARCH_LIST__=700 -D CUDA_DOUBLE_MATH_FUNCTIONS /var/tmp/holger/tmpxft_00013a38_00000000-6_CMakeCUDACompilerABI.cudafe1.cpp -msecure-plt -quiet -dumpbase tmpxft_00013a38_00000000-6_CMakeCUDACompilerABI.cudafe1.cpp -mtune=power8 -mcpu=power8 -auxbase-strip CMakeFiles/cmTC_2c25c.dir/CMakeCUDACompilerABI.cu.o -std=c++14 -version -o /var/tmp/holger/ccM6rkax.s]
+  ignore line: [GNU C++14 (GCC) version 8.3.1 20190311 (Red Hat 8.3.1-3) (ppc64le-redhat-linux)]
+  ignore line: [	compiled by GNU C version 8.3.1 20190311 (Red Hat 8.3.1-3)  GMP version 6.0.0  MPFR version 3.1.1  MPC version 1.0.1  isl version isl-0.16.1-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/include-fixed"]
+  ignore line: [ignoring nonexistent directory "/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../../../ppc64le-redhat-linux/include"]
+  ignore line: [ignoring duplicate directory "/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/../../lib/gcc/ppc64le-redhat-linux/8/../../../../include/c++/8"]
+  ignore line: [ignoring duplicate directory "/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/../../lib/gcc/ppc64le-redhat-linux/8/../../../../include/c++/8/ppc64le-redhat-linux"]
+  ignore line: [ignoring duplicate directory "/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/../../lib/gcc/ppc64le-redhat-linux/8/../../../../include/c++/8/backward"]
+  ignore line: [ignoring duplicate directory "/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/../../lib/gcc/ppc64le-redhat-linux/8/include"]
+  ignore line: [ignoring nonexistent directory "/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/../../lib/gcc/ppc64le-redhat-linux/8/include-fixed"]
+  ignore line: [ignoring nonexistent directory "/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/../../lib/gcc/ppc64le-redhat-linux/8/../../../../ppc64le-redhat-linux/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/include]
+  ignore line: [ /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../../../include/c++/8]
+  ignore line: [ /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../../../include/c++/8/ppc64le-redhat-linux]
+  ignore line: [ /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../../../include/c++/8/backward]
+  ignore line: [ /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/../../include]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C++14 (GCC) version 8.3.1 20190311 (Red Hat 8.3.1-3) (ppc64le-redhat-linux)]
+  ignore line: [	compiled by GNU C version 8.3.1 20190311 (Red Hat 8.3.1-3)  GMP version 6.0.0  MPFR version 3.1.1  MPC version 1.0.1  isl version isl-0.16.1-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 16e8708e3cb63ee916cff70b274d2773]
+  ignore line: [COLLECT_GCC_OPTIONS='-std=c++14' '-D' '__CUDA_ARCH__=700' '-D' '__CUDA_ARCH_LIST__=700' '-c' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-v' '-I' '/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/include' '-o' 'CMakeFiles/cmTC_2c25c.dir/CMakeCUDACompilerABI.cu.o' '-mtune=power8' '-mcpu=power8']
+  ignore line: [ /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../libexec/gcc/ppc64le-redhat-linux/8/as -v -I /usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/include -a64 -mpower8 -many -mlittle -o CMakeFiles/cmTC_2c25c.dir/CMakeCUDACompilerABI.cu.o /var/tmp/holger/ccM6rkax.s]
+  ignore line: [GNU assembler version 2.30 (ppc64le-redhat-linux) using BFD version version 2.30-54.el7]
+  ignore line: [COMPILER_PATH=/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../libexec/gcc/ppc64le-redhat-linux/8/:/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../libexec/gcc/]
+  ignore line: [LIBRARY_PATH=/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/:/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/:/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-std=c++14' '-D' '__CUDA_ARCH__=700' '-D' '__CUDA_ARCH_LIST__=700' '-c' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-v' '-I' '/usr/tce/packages/cuda/cuda-11.8.0/nvidia/bin/../targets/ppc64le-linux/include' '-o' 'CMakeFiles/cmTC_2c25c.dir/CMakeCUDACompilerABI.cu.o' '-mtune=power8' '-mcpu=power8']
+  ignore line: [Linking CUDA executable cmTC_2c25c]
+  ignore line: [/usr/tce/packages/cmake/cmake-3.23.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2c25c.dir/link.txt --verbose=1]
+  ignore line: [/usr/tce/packages/gcc/gcc-8.3.1/bin/g++  -v CMakeFiles/cmTC_2c25c.dir/CMakeCUDACompilerABI.cu.o -o cmTC_2c25c  -lcudadevrt -lcudart_static -lrt -lpthread -ldl  -L"/usr/tce/packages/cuda/cuda-11.8.0/nvidia/targets/ppc64le-linux/lib/stubs" -L"/usr/tce/packages/cuda/cuda-11.8.0/nvidia/targets/ppc64le-linux/lib"]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/tce/packages/gcc/gcc-8.3.1/rh/bin/g++]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../libexec/gcc/ppc64le-redhat-linux/8/lto-wrapper]
+  ignore line: [Target: ppc64le-redhat-linux]
+  ignore line: [Configured with: ../configure --enable-bootstrap --enable-languages=c c++ fortran lto --prefix=/opt/rh/devtoolset-8/root/usr --mandir=/opt/rh/devtoolset-8/root/usr/share/man --infodir=/opt/rh/devtoolset-8/root/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-shared --enable-threads=posix --enable-checking=release --enable-targets=powerpcle-linux --disable-multilib --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-gcc-major-version-only --with-linker-hash-style=gnu --with-default-libstdcxx-abi=gcc4-compatible --enable-plugin --enable-initfini-array --with-isl=/builddir/build/BUILD/gcc-8.3.1-20190311/obj-ppc64le-redhat-linux/isl-install --disable-libmpx --enable-gnu-indirect-function --enable-secureplt --with-long-double-128 --with-cpu-32=power8 --with-tune-32=power8 --with-cpu-64=power8 --with-tune-64=power8 --build=ppc64le-redhat-linux]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 8.3.1 20190311 (Red Hat 8.3.1-3) (GCC) ]
+  ignore line: [COMPILER_PATH=/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../libexec/gcc/ppc64le-redhat-linux/8/:/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../libexec/gcc/]
+  ignore line: [LIBRARY_PATH=/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/:/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/:/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_2c25c' '-L/usr/tce/packages/cuda/cuda-11.8.0/nvidia/targets/ppc64le-linux/lib/stubs' '-L/usr/tce/packages/cuda/cuda-11.8.0/nvidia/targets/ppc64le-linux/lib' '-shared-libgcc' '-mtune=power8' '-mcpu=power8']
+  link line: [ /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../libexec/gcc/ppc64le-redhat-linux/8/collect2 -plugin /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../libexec/gcc/ppc64le-redhat-linux/8/liblto_plugin.so -plugin-opt=/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../libexec/gcc/ppc64le-redhat-linux/8/lto-wrapper -plugin-opt=-fresolution=/var/tmp/cc5DvuNJ.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -V -m elf64lppc -dynamic-linker /lib64/ld64.so.2 -o cmTC_2c25c /lib/../lib64/crt1.o /lib/../lib64/crti.o /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/crtbegin.o -L/usr/tce/packages/cuda/cuda-11.8.0/nvidia/targets/ppc64le-linux/lib/stubs -L/usr/tce/packages/cuda/cuda-11.8.0/nvidia/targets/ppc64le-linux/lib -L/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8 -L/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc -L/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../.. CMakeFiles/cmTC_2c25c.dir/CMakeCUDACompilerABI.cu.o -lcudadevrt -lcudart_static -lrt -lpthread -ldl -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/crtend.o /lib/../lib64/crtn.o]
+    arg [/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../libexec/gcc/ppc64le-redhat-linux/8/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../libexec/gcc/ppc64le-redhat-linux/8/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../libexec/gcc/ppc64le-redhat-linux/8/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/var/tmp/cc5DvuNJ.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--no-add-needed] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [-V] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf64lppc] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_2c25c] ==> ignore
+    arg [/lib/../lib64/crt1.o] ==> obj [/lib/../lib64/crt1.o]
+    arg [/lib/../lib64/crti.o] ==> obj [/lib/../lib64/crti.o]
+    arg [/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/crtbegin.o] ==> obj [/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/crtbegin.o]
+    arg [-L/usr/tce/packages/cuda/cuda-11.8.0/nvidia/targets/ppc64le-linux/lib/stubs] ==> dir [/usr/tce/packages/cuda/cuda-11.8.0/nvidia/targets/ppc64le-linux/lib/stubs]
+    arg [-L/usr/tce/packages/cuda/cuda-11.8.0/nvidia/targets/ppc64le-linux/lib] ==> dir [/usr/tce/packages/cuda/cuda-11.8.0/nvidia/targets/ppc64le-linux/lib]
+    arg [-L/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8] ==> dir [/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8]
+    arg [-L/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc] ==> dir [/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc]
+    arg [-L/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../../../lib64] ==> dir [/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../../../lib64]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../..] ==> dir [/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../..]
+    arg [CMakeFiles/cmTC_2c25c.dir/CMakeCUDACompilerABI.cu.o] ==> ignore
+    arg [-lcudadevrt] ==> lib [cudadevrt]
+    arg [-lcudart_static] ==> lib [cudart_static]
+    arg [-lrt] ==> lib [rt]
+    arg [-lpthread] ==> lib [pthread]
+    arg [-ldl] ==> lib [dl]
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/crtend.o] ==> obj [/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/crtend.o]
+    arg [/lib/../lib64/crtn.o] ==> obj [/lib/../lib64/crtn.o]
+  collapse obj [/lib/../lib64/crt1.o] ==> [/lib64/crt1.o]
+  collapse obj [/lib/../lib64/crti.o] ==> [/lib64/crti.o]
+  collapse obj [/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/crtbegin.o] ==> [/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/lib/gcc/ppc64le-redhat-linux/8/crtbegin.o]
+  collapse obj [/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/crtend.o] ==> [/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/lib/gcc/ppc64le-redhat-linux/8/crtend.o]
+  collapse obj [/lib/../lib64/crtn.o] ==> [/lib64/crtn.o]
+  collapse library dir [/usr/tce/packages/cuda/cuda-11.8.0/nvidia/targets/ppc64le-linux/lib/stubs] ==> [/usr/tce/packages/cuda/cuda-11.8.0/nvidia/targets/ppc64le-linux/lib/stubs]
+  collapse library dir [/usr/tce/packages/cuda/cuda-11.8.0/nvidia/targets/ppc64le-linux/lib] ==> [/usr/tce/packages/cuda/cuda-11.8.0/nvidia/targets/ppc64le-linux/lib]
+  collapse library dir [/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8] ==> [/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/lib/gcc/ppc64le-redhat-linux/8]
+  collapse library dir [/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc] ==> [/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/lib/gcc]
+  collapse library dir [/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../../../lib64] ==> [/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/lib64]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/bin/../lib/gcc/ppc64le-redhat-linux/8/../../..] ==> [/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/lib]
+  implicit libs: [cudadevrt;cudart_static;rt;pthread;dl;stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+  implicit objs: [/lib64/crt1.o;/lib64/crti.o;/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/lib/gcc/ppc64le-redhat-linux/8/crtbegin.o;/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/lib/gcc/ppc64le-redhat-linux/8/crtend.o;/lib64/crtn.o]
+  implicit dirs: [/usr/tce/packages/cuda/cuda-11.8.0/nvidia/targets/ppc64le-linux/lib/stubs;/usr/tce/packages/cuda/cuda-11.8.0/nvidia/targets/ppc64le-linux/lib;/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/lib/gcc/ppc64le-redhat-linux/8;/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/lib/gcc;/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/lib64;/lib64;/usr/lib64;/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/lib]
+  implicit fwks: []
+
+
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /g/g0/holger/workspace/magma/test_export/build_cuda/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/tcetmp/bin/gmake -f Makefile cmTC_bf3af/fast && /usr/tcetmp/bin/gmake  -f CMakeFiles/cmTC_bf3af.dir/build.make CMakeFiles/cmTC_bf3af.dir/build
+gmake[1]: Entering directory '/usr/WS2/holger/magma/test_export/build_cuda/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_bf3af.dir/CheckIncludeFile.cxx.o
+/usr/tce/packages/gcc/gcc-8.3.1/bin/g++   -std=gnu++11 -o CMakeFiles/cmTC_bf3af.dir/CheckIncludeFile.cxx.o -c /g/g0/holger/workspace/magma/test_export/build_cuda/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_bf3af
+/usr/tce/packages/cmake/cmake-3.23.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bf3af.dir/link.txt --verbose=1
+/usr/tce/packages/gcc/gcc-8.3.1/bin/g++ CMakeFiles/cmTC_bf3af.dir/CheckIncludeFile.cxx.o -o cmTC_bf3af 
+gmake[1]: Leaving directory '/usr/WS2/holger/magma/test_export/build_cuda/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /g/g0/holger/workspace/magma/test_export/build_cuda/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/tcetmp/bin/gmake -f Makefile cmTC_3c7d0/fast && /usr/tcetmp/bin/gmake  -f CMakeFiles/cmTC_3c7d0.dir/build.make CMakeFiles/cmTC_3c7d0.dir/build
+gmake[1]: Entering directory '/usr/WS2/holger/magma/test_export/build_cuda/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_3c7d0.dir/CheckFunctionExists.cxx.o
+/usr/tce/packages/gcc/gcc-8.3.1/bin/g++   -DCHECK_FUNCTION_EXISTS=pthread_create -std=gnu++11 -o CMakeFiles/cmTC_3c7d0.dir/CheckFunctionExists.cxx.o -c /g/g0/holger/workspace/magma/test_export/build_cuda/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
+Linking CXX executable cmTC_3c7d0
+/usr/tce/packages/cmake/cmake-3.23.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3c7d0.dir/link.txt --verbose=1
+/usr/tce/packages/gcc/gcc-8.3.1/bin/g++  -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_3c7d0.dir/CheckFunctionExists.cxx.o -o cmTC_3c7d0  -lpthread 
+gmake[1]: Leaving directory '/usr/WS2/holger/magma/test_export/build_cuda/CMakeFiles/CMakeTmp'
+
+
+
