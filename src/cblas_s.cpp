@@ -6,7 +6,7 @@
        @date
  
        @author Mark Gates
-       @generated from src/cblas_z.cpp, normal z -> s, Tue May 21 13:14:22 2024
+       @generated from src/cblas_z.cpp, normal z -> s, Mon Jun  3 16:00:57 2024
 
     Wrappers around a few CBLAS functions.
     

@@ -5,7 +5,7 @@
        Univ. of Colorado, Denver
        @date
 
-       @generated from include/magma_zlapack.h, normal z -> d, Mon Feb 19 15:47:11 2024
+       @generated from include/magma_zlapack.h, normal z -> d, Mon Jun  3 16:01:12 2024
 */
 
 #ifndef MAGMA_DLAPACK_H
@@ -786,7 +786,7 @@ void   lapackf77_dlasyf( const char *uplo,
                          magma_int_t *info );
 
 double lapackf77_dlangb( const char *norm,
-                         const magma_int_t *n, const magma_int_t *kl, magma_int_t *ku,
+                         const magma_int_t *n, const magma_int_t *kl, const magma_int_t *ku,
                          const double *AB, const magma_int_t *ldab,
                          double *work );
 

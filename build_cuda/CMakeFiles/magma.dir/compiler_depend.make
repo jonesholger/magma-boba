@@ -22913,247 +22913,6 @@ CMakeFiles/magma.dir/magmablas/cgetrf_batched_smallsq_noshfl.cu.o: ../magmablas/
   ../magmablas/shuffle.cuh \
   ../control/batched_kernel_param.h
 
-CMakeFiles/magma.dir/magmablas/cgetrf_batched_smallsq_shfl.cu.o: ../magmablas/cgetrf_batched_smallsq_shfl.cu \
-  /usr/include/stdc-predef.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/cuda_runtime.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/crt/host_config.h \
-  /usr/include/features.h \
-  /usr/include/sys/cdefs.h \
-  /usr/include/bits/wordsize.h \
-  /usr/include/gnu/stubs.h \
-  /usr/include/gnu/stubs-64-v2.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/builtin_types.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/device_types.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/crt/host_defines.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/driver_types.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/vector_types.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/lib/gcc/ppc64le-redhat-linux/8/include/limits.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/lib/gcc/ppc64le-redhat-linux/8/include/syslimits.h \
-  /usr/include/limits.h \
-  /usr/include/bits/posix1_lim.h \
-  /usr/include/bits/local_lim.h \
-  /usr/include/linux/limits.h \
-  /usr/include/bits/posix2_lim.h \
-  /usr/include/bits/xopen_lim.h \
-  /usr/include/bits/stdio_lim.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/lib/gcc/ppc64le-redhat-linux/8/include/stddef.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/surface_types.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/texture_types.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/library_types.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/channel_descriptor.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/cuda_runtime_api.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/cuda_device_runtime_api.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/driver_functions.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/vector_functions.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/vector_functions.hpp \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/crt/common_functions.h \
-  /usr/include/string.h \
-  /usr/include/xlocale.h \
-  /usr/include/time.h \
-  /usr/include/bits/time.h \
-  /usr/include/bits/types.h \
-  /usr/include/bits/typesizes.h \
-  /usr/include/bits/timex.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/new \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/ppc64le-redhat-linux/bits/c++config.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/ppc64le-redhat-linux/bits/os_defines.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/ppc64le-redhat-linux/bits/cpu_defines.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/exception \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/exception.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/exception_ptr.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/exception_defines.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/cxxabi_init_exception.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/typeinfo \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/hash_bytes.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/nested_exception.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/move.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/concept_check.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/type_traits \
-  /usr/include/stdio.h \
-  /usr/include/libio.h \
-  /usr/include/_G_config.h \
-  /usr/include/wchar.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/lib/gcc/ppc64le-redhat-linux/8/include/stdarg.h \
-  /usr/include/bits/sys_errlist.h \
-  /usr/include/bits/stdio.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/stdlib.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/cstdlib \
-  /usr/include/stdlib.h \
-  /usr/include/bits/waitflags.h \
-  /usr/include/bits/waitstatus.h \
-  /usr/include/endian.h \
-  /usr/include/bits/endian.h \
-  /usr/include/bits/byteswap.h \
-  /usr/include/bits/byteswap-16.h \
-  /usr/include/sys/types.h \
-  /usr/include/sys/select.h \
-  /usr/include/bits/select.h \
-  /usr/include/bits/sigset.h \
-  /usr/include/sys/sysmacros.h \
-  /usr/include/bits/pthreadtypes.h \
-  /usr/include/alloca.h \
-  /usr/include/bits/stdlib-float.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/std_abs.h \
-  /usr/include/assert.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/crt/math_functions.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/math.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/cmath \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/cpp_type_traits.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/ext/type_traits.h \
-  /usr/include/math.h \
-  /usr/include/bits/huge_val.h \
-  /usr/include/bits/huge_valf.h \
-  /usr/include/bits/huge_vall.h \
-  /usr/include/bits/inf.h \
-  /usr/include/bits/nan.h \
-  /usr/include/bits/mathdef.h \
-  /usr/include/bits/mathcalls.h \
-  /usr/include/bits/mathinline.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/specfun.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/stl_algobase.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/functexcept.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/ext/numeric_traits.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/stl_pair.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/stl_iterator_base_types.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/stl_iterator_base_funcs.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/debug/assertions.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/stl_iterator.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/ptr_traits.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/debug/debug.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/predefined_ops.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/limits \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/tr1/gamma.tcc \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/tr1/special_function_util.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/tr1/bessel_function.tcc \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/tr1/beta_function.tcc \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/tr1/ell_integral.tcc \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/tr1/exp_integral.tcc \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/tr1/hypergeometric.tcc \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/tr1/legendre_function.tcc \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/tr1/modified_bessel_func.tcc \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/tr1/poly_hermite.tcc \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/tr1/poly_laguerre.tcc \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/tr1/riemann_zeta.tcc \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/crt/math_functions.hpp \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/cuda_surface_types.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/cuda_texture_types.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/crt/device_functions.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/crt/device_functions.hpp \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/device_atomic_functions.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/device_atomic_functions.hpp \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/crt/device_double_functions.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/crt/device_double_functions.hpp \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/sm_20_atomic_functions.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/sm_20_atomic_functions.hpp \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/sm_32_atomic_functions.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/sm_32_atomic_functions.hpp \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/sm_35_atomic_functions.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/sm_60_atomic_functions.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/sm_60_atomic_functions.hpp \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/sm_20_intrinsics.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/sm_20_intrinsics.hpp \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/sm_30_intrinsics.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/sm_30_intrinsics.hpp \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/sm_32_intrinsics.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/sm_32_intrinsics.hpp \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/sm_35_intrinsics.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/sm_61_intrinsics.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/sm_61_intrinsics.hpp \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/crt/sm_70_rt.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/crt/sm_70_rt.hpp \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/crt/sm_80_rt.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/crt/sm_80_rt.hpp \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/crt/sm_90_rt.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/crt/sm_90_rt.hpp \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/surface_functions.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/texture_fetch_functions.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/texture_indirect_functions.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/surface_indirect_functions.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/crt/cudacc_ext.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/device_launch_parameters.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/utility \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/stl_relops.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/initializer_list \
-  ../control/magma_internal.h \
-  /usr/include/ctype.h \
-  /usr/include/pthread.h \
-  /usr/include/sched.h \
-  /usr/include/bits/sched.h \
-  /usr/include/bits/setjmp.h \
-  /usr/include/unistd.h \
-  /usr/include/bits/posix_opt.h \
-  /usr/include/bits/environments.h \
-  /usr/include/bits/confname.h \
-  /usr/include/getopt.h \
-  /usr/include/inttypes.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/lib/gcc/ppc64le-redhat-linux/8/include/stdint.h \
-  /usr/include/stdint.h \
-  /usr/include/bits/wchar.h \
-  ../control/pthread_barrier.h \
-  ../include/magma_v2.h \
-  include/magma_config.h \
-  ../include/magmablas.h \
-  ../include/magma_copy.h \
-  ../include/magma_types.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/cuda.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/cublas_v2.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/cublas_api.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/cuComplex.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/cuda_fp16.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/cuda_fp16.hpp \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/cuda_bf16.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/cuda_bf16.hpp \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/cusparse_v2.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/cusparse.h \
-  ../include/magmablas_z.h \
-  ../include/magmablas_c.h \
-  ../include/magmablas_d.h \
-  ../include/magmablas_s.h \
-  ../include/magmablas_zc.h \
-  ../include/magmablas_ds.h \
-  ../include/magmablas_h.h \
-  ../include/magma_batched.h \
-  ../include/magma_zbatched.h \
-  ../include/magma_cbatched.h \
-  ../include/magma_dbatched.h \
-  ../include/magma_sbatched.h \
-  ../include/magma_hbatched.h \
-  ../include/magma_vbatched.h \
-  ../include/magma_zvbatched.h \
-  ../include/magma_cvbatched.h \
-  ../include/magma_dvbatched.h \
-  ../include/magma_svbatched.h \
-  ../include/magma_bulge.h \
-  ../include/magma_zbulge.h \
-  ../include/magma_cbulge.h \
-  ../include/magma_dbulge.h \
-  ../include/magma_sbulge.h \
-  ../include/magma_z.h \
-  ../include/magma_zgehrd_m.h \
-  ../include/magma_c.h \
-  ../include/magma_cgehrd_m.h \
-  ../include/magma_d.h \
-  ../include/magma_dgehrd_m.h \
-  ../include/magma_s.h \
-  ../include/magma_sgehrd_m.h \
-  ../include/magma_zc.h \
-  ../include/magma_ds.h \
-  ../include/magma_auxiliary.h \
-  ../include/magma_htc.h \
-  ../include/magma_lapack.h \
-  ../include/magma_mangling.h \
-  ../include/magma_mangling_cmake.h \
-  ../include/magma_zlapack.h \
-  ../include/magma_clapack.h \
-  ../include/magma_dlapack.h \
-  ../include/magma_slapack.h \
-  ../include/magma_operators.h \
-  ../control/magma_threadsetting.h \
-  ../magmablas/magma_templates.h \
-  ../magmablas/sync.cuh \
-  ../magmablas/shuffle.cuh \
-  ../control/batched_kernel_param.h
-
 CMakeFiles/magma.dir/magmablas/cheinertia.cu.o: ../magmablas/cheinertia.cu \
   /usr/include/stdc-predef.h \
   /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/cuda_runtime.h \
@@ -56137,247 +55896,6 @@ CMakeFiles/magma.dir/magmablas/dgetmatrix_transpose_mgpu.cpp.o: ../magmablas/dge
   ../control/magma_threadsetting.h
 
 CMakeFiles/magma.dir/magmablas/dgetrf_batched_smallsq_noshfl.cu.o: ../magmablas/dgetrf_batched_smallsq_noshfl.cu \
-  /usr/include/stdc-predef.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/cuda_runtime.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/crt/host_config.h \
-  /usr/include/features.h \
-  /usr/include/sys/cdefs.h \
-  /usr/include/bits/wordsize.h \
-  /usr/include/gnu/stubs.h \
-  /usr/include/gnu/stubs-64-v2.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/builtin_types.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/device_types.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/crt/host_defines.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/driver_types.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/vector_types.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/lib/gcc/ppc64le-redhat-linux/8/include/limits.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/lib/gcc/ppc64le-redhat-linux/8/include/syslimits.h \
-  /usr/include/limits.h \
-  /usr/include/bits/posix1_lim.h \
-  /usr/include/bits/local_lim.h \
-  /usr/include/linux/limits.h \
-  /usr/include/bits/posix2_lim.h \
-  /usr/include/bits/xopen_lim.h \
-  /usr/include/bits/stdio_lim.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/lib/gcc/ppc64le-redhat-linux/8/include/stddef.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/surface_types.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/texture_types.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/library_types.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/channel_descriptor.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/cuda_runtime_api.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/cuda_device_runtime_api.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/driver_functions.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/vector_functions.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/vector_functions.hpp \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/crt/common_functions.h \
-  /usr/include/string.h \
-  /usr/include/xlocale.h \
-  /usr/include/time.h \
-  /usr/include/bits/time.h \
-  /usr/include/bits/types.h \
-  /usr/include/bits/typesizes.h \
-  /usr/include/bits/timex.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/new \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/ppc64le-redhat-linux/bits/c++config.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/ppc64le-redhat-linux/bits/os_defines.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/ppc64le-redhat-linux/bits/cpu_defines.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/exception \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/exception.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/exception_ptr.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/exception_defines.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/cxxabi_init_exception.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/typeinfo \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/hash_bytes.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/nested_exception.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/move.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/concept_check.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/type_traits \
-  /usr/include/stdio.h \
-  /usr/include/libio.h \
-  /usr/include/_G_config.h \
-  /usr/include/wchar.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/lib/gcc/ppc64le-redhat-linux/8/include/stdarg.h \
-  /usr/include/bits/sys_errlist.h \
-  /usr/include/bits/stdio.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/stdlib.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/cstdlib \
-  /usr/include/stdlib.h \
-  /usr/include/bits/waitflags.h \
-  /usr/include/bits/waitstatus.h \
-  /usr/include/endian.h \
-  /usr/include/bits/endian.h \
-  /usr/include/bits/byteswap.h \
-  /usr/include/bits/byteswap-16.h \
-  /usr/include/sys/types.h \
-  /usr/include/sys/select.h \
-  /usr/include/bits/select.h \
-  /usr/include/bits/sigset.h \
-  /usr/include/sys/sysmacros.h \
-  /usr/include/bits/pthreadtypes.h \
-  /usr/include/alloca.h \
-  /usr/include/bits/stdlib-float.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/std_abs.h \
-  /usr/include/assert.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/crt/math_functions.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/math.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/cmath \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/cpp_type_traits.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/ext/type_traits.h \
-  /usr/include/math.h \
-  /usr/include/bits/huge_val.h \
-  /usr/include/bits/huge_valf.h \
-  /usr/include/bits/huge_vall.h \
-  /usr/include/bits/inf.h \
-  /usr/include/bits/nan.h \
-  /usr/include/bits/mathdef.h \
-  /usr/include/bits/mathcalls.h \
-  /usr/include/bits/mathinline.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/specfun.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/stl_algobase.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/functexcept.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/ext/numeric_traits.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/stl_pair.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/stl_iterator_base_types.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/stl_iterator_base_funcs.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/debug/assertions.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/stl_iterator.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/ptr_traits.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/debug/debug.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/predefined_ops.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/limits \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/tr1/gamma.tcc \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/tr1/special_function_util.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/tr1/bessel_function.tcc \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/tr1/beta_function.tcc \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/tr1/ell_integral.tcc \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/tr1/exp_integral.tcc \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/tr1/hypergeometric.tcc \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/tr1/legendre_function.tcc \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/tr1/modified_bessel_func.tcc \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/tr1/poly_hermite.tcc \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/tr1/poly_laguerre.tcc \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/tr1/riemann_zeta.tcc \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/crt/math_functions.hpp \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/cuda_surface_types.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/cuda_texture_types.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/crt/device_functions.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/crt/device_functions.hpp \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/device_atomic_functions.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/device_atomic_functions.hpp \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/crt/device_double_functions.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/crt/device_double_functions.hpp \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/sm_20_atomic_functions.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/sm_20_atomic_functions.hpp \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/sm_32_atomic_functions.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/sm_32_atomic_functions.hpp \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/sm_35_atomic_functions.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/sm_60_atomic_functions.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/sm_60_atomic_functions.hpp \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/sm_20_intrinsics.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/sm_20_intrinsics.hpp \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/sm_30_intrinsics.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/sm_30_intrinsics.hpp \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/sm_32_intrinsics.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/sm_32_intrinsics.hpp \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/sm_35_intrinsics.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/sm_61_intrinsics.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/sm_61_intrinsics.hpp \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/crt/sm_70_rt.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/crt/sm_70_rt.hpp \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/crt/sm_80_rt.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/crt/sm_80_rt.hpp \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/crt/sm_90_rt.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/crt/sm_90_rt.hpp \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/surface_functions.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/texture_fetch_functions.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/texture_indirect_functions.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/surface_indirect_functions.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/crt/cudacc_ext.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/device_launch_parameters.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/utility \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/stl_relops.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/initializer_list \
-  ../control/magma_internal.h \
-  /usr/include/ctype.h \
-  /usr/include/pthread.h \
-  /usr/include/sched.h \
-  /usr/include/bits/sched.h \
-  /usr/include/bits/setjmp.h \
-  /usr/include/unistd.h \
-  /usr/include/bits/posix_opt.h \
-  /usr/include/bits/environments.h \
-  /usr/include/bits/confname.h \
-  /usr/include/getopt.h \
-  /usr/include/inttypes.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/lib/gcc/ppc64le-redhat-linux/8/include/stdint.h \
-  /usr/include/stdint.h \
-  /usr/include/bits/wchar.h \
-  ../control/pthread_barrier.h \
-  ../include/magma_v2.h \
-  include/magma_config.h \
-  ../include/magmablas.h \
-  ../include/magma_copy.h \
-  ../include/magma_types.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/cuda.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/cublas_v2.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/cublas_api.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/cuComplex.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/cuda_fp16.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/cuda_fp16.hpp \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/cuda_bf16.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/cuda_bf16.hpp \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/cusparse_v2.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/cusparse.h \
-  ../include/magmablas_z.h \
-  ../include/magmablas_c.h \
-  ../include/magmablas_d.h \
-  ../include/magmablas_s.h \
-  ../include/magmablas_zc.h \
-  ../include/magmablas_ds.h \
-  ../include/magmablas_h.h \
-  ../include/magma_batched.h \
-  ../include/magma_zbatched.h \
-  ../include/magma_cbatched.h \
-  ../include/magma_dbatched.h \
-  ../include/magma_sbatched.h \
-  ../include/magma_hbatched.h \
-  ../include/magma_vbatched.h \
-  ../include/magma_zvbatched.h \
-  ../include/magma_cvbatched.h \
-  ../include/magma_dvbatched.h \
-  ../include/magma_svbatched.h \
-  ../include/magma_bulge.h \
-  ../include/magma_zbulge.h \
-  ../include/magma_cbulge.h \
-  ../include/magma_dbulge.h \
-  ../include/magma_sbulge.h \
-  ../include/magma_z.h \
-  ../include/magma_zgehrd_m.h \
-  ../include/magma_c.h \
-  ../include/magma_cgehrd_m.h \
-  ../include/magma_d.h \
-  ../include/magma_dgehrd_m.h \
-  ../include/magma_s.h \
-  ../include/magma_sgehrd_m.h \
-  ../include/magma_zc.h \
-  ../include/magma_ds.h \
-  ../include/magma_auxiliary.h \
-  ../include/magma_htc.h \
-  ../include/magma_lapack.h \
-  ../include/magma_mangling.h \
-  ../include/magma_mangling_cmake.h \
-  ../include/magma_zlapack.h \
-  ../include/magma_clapack.h \
-  ../include/magma_dlapack.h \
-  ../include/magma_slapack.h \
-  ../include/magma_operators.h \
-  ../control/magma_threadsetting.h \
-  ../magmablas/magma_templates.h \
-  ../magmablas/sync.cuh \
-  ../magmablas/shuffle.cuh \
-  ../control/batched_kernel_param.h
-
-CMakeFiles/magma.dir/magmablas/dgetrf_batched_smallsq_shfl.cu.o: ../magmablas/dgetrf_batched_smallsq_shfl.cu \
   /usr/include/stdc-predef.h \
   /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/cuda_runtime.h \
   /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/crt/host_config.h \
@@ -92337,247 +91855,6 @@ CMakeFiles/magma.dir/magmablas/sgetrf_batched_smallsq_noshfl.cu.o: ../magmablas/
   ../magmablas/shuffle.cuh \
   ../control/batched_kernel_param.h
 
-CMakeFiles/magma.dir/magmablas/sgetrf_batched_smallsq_shfl.cu.o: ../magmablas/sgetrf_batched_smallsq_shfl.cu \
-  /usr/include/stdc-predef.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/cuda_runtime.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/crt/host_config.h \
-  /usr/include/features.h \
-  /usr/include/sys/cdefs.h \
-  /usr/include/bits/wordsize.h \
-  /usr/include/gnu/stubs.h \
-  /usr/include/gnu/stubs-64-v2.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/builtin_types.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/device_types.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/crt/host_defines.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/driver_types.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/vector_types.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/lib/gcc/ppc64le-redhat-linux/8/include/limits.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/lib/gcc/ppc64le-redhat-linux/8/include/syslimits.h \
-  /usr/include/limits.h \
-  /usr/include/bits/posix1_lim.h \
-  /usr/include/bits/local_lim.h \
-  /usr/include/linux/limits.h \
-  /usr/include/bits/posix2_lim.h \
-  /usr/include/bits/xopen_lim.h \
-  /usr/include/bits/stdio_lim.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/lib/gcc/ppc64le-redhat-linux/8/include/stddef.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/surface_types.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/texture_types.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/library_types.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/channel_descriptor.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/cuda_runtime_api.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/cuda_device_runtime_api.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/driver_functions.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/vector_functions.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/vector_functions.hpp \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/crt/common_functions.h \
-  /usr/include/string.h \
-  /usr/include/xlocale.h \
-  /usr/include/time.h \
-  /usr/include/bits/time.h \
-  /usr/include/bits/types.h \
-  /usr/include/bits/typesizes.h \
-  /usr/include/bits/timex.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/new \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/ppc64le-redhat-linux/bits/c++config.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/ppc64le-redhat-linux/bits/os_defines.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/ppc64le-redhat-linux/bits/cpu_defines.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/exception \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/exception.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/exception_ptr.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/exception_defines.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/cxxabi_init_exception.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/typeinfo \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/hash_bytes.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/nested_exception.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/move.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/concept_check.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/type_traits \
-  /usr/include/stdio.h \
-  /usr/include/libio.h \
-  /usr/include/_G_config.h \
-  /usr/include/wchar.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/lib/gcc/ppc64le-redhat-linux/8/include/stdarg.h \
-  /usr/include/bits/sys_errlist.h \
-  /usr/include/bits/stdio.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/stdlib.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/cstdlib \
-  /usr/include/stdlib.h \
-  /usr/include/bits/waitflags.h \
-  /usr/include/bits/waitstatus.h \
-  /usr/include/endian.h \
-  /usr/include/bits/endian.h \
-  /usr/include/bits/byteswap.h \
-  /usr/include/bits/byteswap-16.h \
-  /usr/include/sys/types.h \
-  /usr/include/sys/select.h \
-  /usr/include/bits/select.h \
-  /usr/include/bits/sigset.h \
-  /usr/include/sys/sysmacros.h \
-  /usr/include/bits/pthreadtypes.h \
-  /usr/include/alloca.h \
-  /usr/include/bits/stdlib-float.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/std_abs.h \
-  /usr/include/assert.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/crt/math_functions.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/math.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/cmath \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/cpp_type_traits.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/ext/type_traits.h \
-  /usr/include/math.h \
-  /usr/include/bits/huge_val.h \
-  /usr/include/bits/huge_valf.h \
-  /usr/include/bits/huge_vall.h \
-  /usr/include/bits/inf.h \
-  /usr/include/bits/nan.h \
-  /usr/include/bits/mathdef.h \
-  /usr/include/bits/mathcalls.h \
-  /usr/include/bits/mathinline.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/specfun.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/stl_algobase.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/functexcept.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/ext/numeric_traits.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/stl_pair.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/stl_iterator_base_types.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/stl_iterator_base_funcs.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/debug/assertions.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/stl_iterator.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/ptr_traits.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/debug/debug.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/predefined_ops.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/limits \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/tr1/gamma.tcc \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/tr1/special_function_util.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/tr1/bessel_function.tcc \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/tr1/beta_function.tcc \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/tr1/ell_integral.tcc \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/tr1/exp_integral.tcc \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/tr1/hypergeometric.tcc \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/tr1/legendre_function.tcc \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/tr1/modified_bessel_func.tcc \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/tr1/poly_hermite.tcc \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/tr1/poly_laguerre.tcc \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/tr1/riemann_zeta.tcc \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/crt/math_functions.hpp \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/cuda_surface_types.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/cuda_texture_types.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/crt/device_functions.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/crt/device_functions.hpp \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/device_atomic_functions.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/device_atomic_functions.hpp \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/crt/device_double_functions.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/crt/device_double_functions.hpp \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/sm_20_atomic_functions.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/sm_20_atomic_functions.hpp \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/sm_32_atomic_functions.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/sm_32_atomic_functions.hpp \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/sm_35_atomic_functions.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/sm_60_atomic_functions.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/sm_60_atomic_functions.hpp \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/sm_20_intrinsics.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/sm_20_intrinsics.hpp \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/sm_30_intrinsics.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/sm_30_intrinsics.hpp \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/sm_32_intrinsics.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/sm_32_intrinsics.hpp \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/sm_35_intrinsics.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/sm_61_intrinsics.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/sm_61_intrinsics.hpp \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/crt/sm_70_rt.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/crt/sm_70_rt.hpp \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/crt/sm_80_rt.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/crt/sm_80_rt.hpp \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/crt/sm_90_rt.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/crt/sm_90_rt.hpp \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/surface_functions.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/texture_fetch_functions.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/texture_indirect_functions.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/surface_indirect_functions.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/crt/cudacc_ext.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/device_launch_parameters.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/utility \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/stl_relops.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/initializer_list \
-  ../control/magma_internal.h \
-  /usr/include/ctype.h \
-  /usr/include/pthread.h \
-  /usr/include/sched.h \
-  /usr/include/bits/sched.h \
-  /usr/include/bits/setjmp.h \
-  /usr/include/unistd.h \
-  /usr/include/bits/posix_opt.h \
-  /usr/include/bits/environments.h \
-  /usr/include/bits/confname.h \
-  /usr/include/getopt.h \
-  /usr/include/inttypes.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/lib/gcc/ppc64le-redhat-linux/8/include/stdint.h \
-  /usr/include/stdint.h \
-  /usr/include/bits/wchar.h \
-  ../control/pthread_barrier.h \
-  ../include/magma_v2.h \
-  include/magma_config.h \
-  ../include/magmablas.h \
-  ../include/magma_copy.h \
-  ../include/magma_types.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/cuda.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/cublas_v2.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/cublas_api.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/cuComplex.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/cuda_fp16.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/cuda_fp16.hpp \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/cuda_bf16.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/cuda_bf16.hpp \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/cusparse_v2.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/cusparse.h \
-  ../include/magmablas_z.h \
-  ../include/magmablas_c.h \
-  ../include/magmablas_d.h \
-  ../include/magmablas_s.h \
-  ../include/magmablas_zc.h \
-  ../include/magmablas_ds.h \
-  ../include/magmablas_h.h \
-  ../include/magma_batched.h \
-  ../include/magma_zbatched.h \
-  ../include/magma_cbatched.h \
-  ../include/magma_dbatched.h \
-  ../include/magma_sbatched.h \
-  ../include/magma_hbatched.h \
-  ../include/magma_vbatched.h \
-  ../include/magma_zvbatched.h \
-  ../include/magma_cvbatched.h \
-  ../include/magma_dvbatched.h \
-  ../include/magma_svbatched.h \
-  ../include/magma_bulge.h \
-  ../include/magma_zbulge.h \
-  ../include/magma_cbulge.h \
-  ../include/magma_dbulge.h \
-  ../include/magma_sbulge.h \
-  ../include/magma_z.h \
-  ../include/magma_zgehrd_m.h \
-  ../include/magma_c.h \
-  ../include/magma_cgehrd_m.h \
-  ../include/magma_d.h \
-  ../include/magma_dgehrd_m.h \
-  ../include/magma_s.h \
-  ../include/magma_sgehrd_m.h \
-  ../include/magma_zc.h \
-  ../include/magma_ds.h \
-  ../include/magma_auxiliary.h \
-  ../include/magma_htc.h \
-  ../include/magma_lapack.h \
-  ../include/magma_mangling.h \
-  ../include/magma_mangling_cmake.h \
-  ../include/magma_zlapack.h \
-  ../include/magma_clapack.h \
-  ../include/magma_dlapack.h \
-  ../include/magma_slapack.h \
-  ../include/magma_operators.h \
-  ../control/magma_threadsetting.h \
-  ../magmablas/magma_templates.h \
-  ../magmablas/sync.cuh \
-  ../magmablas/shuffle.cuh \
-  ../control/batched_kernel_param.h
-
 CMakeFiles/magma.dir/magmablas/slacpy.cu.o: ../magmablas/slacpy.cu \
   /usr/include/stdc-predef.h \
   /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/cuda_runtime.h \
@@ -125245,247 +124522,6 @@ CMakeFiles/magma.dir/magmablas/zgetmatrix_transpose_mgpu.cpp.o: ../magmablas/zge
   ../control/magma_threadsetting.h
 
 CMakeFiles/magma.dir/magmablas/zgetrf_batched_smallsq_noshfl.cu.o: ../magmablas/zgetrf_batched_smallsq_noshfl.cu \
-  /usr/include/stdc-predef.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/cuda_runtime.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/crt/host_config.h \
-  /usr/include/features.h \
-  /usr/include/sys/cdefs.h \
-  /usr/include/bits/wordsize.h \
-  /usr/include/gnu/stubs.h \
-  /usr/include/gnu/stubs-64-v2.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/builtin_types.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/device_types.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/crt/host_defines.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/driver_types.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/vector_types.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/lib/gcc/ppc64le-redhat-linux/8/include/limits.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/lib/gcc/ppc64le-redhat-linux/8/include/syslimits.h \
-  /usr/include/limits.h \
-  /usr/include/bits/posix1_lim.h \
-  /usr/include/bits/local_lim.h \
-  /usr/include/linux/limits.h \
-  /usr/include/bits/posix2_lim.h \
-  /usr/include/bits/xopen_lim.h \
-  /usr/include/bits/stdio_lim.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/lib/gcc/ppc64le-redhat-linux/8/include/stddef.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/surface_types.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/texture_types.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/library_types.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/channel_descriptor.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/cuda_runtime_api.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/cuda_device_runtime_api.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/driver_functions.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/vector_functions.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/vector_functions.hpp \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/crt/common_functions.h \
-  /usr/include/string.h \
-  /usr/include/xlocale.h \
-  /usr/include/time.h \
-  /usr/include/bits/time.h \
-  /usr/include/bits/types.h \
-  /usr/include/bits/typesizes.h \
-  /usr/include/bits/timex.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/new \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/ppc64le-redhat-linux/bits/c++config.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/ppc64le-redhat-linux/bits/os_defines.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/ppc64le-redhat-linux/bits/cpu_defines.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/exception \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/exception.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/exception_ptr.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/exception_defines.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/cxxabi_init_exception.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/typeinfo \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/hash_bytes.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/nested_exception.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/move.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/concept_check.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/type_traits \
-  /usr/include/stdio.h \
-  /usr/include/libio.h \
-  /usr/include/_G_config.h \
-  /usr/include/wchar.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/lib/gcc/ppc64le-redhat-linux/8/include/stdarg.h \
-  /usr/include/bits/sys_errlist.h \
-  /usr/include/bits/stdio.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/stdlib.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/cstdlib \
-  /usr/include/stdlib.h \
-  /usr/include/bits/waitflags.h \
-  /usr/include/bits/waitstatus.h \
-  /usr/include/endian.h \
-  /usr/include/bits/endian.h \
-  /usr/include/bits/byteswap.h \
-  /usr/include/bits/byteswap-16.h \
-  /usr/include/sys/types.h \
-  /usr/include/sys/select.h \
-  /usr/include/bits/select.h \
-  /usr/include/bits/sigset.h \
-  /usr/include/sys/sysmacros.h \
-  /usr/include/bits/pthreadtypes.h \
-  /usr/include/alloca.h \
-  /usr/include/bits/stdlib-float.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/std_abs.h \
-  /usr/include/assert.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/crt/math_functions.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/math.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/cmath \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/cpp_type_traits.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/ext/type_traits.h \
-  /usr/include/math.h \
-  /usr/include/bits/huge_val.h \
-  /usr/include/bits/huge_valf.h \
-  /usr/include/bits/huge_vall.h \
-  /usr/include/bits/inf.h \
-  /usr/include/bits/nan.h \
-  /usr/include/bits/mathdef.h \
-  /usr/include/bits/mathcalls.h \
-  /usr/include/bits/mathinline.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/specfun.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/stl_algobase.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/functexcept.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/ext/numeric_traits.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/stl_pair.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/stl_iterator_base_types.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/stl_iterator_base_funcs.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/debug/assertions.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/stl_iterator.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/ptr_traits.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/debug/debug.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/predefined_ops.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/limits \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/tr1/gamma.tcc \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/tr1/special_function_util.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/tr1/bessel_function.tcc \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/tr1/beta_function.tcc \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/tr1/ell_integral.tcc \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/tr1/exp_integral.tcc \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/tr1/hypergeometric.tcc \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/tr1/legendre_function.tcc \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/tr1/modified_bessel_func.tcc \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/tr1/poly_hermite.tcc \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/tr1/poly_laguerre.tcc \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/tr1/riemann_zeta.tcc \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/crt/math_functions.hpp \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/cuda_surface_types.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/cuda_texture_types.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/crt/device_functions.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/crt/device_functions.hpp \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/device_atomic_functions.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/device_atomic_functions.hpp \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/crt/device_double_functions.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/crt/device_double_functions.hpp \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/sm_20_atomic_functions.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/sm_20_atomic_functions.hpp \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/sm_32_atomic_functions.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/sm_32_atomic_functions.hpp \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/sm_35_atomic_functions.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/sm_60_atomic_functions.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/sm_60_atomic_functions.hpp \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/sm_20_intrinsics.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/sm_20_intrinsics.hpp \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/sm_30_intrinsics.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/sm_30_intrinsics.hpp \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/sm_32_intrinsics.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/sm_32_intrinsics.hpp \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/sm_35_intrinsics.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/sm_61_intrinsics.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/sm_61_intrinsics.hpp \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/crt/sm_70_rt.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/crt/sm_70_rt.hpp \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/crt/sm_80_rt.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/crt/sm_80_rt.hpp \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/crt/sm_90_rt.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/crt/sm_90_rt.hpp \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/surface_functions.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/texture_fetch_functions.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/texture_indirect_functions.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/surface_indirect_functions.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/crt/cudacc_ext.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/device_launch_parameters.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/utility \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/stl_relops.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/initializer_list \
-  ../control/magma_internal.h \
-  /usr/include/ctype.h \
-  /usr/include/pthread.h \
-  /usr/include/sched.h \
-  /usr/include/bits/sched.h \
-  /usr/include/bits/setjmp.h \
-  /usr/include/unistd.h \
-  /usr/include/bits/posix_opt.h \
-  /usr/include/bits/environments.h \
-  /usr/include/bits/confname.h \
-  /usr/include/getopt.h \
-  /usr/include/inttypes.h \
-  /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/lib/gcc/ppc64le-redhat-linux/8/include/stdint.h \
-  /usr/include/stdint.h \
-  /usr/include/bits/wchar.h \
-  ../control/pthread_barrier.h \
-  ../include/magma_v2.h \
-  include/magma_config.h \
-  ../include/magmablas.h \
-  ../include/magma_copy.h \
-  ../include/magma_types.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/cuda.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/cublas_v2.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/cublas_api.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/cuComplex.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/cuda_fp16.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/cuda_fp16.hpp \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/cuda_bf16.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/cuda_bf16.hpp \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/cusparse_v2.h \
-  /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/cusparse.h \
-  ../include/magmablas_z.h \
-  ../include/magmablas_c.h \
-  ../include/magmablas_d.h \
-  ../include/magmablas_s.h \
-  ../include/magmablas_zc.h \
-  ../include/magmablas_ds.h \
-  ../include/magmablas_h.h \
-  ../include/magma_batched.h \
-  ../include/magma_zbatched.h \
-  ../include/magma_cbatched.h \
-  ../include/magma_dbatched.h \
-  ../include/magma_sbatched.h \
-  ../include/magma_hbatched.h \
-  ../include/magma_vbatched.h \
-  ../include/magma_zvbatched.h \
-  ../include/magma_cvbatched.h \
-  ../include/magma_dvbatched.h \
-  ../include/magma_svbatched.h \
-  ../include/magma_bulge.h \
-  ../include/magma_zbulge.h \
-  ../include/magma_cbulge.h \
-  ../include/magma_dbulge.h \
-  ../include/magma_sbulge.h \
-  ../include/magma_z.h \
-  ../include/magma_zgehrd_m.h \
-  ../include/magma_c.h \
-  ../include/magma_cgehrd_m.h \
-  ../include/magma_d.h \
-  ../include/magma_dgehrd_m.h \
-  ../include/magma_s.h \
-  ../include/magma_sgehrd_m.h \
-  ../include/magma_zc.h \
-  ../include/magma_ds.h \
-  ../include/magma_auxiliary.h \
-  ../include/magma_htc.h \
-  ../include/magma_lapack.h \
-  ../include/magma_mangling.h \
-  ../include/magma_mangling_cmake.h \
-  ../include/magma_zlapack.h \
-  ../include/magma_clapack.h \
-  ../include/magma_dlapack.h \
-  ../include/magma_slapack.h \
-  ../include/magma_operators.h \
-  ../control/magma_threadsetting.h \
-  ../magmablas/magma_templates.h \
-  ../magmablas/sync.cuh \
-  ../magmablas/shuffle.cuh \
-  ../control/batched_kernel_param.h
-
-CMakeFiles/magma.dir/magmablas/zgetrf_batched_smallsq_shfl.cu.o: ../magmablas/zgetrf_batched_smallsq_shfl.cu \
   /usr/include/stdc-predef.h \
   /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/cuda_runtime.h \
   /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/crt/host_config.h \
@@ -293065,11 +292101,7 @@ CMakeFiles/magma.dir/src/zunmtr_m.cpp.o: ../src/zunmtr_m.cpp \
 
 ../src/zcgeqrsv_gpu.cpp:
 
-../src/zbulge_back_m.cpp:
-
-../src/zbulge_back.cpp:
-
-../include/magma_zbulgeinc.h:
+../magmablas/dgeam.cu:
 
 ../magmablas/sgbtrs_kernels.cu:
 
@@ -293114,6 +292146,10 @@ CMakeFiles/magma.dir/src/zunmtr_m.cpp.o: ../src/zunmtr_m.cpp \
 ../magmablas/dtrtri_diag_vbatched.cu:
 
 ../src/slaex1_m.cpp:
+
+../magmablas/dtrsv.cu:
+
+/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/stl_map.h:
 
 ../magmablas/dtrsm.cu:
 
@@ -293501,12 +292537,6 @@ CMakeFiles/magma.dir/src/zunmtr_m.cpp.o: ../src/zunmtr_m.cpp \
 
 ../magmablas/chemm.cu:
 
-../magmablas/dtrsv.cu:
-
-/usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/stl_map.h:
-
-../magmablas/cgetrf_batched_smallsq_shfl.cu:
-
 ../magmablas/cgetrf_batched_smallsq_noshfl.cu:
 
 ../src/dgetrf_panel_nopiv_batched.cpp:
@@ -293765,8 +292795,6 @@ CMakeFiles/magma.dir/src/zunmtr_m.cpp.o: ../src/zunmtr_m.cpp \
 
 ../control/affinity.cpp:
 
-../magmablas/dgeam.cu:
-
 ../magmablas/hemv_template_kernel_batched.cuh:
 
 ../control/magma_threadsetting.h:
@@ -293874,10 +292902,6 @@ CMakeFiles/magma.dir/src/zunmtr_m.cpp.o: ../src/zunmtr_m.cpp \
 ../magmablas/clarf_batched_fused_sm.cu:
 
 ../src/strsm_m.cpp:
-
-../magmablas/dgetrf_batched_smallsq_shfl.cu:
-
-../magmablas/dgeadd2.cu:
 
 /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/initializer_list:
 
@@ -294037,6 +293061,8 @@ CMakeFiles/magma.dir/src/zunmtr_m.cpp.o: ../src/zunmtr_m.cpp \
 
 ../magmablas/ztrsm_inv_vbatched_core.cu:
 
+../src/zbulge_back_m.cpp:
+
 ../control/xerbla.cpp:
 
 ../src/dsytrf_nopiv.cpp:
@@ -294169,6 +293195,12 @@ CMakeFiles/magma.dir/src/zunmtr_m.cpp.o: ../src/zunmtr_m.cpp \
 
 /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/cstring:
 
+../src/sormrq.cpp:
+
+../magmablas/sgeadd.cu:
+
+../src/sgerfs_nopiv_gpu.cpp:
+
 ../interface_cuda/blas_z_v2.cpp:
 
 ../src/zgetrf.cpp:
@@ -294190,6 +293222,8 @@ CMakeFiles/magma.dir/src/zunmtr_m.cpp.o: ../src/zunmtr_m.cpp \
 /usr/include/features.h:
 
 ../include/magma_types.h:
+
+../magmablas/dgeadd2.cu:
 
 /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/tr1/poly_laguerre.tcc:
 
@@ -294795,8 +293829,6 @@ CMakeFiles/magma.dir/src/zunmtr_m.cpp.o: ../src/zunmtr_m.cpp \
 
 ../magmablas/chemv_upper.cu:
 
-../magmablas/sgetrf_batched_smallsq_shfl.cu:
-
 /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/deque.tcc:
 
 /usr/tce/packages/gcc/gcc-8.3.1/rh/usr/include/c++/8/bits/stl_heap.h:
@@ -294834,6 +293866,8 @@ CMakeFiles/magma.dir/src/zunmtr_m.cpp.o: ../src/zunmtr_m.cpp \
 /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/crt/host_config.h:
 
 /usr/tce/packages/cuda/cuda-11.8.0/nvidia/include/surface_types.h:
+
+/usr/include/bits/wordsize.h:
 
 ../magmablas/dgetmatrix_transpose_mgpu.cpp:
 
@@ -295001,12 +294035,6 @@ CMakeFiles/magma.dir/src/zunmtr_m.cpp.o: ../src/zunmtr_m.cpp \
 
 ../src/dlaex0.cpp:
 
-../src/sormrq.cpp:
-
-../magmablas/sgeadd.cu:
-
-../src/sgerfs_nopiv_gpu.cpp:
-
 ../src/spotri_gpu.cpp:
 
 ../magmablas/sgemm.cu:
@@ -295056,6 +294084,8 @@ CMakeFiles/magma.dir/src/zunmtr_m.cpp.o: ../src/zunmtr_m.cpp \
 ../magmablas/sgemv_conj.cu:
 
 ../src/core_dlarfy.cpp:
+
+../src/zbulge_back.cpp:
 
 ../magmablas/sgemv_fermi.cu:
 
@@ -295493,14 +294523,6 @@ CMakeFiles/magma.dir/src/zunmtr_m.cpp.o: ../src/zunmtr_m.cpp \
 
 ../src/cgeqrf_expert_batched.cpp:
 
-/usr/include/bits/wordsize.h:
-
-../magmablas/zgetrf_batched_smallsq_shfl.cu:
-
-/usr/include/math.h:
-
-../src/cgetrs_batched.cpp:
-
 ../src/zgetrs_batched.cpp:
 
 ../magmablas/zheinertia.cu:
@@ -295872,6 +294894,10 @@ CMakeFiles/magma.dir/src/zunmtr_m.cpp.o: ../src/zunmtr_m.cpp \
 ../src/cgels3_gpu.cpp:
 
 ../src/cgetri_outofplace_batched.cpp:
+
+/usr/include/math.h:
+
+../src/cgetrs_batched.cpp:
 
 ../src/cgetrs_nopiv_gpu.cpp:
 
@@ -296684,3 +295710,5 @@ include/magma_config.h:
 ../src/strtri.cpp:
 
 ../src/xhsgetrf_gpu.cpp:
+
+../include/magma_zbulgeinc.h:

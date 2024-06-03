@@ -1,3 +1,3 @@
-BACKEND=hip
-GPU_TARGET=gfx90a
+BACKEND=cuda
+GPU_TARGET=Volta
 FORT=false

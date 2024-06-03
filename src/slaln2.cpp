@@ -10,7 +10,7 @@
 
        @author Mark Gates
 
-       @generated from src/dlaln2.cpp, normal d -> s, Tue May 21 13:14:23 2024
+       @generated from src/dlaln2.cpp, normal d -> s, Mon Jun  3 16:01:00 2024
 */
 #include "magma_internal.h"
 

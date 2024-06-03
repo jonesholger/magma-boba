@@ -9,7 +9,7 @@
        @author Tingxing Dong
        @author Ahmad Abdelfattah
 
-       @generated from include/magma_zvbatched.h, normal z -> s, Tue May 21 13:14:30 2024
+       @generated from include/magma_zvbatched.h, normal z -> s, Mon Jun  3 16:01:12 2024
 */
 
 #ifndef MAGMA_SVBATCHED_H

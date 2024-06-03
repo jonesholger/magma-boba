@@ -8,7 +8,7 @@
        @author Azzam Haidar
        @author Tingxing Dong
 
-       @generated from include/magma_zbatched.h, normal z -> c, Tue May 21 13:14:30 2024
+       @generated from include/magma_zbatched.h, normal z -> c, Mon Jun  3 16:01:12 2024
 */
 
 #ifndef MAGMA_CBATCHED_H

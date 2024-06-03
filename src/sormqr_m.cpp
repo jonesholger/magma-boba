@@ -10,7 +10,7 @@
        @author Stan Tomov
        @author Mark Gates
 
-       @generated from src/zunmqr_m.cpp, normal z -> s, Tue May 21 13:14:23 2024
+       @generated from src/zunmqr_m.cpp, normal z -> s, Mon Jun  3 16:00:59 2024
 
 */
 #include "magma_internal.h"

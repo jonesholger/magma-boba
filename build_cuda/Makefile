@@ -2966,30 +2966,6 @@ magmablas/cgetrf_batched_smallsq_noshfl.cu.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/magma.dir/build.make CMakeFiles/magma.dir/magmablas/cgetrf_batched_smallsq_noshfl.cu.s
 .PHONY : magmablas/cgetrf_batched_smallsq_noshfl.cu.s
 
-magmablas/cgetrf_batched_smallsq_shfl.o: magmablas/cgetrf_batched_smallsq_shfl.cu.o
-.PHONY : magmablas/cgetrf_batched_smallsq_shfl.o
-
-# target to build an object file
-magmablas/cgetrf_batched_smallsq_shfl.cu.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/magma.dir/build.make CMakeFiles/magma.dir/magmablas/cgetrf_batched_smallsq_shfl.cu.o
-.PHONY : magmablas/cgetrf_batched_smallsq_shfl.cu.o
-
-magmablas/cgetrf_batched_smallsq_shfl.i: magmablas/cgetrf_batched_smallsq_shfl.cu.i
-.PHONY : magmablas/cgetrf_batched_smallsq_shfl.i
-
-# target to preprocess a source file
-magmablas/cgetrf_batched_smallsq_shfl.cu.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/magma.dir/build.make CMakeFiles/magma.dir/magmablas/cgetrf_batched_smallsq_shfl.cu.i
-.PHONY : magmablas/cgetrf_batched_smallsq_shfl.cu.i
-
-magmablas/cgetrf_batched_smallsq_shfl.s: magmablas/cgetrf_batched_smallsq_shfl.cu.s
-.PHONY : magmablas/cgetrf_batched_smallsq_shfl.s
-
-# target to generate assembly for a file
-magmablas/cgetrf_batched_smallsq_shfl.cu.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/magma.dir/build.make CMakeFiles/magma.dir/magmablas/cgetrf_batched_smallsq_shfl.cu.s
-.PHONY : magmablas/cgetrf_batched_smallsq_shfl.cu.s
-
 magmablas/cheinertia.o: magmablas/cheinertia.cu.o
 .PHONY : magmablas/cheinertia.o
 
@@ -6493,30 +6469,6 @@ magmablas/dgetrf_batched_smallsq_noshfl.s: magmablas/dgetrf_batched_smallsq_nosh
 magmablas/dgetrf_batched_smallsq_noshfl.cu.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/magma.dir/build.make CMakeFiles/magma.dir/magmablas/dgetrf_batched_smallsq_noshfl.cu.s
 .PHONY : magmablas/dgetrf_batched_smallsq_noshfl.cu.s
-
-magmablas/dgetrf_batched_smallsq_shfl.o: magmablas/dgetrf_batched_smallsq_shfl.cu.o
-.PHONY : magmablas/dgetrf_batched_smallsq_shfl.o
-
-# target to build an object file
-magmablas/dgetrf_batched_smallsq_shfl.cu.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/magma.dir/build.make CMakeFiles/magma.dir/magmablas/dgetrf_batched_smallsq_shfl.cu.o
-.PHONY : magmablas/dgetrf_batched_smallsq_shfl.cu.o
-
-magmablas/dgetrf_batched_smallsq_shfl.i: magmablas/dgetrf_batched_smallsq_shfl.cu.i
-.PHONY : magmablas/dgetrf_batched_smallsq_shfl.i
-
-# target to preprocess a source file
-magmablas/dgetrf_batched_smallsq_shfl.cu.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/magma.dir/build.make CMakeFiles/magma.dir/magmablas/dgetrf_batched_smallsq_shfl.cu.i
-.PHONY : magmablas/dgetrf_batched_smallsq_shfl.cu.i
-
-magmablas/dgetrf_batched_smallsq_shfl.s: magmablas/dgetrf_batched_smallsq_shfl.cu.s
-.PHONY : magmablas/dgetrf_batched_smallsq_shfl.s
-
-# target to generate assembly for a file
-magmablas/dgetrf_batched_smallsq_shfl.cu.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/magma.dir/build.make CMakeFiles/magma.dir/magmablas/dgetrf_batched_smallsq_shfl.cu.s
-.PHONY : magmablas/dgetrf_batched_smallsq_shfl.cu.s
 
 magmablas/dlacpy.o: magmablas/dlacpy.cu.o
 .PHONY : magmablas/dlacpy.o
@@ -10286,30 +10238,6 @@ magmablas/sgetrf_batched_smallsq_noshfl.cu.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/magma.dir/build.make CMakeFiles/magma.dir/magmablas/sgetrf_batched_smallsq_noshfl.cu.s
 .PHONY : magmablas/sgetrf_batched_smallsq_noshfl.cu.s
 
-magmablas/sgetrf_batched_smallsq_shfl.o: magmablas/sgetrf_batched_smallsq_shfl.cu.o
-.PHONY : magmablas/sgetrf_batched_smallsq_shfl.o
-
-# target to build an object file
-magmablas/sgetrf_batched_smallsq_shfl.cu.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/magma.dir/build.make CMakeFiles/magma.dir/magmablas/sgetrf_batched_smallsq_shfl.cu.o
-.PHONY : magmablas/sgetrf_batched_smallsq_shfl.cu.o
-
-magmablas/sgetrf_batched_smallsq_shfl.i: magmablas/sgetrf_batched_smallsq_shfl.cu.i
-.PHONY : magmablas/sgetrf_batched_smallsq_shfl.i
-
-# target to preprocess a source file
-magmablas/sgetrf_batched_smallsq_shfl.cu.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/magma.dir/build.make CMakeFiles/magma.dir/magmablas/sgetrf_batched_smallsq_shfl.cu.i
-.PHONY : magmablas/sgetrf_batched_smallsq_shfl.cu.i
-
-magmablas/sgetrf_batched_smallsq_shfl.s: magmablas/sgetrf_batched_smallsq_shfl.cu.s
-.PHONY : magmablas/sgetrf_batched_smallsq_shfl.s
-
-# target to generate assembly for a file
-magmablas/sgetrf_batched_smallsq_shfl.cu.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/magma.dir/build.make CMakeFiles/magma.dir/magmablas/sgetrf_batched_smallsq_shfl.cu.s
-.PHONY : magmablas/sgetrf_batched_smallsq_shfl.cu.s
-
 magmablas/slacpy.o: magmablas/slacpy.cu.o
 .PHONY : magmablas/slacpy.o
 
@@ -13765,30 +13693,6 @@ magmablas/zgetrf_batched_smallsq_noshfl.s: magmablas/zgetrf_batched_smallsq_nosh
 magmablas/zgetrf_batched_smallsq_noshfl.cu.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/magma.dir/build.make CMakeFiles/magma.dir/magmablas/zgetrf_batched_smallsq_noshfl.cu.s
 .PHONY : magmablas/zgetrf_batched_smallsq_noshfl.cu.s
-
-magmablas/zgetrf_batched_smallsq_shfl.o: magmablas/zgetrf_batched_smallsq_shfl.cu.o
-.PHONY : magmablas/zgetrf_batched_smallsq_shfl.o
-
-# target to build an object file
-magmablas/zgetrf_batched_smallsq_shfl.cu.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/magma.dir/build.make CMakeFiles/magma.dir/magmablas/zgetrf_batched_smallsq_shfl.cu.o
-.PHONY : magmablas/zgetrf_batched_smallsq_shfl.cu.o
-
-magmablas/zgetrf_batched_smallsq_shfl.i: magmablas/zgetrf_batched_smallsq_shfl.cu.i
-.PHONY : magmablas/zgetrf_batched_smallsq_shfl.i
-
-# target to preprocess a source file
-magmablas/zgetrf_batched_smallsq_shfl.cu.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/magma.dir/build.make CMakeFiles/magma.dir/magmablas/zgetrf_batched_smallsq_shfl.cu.i
-.PHONY : magmablas/zgetrf_batched_smallsq_shfl.cu.i
-
-magmablas/zgetrf_batched_smallsq_shfl.s: magmablas/zgetrf_batched_smallsq_shfl.cu.s
-.PHONY : magmablas/zgetrf_batched_smallsq_shfl.s
-
-# target to generate assembly for a file
-magmablas/zgetrf_batched_smallsq_shfl.cu.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/magma.dir/build.make CMakeFiles/magma.dir/magmablas/zgetrf_batched_smallsq_shfl.cu.s
-.PHONY : magmablas/zgetrf_batched_smallsq_shfl.cu.s
 
 magmablas/zheinertia.o: magmablas/zheinertia.cu.o
 .PHONY : magmablas/zheinertia.o
@@ -35535,9 +35439,6 @@ help:
 	@echo "... magmablas/cgetrf_batched_smallsq_noshfl.o"
 	@echo "... magmablas/cgetrf_batched_smallsq_noshfl.i"
 	@echo "... magmablas/cgetrf_batched_smallsq_noshfl.s"
-	@echo "... magmablas/cgetrf_batched_smallsq_shfl.o"
-	@echo "... magmablas/cgetrf_batched_smallsq_shfl.i"
-	@echo "... magmablas/cgetrf_batched_smallsq_shfl.s"
 	@echo "... magmablas/cheinertia.o"
 	@echo "... magmablas/cheinertia.i"
 	@echo "... magmablas/cheinertia.s"
@@ -35976,9 +35877,6 @@ help:
 	@echo "... magmablas/dgetrf_batched_smallsq_noshfl.o"
 	@echo "... magmablas/dgetrf_batched_smallsq_noshfl.i"
 	@echo "... magmablas/dgetrf_batched_smallsq_noshfl.s"
-	@echo "... magmablas/dgetrf_batched_smallsq_shfl.o"
-	@echo "... magmablas/dgetrf_batched_smallsq_shfl.i"
-	@echo "... magmablas/dgetrf_batched_smallsq_shfl.s"
 	@echo "... magmablas/dlacpy.o"
 	@echo "... magmablas/dlacpy.i"
 	@echo "... magmablas/dlacpy.s"
@@ -36450,9 +36348,6 @@ help:
 	@echo "... magmablas/sgetrf_batched_smallsq_noshfl.o"
 	@echo "... magmablas/sgetrf_batched_smallsq_noshfl.i"
 	@echo "... magmablas/sgetrf_batched_smallsq_noshfl.s"
-	@echo "... magmablas/sgetrf_batched_smallsq_shfl.o"
-	@echo "... magmablas/sgetrf_batched_smallsq_shfl.i"
-	@echo "... magmablas/sgetrf_batched_smallsq_shfl.s"
 	@echo "... magmablas/slacpy.o"
 	@echo "... magmablas/slacpy.i"
 	@echo "... magmablas/slacpy.s"
@@ -36885,9 +36780,6 @@ help:
 	@echo "... magmablas/zgetrf_batched_smallsq_noshfl.o"
 	@echo "... magmablas/zgetrf_batched_smallsq_noshfl.i"
 	@echo "... magmablas/zgetrf_batched_smallsq_noshfl.s"
-	@echo "... magmablas/zgetrf_batched_smallsq_shfl.o"
-	@echo "... magmablas/zgetrf_batched_smallsq_shfl.i"
-	@echo "... magmablas/zgetrf_batched_smallsq_shfl.s"
 	@echo "... magmablas/zheinertia.o"
 	@echo "... magmablas/zheinertia.i"
 	@echo "... magmablas/zheinertia.s"

@@ -7,7 +7,7 @@
 
        @author Azzam Haidar
   
-       @generated from src/core_zlarfy.cpp, normal z -> d, Tue May 21 13:14:23 2024
+       @generated from src/core_zlarfy.cpp, normal z -> d, Mon Jun  3 16:01:00 2024
 */
 #include "magma_internal.h"
 #include "magma_bulge.h"

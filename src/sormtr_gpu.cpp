@@ -8,7 +8,7 @@
        @author Raffaele Solca
        @author Stan Tomov
 
-       @generated from src/zunmtr_gpu.cpp, normal z -> s, Tue May 21 13:14:23 2024
+       @generated from src/zunmtr_gpu.cpp, normal z -> s, Mon Jun  3 16:00:59 2024
 
 */
 #include "magma_internal.h"

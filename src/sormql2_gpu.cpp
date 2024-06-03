@@ -8,7 +8,7 @@
        @author Raffaele Solca
        @author Mark Gates
 
-       @generated from src/zunmql2_gpu.cpp, normal z -> s, Tue May 21 13:14:22 2024
+       @generated from src/zunmql2_gpu.cpp, normal z -> s, Mon Jun  3 16:00:58 2024
 
 */
 #include "magma_internal.h"

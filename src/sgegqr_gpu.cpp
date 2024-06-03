@@ -6,7 +6,7 @@
        @date
 
        @author Stan Tomov
-       @generated from src/zgegqr_gpu.cpp, normal z -> s, Tue May 21 13:14:22 2024
+       @generated from src/zgegqr_gpu.cpp, normal z -> s, Mon Jun  3 16:00:58 2024
 
 */
 #include "magma_internal.h"

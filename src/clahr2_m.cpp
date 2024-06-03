@@ -5,7 +5,7 @@
        Univ. of Colorado, Denver
        @date
 
-       @generated from src/zlahr2_m.cpp, normal z -> c, Tue May 21 13:14:23 2024
+       @generated from src/zlahr2_m.cpp, normal z -> c, Mon Jun  3 16:01:00 2024
        @author Mark Gates
 */
 #include "magma_internal.h"

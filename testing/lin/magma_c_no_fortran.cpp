@@ -6,7 +6,7 @@
        @date
 
        @author Mark Gates
-       @generated from testing/lin/magma_z_no_fortran.cpp, normal z -> c, Tue May 21 13:14:26 2024
+       @generated from testing/lin/magma_z_no_fortran.cpp, normal z -> c, Mon Jun  3 16:01:04 2024
        
        This is simply a copy of part of magma_clapack.h,
        with the { printf(...); } function body added to each function.

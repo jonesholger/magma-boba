@@ -8,7 +8,7 @@
        @author Azzam Haidar
        @author Tingxing Dong
 
-       @generated from include/magma_zbatched.h, normal z -> d, Mon Feb 19 15:47:11 2024
+       @generated from include/magma_zbatched.h, normal z -> d, Mon Jun  3 16:01:12 2024
 */
 
 #ifndef MAGMA_DBATCHED_H
@@ -714,13 +714,6 @@ magma_dgetrf_batched_smallsq_noshfl(
     magma_int_t batchCount, magma_queue_t queue );
 
 magma_int_t
-magma_dgetrf_batched_smallsq_shfl(
-    magma_int_t n,
-    double** dA_array, magma_int_t ldda,
-    magma_int_t** ipiv_array, magma_int_t* info_array,
-    magma_int_t batchCount, magma_queue_t queue );
-
-magma_int_t
 magma_dgetri_outofplace_batched(
     magma_int_t n,
     double **dA_array, magma_int_t ldda,
@@ -986,6 +979,15 @@ magma_dgeqrf_batched(
     magma_int_t lda,
     double **dtau_array,
     magma_int_t *info_array,
+    magma_int_t batchCount, magma_queue_t queue);
+
+magma_int_t
+magma_dgeqrf_batched_work(
+    magma_int_t m, magma_int_t n,
+    double **dA_array, magma_int_t ldda,
+    double **dtau_array,
+    magma_int_t *info_array,
+    void* device_work, magma_int_t* device_lwork,
     magma_int_t batchCount, magma_queue_t queue);
 
 magma_int_t

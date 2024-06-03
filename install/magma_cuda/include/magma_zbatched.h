@@ -714,13 +714,6 @@ magma_zgetrf_batched_smallsq_noshfl(
     magma_int_t batchCount, magma_queue_t queue );
 
 magma_int_t
-magma_zgetrf_batched_smallsq_shfl(
-    magma_int_t n,
-    magmaDoubleComplex** dA_array, magma_int_t ldda,
-    magma_int_t** ipiv_array, magma_int_t* info_array,
-    magma_int_t batchCount, magma_queue_t queue );
-
-magma_int_t
 magma_zgetri_outofplace_batched(
     magma_int_t n,
     magmaDoubleComplex **dA_array, magma_int_t ldda,
@@ -986,6 +979,15 @@ magma_zgeqrf_batched(
     magma_int_t lda,
     magmaDoubleComplex **dtau_array,
     magma_int_t *info_array,
+    magma_int_t batchCount, magma_queue_t queue);
+
+magma_int_t
+magma_zgeqrf_batched_work(
+    magma_int_t m, magma_int_t n,
+    magmaDoubleComplex **dA_array, magma_int_t ldda,
+    magmaDoubleComplex **dtau_array,
+    magma_int_t *info_array,
+    void* device_work, magma_int_t* device_lwork,
     magma_int_t batchCount, magma_queue_t queue);
 
 magma_int_t

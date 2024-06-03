@@ -5,7 +5,7 @@
        Univ. of Colorado, Denver
        @date
 
-       @generated from include/magma_z.h, normal z -> s, Mon Feb 19 15:47:11 2024
+       @generated from include/magma_z.h, normal z -> s, Mon Jun  3 16:01:12 2024
 */
 
 #ifndef MAGMA_S_H
@@ -1480,6 +1480,13 @@ magma_spotf2_gpu(
     magmaFloat_ptr dA, magma_int_t ldda,
     magma_queue_t queue,
     magma_int_t *info);
+
+magma_int_t
+magma_spotf2_native(
+    magma_uplo_t uplo, magma_int_t n,
+    magmaFloat_ptr dA, magma_int_t ldda,
+    magma_int_t step, magma_int_t *device_info,
+    magma_queue_t queue );
 
 magma_int_t
 magma_spotrf_rectile_native(

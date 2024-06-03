@@ -9,7 +9,7 @@
        @author Tingxing Dong
        @author Ahmad Abdelfattah
 
-       @generated from src/zpotrf_panel_batched.cpp, normal z -> s, Tue May 21 13:14:24 2024
+       @generated from src/zpotrf_panel_batched.cpp, normal z -> s, Mon Jun  3 16:01:01 2024
 */
 #include "magma_internal.h"
 #include "batched_kernel_param.h"

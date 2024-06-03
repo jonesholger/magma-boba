@@ -408,7 +408,6 @@ magmablas/zgerbt_func_batched.cu
 magmablas/zgesv_batched_small.cu
 magmablas/zgetf2_kernels.cu
 magmablas/zgetrf_batched_smallsq_noshfl.cu
-magmablas/zgetrf_batched_smallsq_shfl.cu
 magmablas/getrf_setup_pivinfo.cu
 magmablas/zhemm_batched_core.cu
 magmablas/zher2k_batched.cpp
@@ -1349,9 +1348,6 @@ magmablas/cgetf2_kernels.cu
 magmablas/sgetrf_batched_smallsq_noshfl.cu
 magmablas/dgetrf_batched_smallsq_noshfl.cu
 magmablas/cgetrf_batched_smallsq_noshfl.cu
-magmablas/sgetrf_batched_smallsq_shfl.cu
-magmablas/dgetrf_batched_smallsq_shfl.cu
-magmablas/cgetrf_batched_smallsq_shfl.cu
 magmablas/ssymm_batched_core.cu
 magmablas/dsymm_batched_core.cu
 magmablas/chemm_batched_core.cu

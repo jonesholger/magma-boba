@@ -8,7 +8,7 @@
    @author Azzam Haidar
    @author Tingxing Dong
 
-   @generated from testing/testing_zgetrf_batched.cpp, normal z -> d, Tue May 21 13:14:27 2024
+   @generated from testing/testing_zgetrf_batched.cpp, normal z -> d, Mon Jun  3 16:01:07 2024
  */
 // includes, system
 #include <stdlib.h>

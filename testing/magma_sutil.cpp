@@ -5,7 +5,7 @@
        Univ. of Colorado, Denver
        @date
 
-       @generated from testing/magma_zutil.cpp, normal z -> s, Tue May 21 13:14:26 2024
+       @generated from testing/magma_zutil.cpp, normal z -> s, Mon Jun  3 16:01:04 2024
 
        @author Mark Gates
 

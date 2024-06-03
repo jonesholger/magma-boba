@@ -5,7 +5,7 @@
        Univ. of Colorado, Denver
        @date
 
-       @generated from src/zgerbt_batched.cpp, normal z -> s, Tue May 21 13:14:24 2024
+       @generated from src/zgerbt_batched.cpp, normal z -> s, Mon Jun  3 16:01:01 2024
        @author Adrien REMY
 */
 #include "magma_internal.h"

@@ -5,7 +5,7 @@
        Univ. of Colorado, Denver
        @date
 
-       @generated from include/magma_zlapack.h, normal z -> s, Tue May 21 13:14:30 2024
+       @generated from include/magma_zlapack.h, normal z -> s, Mon Jun  3 16:01:12 2024
 */
 
 #ifndef MAGMA_SLAPACK_H

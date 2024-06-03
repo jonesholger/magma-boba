@@ -7,7 +7,7 @@
 
        @author Raffaele Solca
 
-       @generated from src/ztrsm_m.cpp, normal z -> c, Tue May 21 13:14:23 2024
+       @generated from src/ztrsm_m.cpp, normal z -> c, Mon Jun  3 16:01:00 2024
 */
 #include "magma_internal.h"
 

@@ -5,7 +5,7 @@
        Univ. of Colorado, Denver
        @date
 
-       @generated from include/magmablas_zc_v1.h, mixed zc -> ds, Tue May 21 13:14:29 2024
+       @generated from include/magmablas_zc_v1.h, mixed zc -> ds, Mon Jun  3 16:01:12 2024
 */
 
 #ifndef MAGMABLAS_DS_V1_H
