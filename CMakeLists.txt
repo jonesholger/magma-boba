@@ -857,7 +857,7 @@ configure_package_config_file(magmaConfig.cmake.in
   INSTALL_DESTINATION lib/cmake/magma)
 write_basic_package_version_file(
   ${CMAKE_CURRENT_BINARY_DIR}/magmaConfigVersion.cmake
-  VERSION 2.7.2
+  VERSION 2.8.0
   COMPATIBILITY SameMajorVersion )
 install(FILES ${CMAKE_CURRENT_BINARY_DIR}/magmaConfig.cmake
               ${CMAKE_CURRENT_BINARY_DIR}/magmaConfigVersion.cmake

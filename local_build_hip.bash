@@ -11,16 +11,14 @@ target=gfx90a
 
 BOBA_DIR=$(pwd)
 BUILD_DIR=${BOBA_DIR}/build_hip
-#git reset --hard d998fcbb94d9046ec98ae93757010a1472902d54
 #echo -e 'BACKEND=hip\nGPU_TARGET=gfx90a\nFORT=false' > make.inc
 #make cleanall
 #make -j 32 generate
 
-#-DCMAKE_EXE_LINKER_FLAGS="--offload-arch=$target" \
-#-DCMAKE_HIP_ARCHITECTURES=$target \
-#-DCMAKE_CXX_FLAGS="--offload-arch=$target" \
-#-DGPU_TARGET=$target  \
-# -DGPU_TARGETS=$target  \
+#MAGMA_ORIG=OFF is broken - doesn't setup memoryType in hipPointerAttribute_t
+#MAGMA_ORIG below uses original HIP arch support while OFF is arch autodetect
+#autodetect uses DetermineHIPCompiler to detect CMAKE_HIP_ARCHITECTURES
+#warning Calls hipconfig as part of process and for rocm 6.1.1 location is wrong (temp)
 
 mkdir -p $BUILD_DIR
 cd $BUILD_DIR
