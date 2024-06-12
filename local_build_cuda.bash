@@ -36,7 +36,3 @@ cmake \
 
 #make -j 32 magma
 #make install -j 32
-
-#echo "set PKG_CONFIG_PATH in env to pick up MAGMA"
-#echo "PKG_CONFIG_PATH=./install/magma_cuda/lib/pkgconfig:$PKG_CONFIG_PATH"
-#export PKG_CONFIG_PATH=${BOBA_DIR}/install/magma_cuda/lib/pkgconfig:$PKG_CONFIG_PATH
