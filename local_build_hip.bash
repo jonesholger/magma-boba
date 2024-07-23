@@ -1,7 +1,7 @@
 #!/bin/bash
 
-ml rocm/6.1.1
-ml rocmcc/6.1.1-magic
+ml rocm/6.0.3
+ml rocmcc/6.0.3-magic
 ml cmake/3.24.2
 ml python/3.9.12
 
